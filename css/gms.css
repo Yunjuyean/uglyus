@@ -1,0 +1,19 @@
+#gms{
+    border-bottom: 3px solid black;
+    padding: 1rem;
+}
+/*#gms .gnb{
+    font-size: 2em;
+}*/
+#gms .gnb li:hover a{
+    color:red;
+}
+#gms .util li:hover a{
+    color:blue;
+}
+/*css가 너무 길면 한번 아이디를 끊어준다*/
+
+.util{font-size: 13px;}
+.util li{margin-left: 0.5rem;}
+.gnb li{margin : 0 1rem;}
+

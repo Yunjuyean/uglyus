@@ -1,0 +1,28 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+li { list-style: none;}
+.fontSnd{
+    font-family: 'Noto Serif KR', sans-serif;
+}
+.d-flex {
+    display: flex;
+}
+
+.jcc{
+    justify-content: center;
+}
+.jcb{
+    justify-content: space-between;
+}
+.jce{
+    justify-content: end;
+}
+.aic{
+    align-items: center;
+}
+.red {background-color: red;}
