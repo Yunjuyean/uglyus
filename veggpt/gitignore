@@ -1,0 +1,6 @@
+**/data/ 
+**/origin*.jpg
+**/data*.*
+**/*.csv
+**/*.json
+**/origin/
