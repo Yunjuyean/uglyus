@@ -1,0 +1,34 @@
+h2{
+    color: #FE663F;
+    font-family: 'Pretendard';
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.adbanner img{
+    height: 345px;
+    width: 1824px;
+    border-radius: 20px;
+}
+
+#we_jjh strong{
+    color: #1F2937;
+    font-family: 'Pretendard';
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#we_jjh p{
+    color: #1F2937;
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#we_jjh ul li i img{
+    height: 145px;
+    width: 144px;
+}
+
+#we_jjh ul li
