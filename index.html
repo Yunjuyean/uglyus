@@ -69,7 +69,7 @@
                 <img class="border-radius" src="https://via.placeholder.com/1824x345" alt="임시 이미지" width="1824" height="345">
             </div>
             <div class="textarea">
-                <strong class="font_subtitle_k letter_spacing line_height_18 d-block mb-4">Ugly Us는 지속 가능한 식탁을 만듭니다.</strong>
+                <strong class="font_subtitle_k letter_spacing line_height_18 d-block mb-4 mycolor">Ugly Us는 지속 가능한 식탁을 만듭니다.</strong>
                 <p class="letter_spacing line_height_15 plus mb-0">농산물의 폐기는 유통과 소비 모든 단계에서 사회적 손실을 야기합니다.</p>
                 <p class="letter_spacing line_height_15 plus mb-0">어글리어스는 불필요한 낭비를 줄여 환경 보호에 기여하고, 농부의 노력에 대한 정당한 보상을 제공합니다.</p>
             </div>
@@ -99,15 +99,116 @@
     <section id="store_jjh">
 
     </section>
-    <section id="recipe_yjy">
 
+    <section id="recipe_yjy">
+        <div class="container text-center">
+            <h2 class="font_title_k letter_spacing">출구 없는 레시피</h2>
+            <p class="font_leadcopy letter_spacing ">나만의 레시피를 알려주세요</p>
+
+            <div class="row">
+                <ul class="row col-6 ">
+                    <li class="col-12 ">
+                        <img src="https://via.placeholder.com/690x450" alt="임시 이미지" class="img-fluid border-radius">
+                        <p class="font_subtitle_k letter_spacing my-0 text-start">한끼뚝딱 전주비빔밥</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="font_text">#한식 #시금치 #당근</p>
+                            <p class="font_text text-right">윤주연님</p>
+                        </div>
+                        
+                    </li>
+                    <li class="col-6">
+                        <img src="https://via.placeholder.com/335x260" alt="임시 이미지" class="img-fluid border-radius">
+                        <p class="font_subtitle_k letter_spacing my-0 text-start">한 입 가득 월남쌈</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="font_text">#볼 빵빵 #새싹채소 #파프리카</p>
+                            <p class="font_text text-right">정장훈 님</p>
+                        </div>
+                    </li>
+                    <li class="col-6">
+                        <img src="https://via.placeholder.com/335x260" alt="임시 이미지" class="img-fluid border-radius">
+                        <p class="font_subtitle_k letter_spacing my-0 text-start">아삭아삭 오이소박이</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="font_text">#새콤달콤 #오이 #부추</p>
+                            <p class="font_text text-right">박연주 님</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="row col-6">
+                    <li class="col-12 order-lg-2">
+                        <img src="https://via.placeholder.com/690x450" alt="임시 이미지" class="img-fluid border-radius">
+                         <p class="font_subtitle_k letter_spacing my-0 text-start">해장엔? 짬뽕</p>
+                         <div class="d-flex justify-content-between">
+                            <p class="font_text">#칼칼한 #청경채 #콩나물</p>
+                            <p class="font_text text-right">윤여선 님</p>
+                        </div>
+                    </li>
+                    <li class="col-6 order-lg-1">
+                        <img src="https://via.placeholder.com/335x260" alt="임시 이미지" class="img-fluid border-radius">
+                        <p class="font_subtitle_k letter_spacing my-0 text-start">달콤한 호박죽</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="font_text">#든든한 #단호박 #잣</p>
+                            <p class="font_text text-right">방보영 님</p>
+                        </div>
+                    </li>
+                    <li class="col-6 order-lg-1">
+                        <img src="https://via.placeholder.com/335x260" alt="임시 이미지" class="img-fluid border-radius">
+                        <p class="font_subtitle_k letter_spacing my-0 text-start">한 솥 가득 밀푀유나베</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="font_text">#집들이 #배추 #버섯</p>
+                            <p class="font_text text-right">고민서 님</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
     <section id="map_pyj">
 
     </section>
-    <section id="form_pyj">
 
+    <section id="form_pyj" class="background py-5">
+        <div class="row mx-auto my-5 letter_spacing justify-content-center align-items-center container">
+            <div class="col-6 mx-auto">
+                <h2 class="myfont mb-4 text-center">생산자님! 구출이 필요한 농산물이 있나요?</h2>
+                <div>
+                    <p class="font_text mb-0 text-center">구출이 필요한 농산물이 있다면 정보 확인 후 연락 드리겠습니다.</p>
+                    <p class="font_text mb-0 text-center">회신까지 약 2~3일 정도 소요될 수 있으며, 최대한 빠르게 연락 드릴 수 있도록 하겠습니다.</p>
+                </div>
+            </div>
+
+            <div class="col-6 d-flex justify-content-end">
+                <form class="formbackground px-5 py-5" action="/submit-form" method="post">
+                    <h2 class="font_subtitle_k text-center mb-3">농산물 납품 문의</h2>
+                    <div class="mb-3 ">
+                      <label for="name" class="form-label plus">이름</label>
+                      <input type="text" class="form-control formfont_placehold" id="name" placeholder="이름을 입력해주세요." name="name" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="contact" class="form-label plus ">연락처</label>
+                      <input type="tel" class="form-control formfont_placehold" id="contact" placeholder="연락처를 입력해주세요." name="contact" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="product" class="form-label plus">납품 물건</label>
+                      <input type="text" class="form-control formfont_placehold" id="product" placeholder="납품할 물건을 입력해주세요." name="product" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label plus">기타 메시지</label>
+                      <input type="text" class="form-control formfont_placehold" id="message" placeholder="기타 의견을 적어주세요." name="message" required>
+                    </div>
+                    <div class="d-flex plus my-4 form-check justify-content-center align-items-center ps-0">  
+                        <p class="my-0">개인정보 수집 및 이용에 동의하십니까?</p>
+                        <input type="checkbox" class="form-check-input ms-4 me-2 mt-0" id="agree" name="agree" required>
+                        <label class="form-check-label" for="agree">동의함</label>
+                    </div>
+                    <div class="mx-auto">
+                        <button type="submit" class="buttonstyle_pyj formfont">문의하기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
+
     <footer id="ft_yys">
 
     </footer>
