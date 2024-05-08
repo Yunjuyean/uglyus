@@ -2,24 +2,24 @@
   letter-spacing: 0.5px;
 }
 
-.line_height_125 {
-  line-height: 1.25rem;
-}
-
 .line_height_1 {
   line-height: 1rem;
 }
 
-.line_height_25 {
-  line-height: 2.5rem;
+.line_height_125 {
+  line-height: 1.25rem;
+}
+
+.line_height_15 {
+  line-height: 1.5rem;
 }
 
 .line_height_18 {
   line-height: 1.8rem;
 }
 
-.line_height_15 {
-  line-height: 1.5rem;
+.line_height_25 {
+  line-height: 2.5rem;
 }
 
 .font_navi {
@@ -38,12 +38,14 @@
   font-family: "Pretendard";
   font-size: 38px;
   font-weight: 700;
+  color: #FE663F;
 }
 
 .font_title_e {
   font-family: "Rubik";
   font-size: 38px;
   font-weight: 700;
+  color: #FE663F;
 }
 
 .font_leadcopy {
