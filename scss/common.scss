@@ -1,7 +1,7 @@
 // color
 $uglyred : #FF2F2F;
 $uglyorange : #FE663F;
-$uglybrawn : #CD8F50;
+$uglybrown : #CD8F50;
 $uglygreen : #5EAB42;
 $textblack : #1F2937;
 $textgray : #414B5A;
@@ -10,22 +10,21 @@ $textgray : #414B5A;
 .letter_spacing{
     letter-spacing: 0.5px;
 }
-.line_height_125{
-    line-height: 1.25rem;
-}
 .line_height_1{
     line-height: 1rem;
 }
-.line_height_25{
-    line-height: 2.5rem;
-}
-.line_height_18{
-    line-height: 1.8rem;
+.line_height_125{
+    line-height: 1.25rem;
 }
 .line_height_15{
     line-height: 1.5rem;
 }
-
+.line_height_18{
+    line-height: 1.8rem;
+}
+.line_height_25{
+    line-height: 2.5rem;
+}
 
 // font_style
 // k : 한국어(pretendard)
