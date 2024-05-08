@@ -3,12 +3,12 @@ $uglyred : #FF2F2F;
 $uglyorange : #FE663F;
 $uglybrown : #CD8F50;
 $uglygreen : #5EAB42;
-$textblack : #1F2937;
-$textgray : #414B5A;
+$uglyblack : #1F2937;
+$uglygray : #414B5A;
 
 // 자간+행간
 .letter_spacing{
-    letter-spacing: 0.5px;
+    letter-spacing: -0.5px;
 }
 .line_height_1{
     line-height: 1rem;
@@ -25,7 +25,12 @@ $textgray : #414B5A;
 .line_height_25{
     line-height: 2.5rem;
 }
-
+.line_height_30 {
+    line-height: 3rem;
+}
+.line_height_40 {
+    line-height: 4rem;
+}
 // font_style
 // k : 한국어(pretendard)
 // e : 영어폰트(rubik)
@@ -33,11 +38,14 @@ $textgray : #414B5A;
     font-family: 'Pretendard';
     font-size: 22px;
     font-weight: 400;
+    color: $uglyblack;
 }
 .font_login{
     font-family: 'Pretendard';
     font-size: 14px;
     font-weight: 600;
+    color: $uglyblack;
+    
 }
 .font_title_k{
     font-family: 'Pretendard';
@@ -45,54 +53,59 @@ $textgray : #414B5A;
     font-weight: 700;
     color: $uglyorange;
 }
+
 .font_title_e{
     font-family: 'Rubik';
     font-size: 38px;
     font-weight: 700;
     color: $uglyorange;
 }
-.font_leadcopy{
-    font-family: 'Pretendard';
-    font-size: 18px;
-    font-weight: 600;
-}
-.font_subtitle_k{
-    font-family: 'Pretendard';
-    font-size: 22px;
-    font-weight: 700;
-}
+
 .font_subtitle_e{
     font-family: 'Rubik';
     font-size: 22px;
     font-weight: 700;
+    color:$uglygray;
 }
+
 .font_text{
     font-family: 'Pretendard';
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
+}
+.font_f30bold{
+    font-family: 'Pretendard';
+    font-size: 30px;
+    font-weight: 700;
+    color: $uglyblack;
 }
 .font_f18bold{
     font-family: 'Pretendard';
     font-size: 18px;
     font-weight: 700;
+    color: $uglygray;
 }
 .font_f14semibold{
     font-family: 'Pretendard';
     font-size: 14px;
     font-weight: 600;
+    color: $uglygray;
 }
 .font_f13regular_k{
     font-family: 'Pretendard';
     font-size: 13px;
     font-weight: 400;
+    color: $uglygray;
 }
 .font_f13regular_e{
     font-family: 'Rubik';
     font-size: 13px;
     font-weight: 400;
+    color: $uglygray;
 }
 .font_f13bold{
     font-family: 'Pretendard';
     font-size: 13px;
     font-weight: 700;
+    color: $uglygray;
 }

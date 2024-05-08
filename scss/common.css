@@ -21,9 +21,11 @@
 .line_height_25 {
   line-height: 2.5rem;
 }
+
 .line_height_30 {
   line-height: 3rem;
 }
+
 .line_height_40 {
   line-height: 4rem;
 }
@@ -32,12 +34,14 @@
   font-family: "Pretendard";
   font-size: 22px;
   font-weight: 400;
+  color: #1F2937;
 }
 
 .font_login {
   font-family: "Pretendard";
   font-size: 14px;
   font-weight: 600;
+  color: #1F2937;
 }
 
 .font_title_k {
@@ -54,22 +58,11 @@
   color: #FE663F;
 }
 
-.font_leadcopy {
-  font-family: "Pretendard";
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.font_subtitle_k {
-  font-family: "Pretendard";
-  font-size: 22px;
-  font-weight: 700;
-}
-
 .font_subtitle_e {
   font-family: "Rubik";
   font-size: 22px;
   font-weight: 700;
+  color: #414B5A;
 }
 
 .font_text {
@@ -78,38 +71,44 @@
   font-weight: 400;
 }
 
-.font_f30bold{
-  font-family: 'Pretendard';
+.font_f30bold {
+  font-family: "Pretendard";
   font-size: 30px;
   font-weight: 700;
+  color: #1F2937;
 }
 
 .font_f18bold {
   font-family: "Pretendard";
   font-size: 18px;
   font-weight: 700;
+  color: #414B5A;
 }
 
 .font_f14semibold {
   font-family: "Pretendard";
   font-size: 14px;
   font-weight: 600;
+  color: #414B5A;
 }
 
 .font_f13regular_k {
   font-family: "Pretendard";
   font-size: 13px;
   font-weight: 400;
+  color: #414B5A;
 }
 
 .font_f13regular_e {
   font-family: "Rubik";
   font-size: 13px;
   font-weight: 400;
+  color: #414B5A;
 }
 
 .font_f13bold {
   font-family: "Pretendard";
   font-size: 13px;
   font-weight: 700;
+  color: #414B5A;
 }
