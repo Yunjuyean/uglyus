@@ -1,0 +1,13 @@
+.adbanner{
+    height: 15vw;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.trans{
+    transform: translate(-15%, -28%);
+    border-radius: 20px;
+}
+.img-fluid{
+    width: 690px;
+    height: 450px;
+}
