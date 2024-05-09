@@ -6,16 +6,16 @@
   line-height: 1rem;
 }
 
-.line_height_1 {
-  line-height: 1rem;
-}
-
 .line_height_125 {
   line-height: 1.25rem;
 }
 
-.line_height_1 {
-  line-height: 1rem;
+.line_height_15 {
+  line-height: 1.5rem;
+}
+
+.line_height_18 {
+  line-height: 1.8rem;
 }
 
 .line_height_25 {
@@ -26,8 +26,12 @@
   line-height: 3rem;
 }
 
-.line_height_15 {
-  line-height: 1.5rem;
+.line_height_40 {
+  line-height: 4rem;
+}
+
+.border-radius {
+  border-radius: 20px;
 }
 
 .font_navi {
@@ -58,6 +62,13 @@
   color: #FE663F;
 }
 
+.font_subtitle_k {
+  font-family: "Pretendard";
+  font-size: 22px;
+  font-weight: 700;
+  color: #414B5A;
+}
+
 .font_subtitle_e {
   font-family: "Rubik";
   font-size: 22px;
@@ -68,7 +79,8 @@
 .font_text {
   font-family: "Pretendard";
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
+  color: #414B5A;
 }
 
 .font_f18bold {

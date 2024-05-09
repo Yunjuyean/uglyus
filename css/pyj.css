@@ -1,46 +1,50 @@
-
-.border-radius{
-    border-radius: 20px;
-}
-
-.mycolor{
-    color: aqua !important
-}
-
-.myfont{
+/* 폼 컨텐츠 css */
+/* 폰트 */
+.formfont_title_pyj{
     font-family: 'Pretendard';
     font-size: 30px;
-    font-weight: 600 !important
+    font-weight: 700;
+    color: #1F2937 !important
 }
-
-.formfont{
-    color: #fff;
+.formfont_subtitle_pyj{
     font-family: 'Pretendard';
     font-size: 22px;
-    font-weight: 600 !important
+    font-weight: 700;
+    color: #1F2937 !important
 }
-.formfont_placehold{
-    color: #414B5A;
+.formfont_text_pyj{
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 600;
+    color: #1F2937 !important
+}
+.formfont_placehold_pyj{
     font-family: 'Pretendard';
     font-size: 14px;
     font-weight: 300;
+    color: #414B5A !important
 }
 
-.background{
+/* 배경 */
+.contents_background_pyj{
     background-color: #FFF4DF;
 }
-
-.formbackground{
+.form_background_pyj{
     width: 500px;
     height: 600px;
     background-color: #fff;
     border-radius: 20px;
 }
 
+/* 버튼 */
 .buttonstyle_pyj{
     width: 400px;
     height: 60px;
     background-color: #FE663F;
     border-radius: 20px;
     border: none;
+    color: #fff;
+    font-family: 'Pretendard';
+    font-size: 22px;
+    font-weight: 600 !important
 }

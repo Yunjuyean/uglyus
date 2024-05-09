@@ -34,6 +34,12 @@ $uglygray : #414B5A;
 }
 
 
+// border-radius 공통 스타일 (버튼,이미지)
+.border-radius{
+    border-radius: 20px;
+}
+
+
 // font_style
 // k : 한글폰트(pretendard)
 // e : 영어폰트(rubik)
@@ -61,6 +67,12 @@ $uglygray : #414B5A;
     font-weight: 700;
     color: $uglyorange;
 }
+.font_subtitle_k{
+    font-family: 'Pretendard';
+    font-size: 22px;
+    font-weight: 700;
+    color:$uglygray;
+}
 .font_subtitle_e{
     font-family: 'Rubik';
     font-size: 22px;
@@ -70,7 +82,8 @@ $uglygray : #414B5A;
 .font_text{
     font-family: 'Pretendard';
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
+    color:$uglygray;
 }
 .font_f18bold{
     font-family: 'Pretendard';
@@ -103,24 +116,21 @@ $uglygray : #414B5A;
     color: $uglygray;
 }
 
+
 // 웹 전용 그리드가이드
 .section_blank{
     margin-bottom: 220px;
 }
-
 .title_blank{
     margin-bottom: 40px;
 }
-
 .text_blank{
     margin-bottom: 23px;
 }
-
 .contents_blank{
     margin-right: 20px;
     margin-bottom: 20px;
 }
-
 @media screen and (max-width: 991px) {
     .section_blank{
         margin-bottom: 220px;
