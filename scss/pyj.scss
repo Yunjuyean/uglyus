@@ -1,0 +1,81 @@
+// color
+$uglyred : #FF2F2F;
+$uglyorange : #FE663F;
+$uglybrown : #CD8F50;
+$uglygreen : #5EAB42;
+$uglyblack : #1F2937;
+$uglygray : #414B5A;
+
+
+/* 폼 컨텐츠 css */
+/* 폰트 */
+.formfont_title_pyj{
+    font-family: 'Pretendard';
+    font-size: 30px;
+    font-weight: 700;
+    color: $uglyblack 
+    !important
+  }
+  .formfont_subtitle_pyj{
+    font-family: 'Pretendard';
+    font-size: 22px;
+    font-weight: 700;
+    color: $uglyblack 
+    !important
+  }
+  .formfont_text_pyj{
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 600;
+    color: $uglyblack 
+    !important
+  }
+  .formfont_placehold_pyj{
+    font-family: 'Pretendard';
+    font-size: 14px;
+    font-weight: 500;
+    color: $uglygray 
+    !important
+  }
+
+  
+  /* 배경 */
+  .contents_background_pyj{
+    background-color: #FFF4DF;
+  }
+  .form_background_pyj{
+    width: 500px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+
+  /* 폼 입력칸 스타일 */
+  .input_box_1_pyj{
+    border: 1px solid #cccccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 400px;
+    height: 33px;
+  }
+  .input_box_2_pyj{
+    border: 1px solid #cccccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 130px;
+    height: 33px;
+  }
+  
+  /* 버튼 */
+  .buttonstyle_pyj{
+    width: 400px;
+    height: 60px;
+    background-color: $uglyorange;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    font-family: 'Pretendard';
+    font-size: 22px;
+    font-weight: 600 
+    !important
+  }
