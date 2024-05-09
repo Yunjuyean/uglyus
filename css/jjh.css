@@ -1,0 +1,18 @@
+.plus{
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 600;
+}
+.letter_spacing_jj{
+    letter-spacing: -1px;
+}
+
+.adbanner{
+    height: 15vw;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.trans{
+    transform: translate(-15%, -28%);
+    border-radius: 20px;
+}

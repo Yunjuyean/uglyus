@@ -1,0 +1,50 @@
+
+<<<<<<< HEAD
+
+=======
+.border-radius{
+    border-radius: 20px;
+}
+
+.mycolor{
+    color: aqua !important
+}
+
+.myfont{
+    font-family: 'Pretendard';
+    font-size: 30px;
+    font-weight: 600 !important
+}
+
+.formfont{
+    color: #fff;
+    font-family: 'Pretendard';
+    font-size: 22px;
+    font-weight: 600 !important
+}
+.formfont_placehold{
+    color: #414B5A;
+    font-family: 'Pretendard';
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.background{
+    background-color: #FFF4DF;
+}
+
+.formbackground{
+    width: 500px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.buttonstyle_pyj{
+    width: 400px;
+    height: 60px;
+    background-color: #FE663F;
+    border-radius: 20px;
+    border: none;
+}
+>>>>>>> 8f8db8a6a8922e13e5884fc49809677fa33b093d
