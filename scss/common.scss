@@ -6,6 +6,7 @@ $uglygreen : #5EAB42;
 $uglyblack : #1F2937;
 $uglygray : #414B5A;
 
+
 // 자간+행간
 .letter_spacing{
     letter-spacing: -0.5px;
@@ -31,8 +32,10 @@ $uglygray : #414B5A;
 .line_height_40 {
     line-height: 4rem;
 }
+
+
 // font_style
-// k : 한국어(pretendard)
+// k : 한글폰트(pretendard)
 // e : 영어폰트(rubik)
 .font_navi{
     font-family: 'Pretendard';
@@ -45,7 +48,6 @@ $uglygray : #414B5A;
     font-size: 14px;
     font-weight: 600;
     color: $uglyblack;
-    
 }
 .font_title_k{
     font-family: 'Pretendard';
@@ -53,21 +55,18 @@ $uglygray : #414B5A;
     font-weight: 700;
     color: $uglyorange;
 }
-
 .font_title_e{
     font-family: 'Rubik';
     font-size: 38px;
     font-weight: 700;
     color: $uglyorange;
 }
-
 .font_subtitle_e{
     font-family: 'Rubik';
     font-size: 22px;
     font-weight: 700;
     color:$uglygray;
 }
-
 .font_text{
     font-family: 'Pretendard';
     font-size: 16px;
@@ -109,3 +108,43 @@ $uglygray : #414B5A;
     font-weight: 700;
     color: $uglygray;
 }
+
+
+// 웹 전용 그리드가이드
+.section_blank{
+    margin-bottom: 220px;
+}
+@media screen and (max-width: 991px) {
+    .section_blank{
+        margin-bottom: 220px;
+    }
+}
+.title_blank{
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 991px) {
+    .title_blank{
+        margin-bottom: 40px;
+    }
+}
+.text_blank{
+    margin-bottom: 23px;
+}
+@media screen and (max-width: 991px) {
+    .text_blank{
+        margin-bottom: 23px;
+    }
+}
+.contents_blank{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 991px) {
+    .contents_blank{
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+// 모바일 전용 그리드가이드 (추후 추가 예정)
