@@ -77,11 +77,21 @@ li{list-style: none;}
     font-size: 14px;
     font-weight: 400;
     color: #414B5A;
-  } */
+} */
+
+/* #navbar_yys{
+    width: 95%;
+
+} */
 
 
-  .nav_fixed-top{
-    position: fixed;
-    top: 81px;
 
+.swiper-pagination{
+    top: unset !important;
+    bottom: unset !important;
+    position: static !important;
+}
+
+.nav_w-97{
+    width: 97% !important;
 }
