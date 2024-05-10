@@ -1,4 +1,4 @@
-
+/* 
 #hd_yys nav{
     height: 80px;
 }
@@ -27,14 +27,14 @@ white-space: nowrap;
 .nav_logo_img{
     
     width: auto ; /* 이미지의 너비를 100px로 설정 */
-    height: auto; /* 이미지의 높이를 자동으로 조절하여 비율을 유지 */
-    margin-left: auto; /* h2 요소를 오른쪽으로 이동 */
-    margin-right: 48px; /* 오른쪽으로 3rem 만큼 여백 설정 */
+    /* height: auto; 이미지의 높이를 자동으로 조절하여 비율을 유지 */
+    /* margin-left: auto; h2 요소를 오른쪽으로 이동 */
+    /* margin-right: 48px; 오른쪽으로 3rem 만큼 여백 설정 */
 
-}
+/* } */ */
 
 
-}
+/* }
 .container_fluid h2{
     width: 0;
     position: relative;
@@ -77,4 +77,11 @@ li{list-style: none;}
     font-size: 14px;
     font-weight: 400;
     color: #414B5A;
-  }
+  } */
+
+
+  .nav_fixed-top{
+    position: fixed;
+    top: 81px;
+
+}
