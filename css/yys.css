@@ -84,14 +84,44 @@ li{list-style: none;}
 
 } */
 
-
+link{list-style: none;
+}
 
 .swiper-pagination{
-    top: unset !important;
-    bottom: unset !important;
-    position: static !important;
+    bottom: unset !important
 }
 
-.nav_w-97{
-    width: 97% !important;
+#navbar_yys{
+    .nav_w-97{
+        width: 97% !important;
+    }
+
+    .font_navi :hover a{
+        color: #FF6943 !important;
+    }
+
+    .font_navi{
+        font-family: "Pretendard";
+        font-size: 22px;
+        font-weight: 400;
+        color: #414B5A;
+      }
+
+    .login{
+        color: #414B5A !important;
+        list-style: none;
+    }
+    .login :hover a{
+        color: #FF6943 !important;
+    }
+   
 }
+
+#mainbanner_yys{
+    .swiper-slide{
+        border-radius: 20%;
+    }
+
+}
+
+
