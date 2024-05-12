@@ -92,6 +92,8 @@ link{list-style: none;
 }
 
 #navbar_yys{
+
+
     .nav_w-97{
         width: 97% !important;
     }
@@ -118,10 +120,66 @@ link{list-style: none;
 }
 
 #mainbanner_yys{
-    .swiper-slide{
-        border-radius: 20%;
-    }
+    .swiper{margin: 80px 0;}
 
 }
+#event_banner_yys{
+    .event_banner{
+        width:100% !important; 
+        height: 0;
+        padding-top: 35%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        
+             
+            
+    }
+    
+}
 
+#quick-menu_yys{
+    .quick-menu{
+        position: fixed; /* 고정 위치 */
+        top: 50%; /* 화면 상단으로부터 50% 위치 */
+        transform: translateY(-50%); /* 수직 중앙 정렬 */
+        right: 20px; /* 화면 오른쪽으로부터 20px 위치 */
+        z-index: 1000; /* 다른 요소 위에 표시 */
 
+     .ul{list-style-type: none; /* 목록 기호 제거 */
+        padding: 0; /* 내부 간격 제거 */
+        margin: 0; /* 외부 간격 제거 */
+
+          .li{margin-bottom: 10px; /* 각 아이템 간격 */
+
+             .a{
+             display: block; /* 인라인 요소를 블록 요소로 변환 */
+             padding: 10px; /* 내부 간격 */
+             background-color: #333; /* 배경색 */
+             color: #fff; /* 글자색 */
+             text-decoration: none; /* 링크에 밑줄 제거 */
+             border-radius: 5px; /* 둥근 모서리 */
+            transition: background-color 0.3s; /* 배경색 변경 시 부드럽게 변화 */
+               }
+             }
+        } 
+ 
+    }
+    .aside{
+        position:fixed !important;
+        bottom:50%;
+        right: 30% ;
+        left: 0;
+        width: 90px;
+        height: 90px;
+       
+        
+        background-color:#FE663F;
+        border-radius: 0;
+        transition: 0.5s;
+        padding-right: 20px;
+    }
+
+    aside:hover{height: 100px;}
+    
+}
