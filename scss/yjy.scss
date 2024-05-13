@@ -10,6 +10,12 @@ $uglygray : #414B5A;
     content: "";
 }
 
+.font_yjy18{
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 500;
+    color: $uglyblack;
+}    
 .font_yjy{
     font-family: 'Pretendard';
     font-size: 30px;
@@ -19,7 +25,7 @@ $uglygray : #414B5A;
 .font_f18bold{
     font-family: 'Pretendard';
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     color: $uglyblack;
 }
 .font_subtitle_k{
@@ -33,6 +39,12 @@ $uglygray : #414B5A;
     font-size: 16px;
     font-weight: 500;
     color:$uglygray;
+}
+.font_f18bold{
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 700;
+    color: $uglygray;
 }
 
 
@@ -83,8 +95,8 @@ $rHeight : 450px;
             
            
            &.other{
-            transform: translate(-10%, 0%);
-            height: 113%;     
+            transform: translate(-8%, 0%);
+            height: 108%;    
            }
            
         }
@@ -170,6 +182,8 @@ $rHeight : 450px;
     a{
         text-decoration: none;
         color: #1F2937;
+        display: block;
+        line-height: 1.2;
     }
     h2{
         color: $uglyorange;

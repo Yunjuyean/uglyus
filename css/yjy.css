@@ -2,6 +2,13 @@
   content: "";
 }
 
+.font_yjy18 {
+  font-family: "Pretendard";
+  font-size: 18px;
+  font-weight: 500;
+  color: #1F2937;
+}
+
 .font_yjy {
   font-family: "Pretendard";
   font-size: 30px;
@@ -12,7 +19,7 @@
 .font_f18bold {
   font-family: "Pretendard";
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #1F2937;
 }
 
@@ -27,6 +34,13 @@
   font-family: "Pretendard";
   font-size: 16px;
   font-weight: 500;
+  color: #414B5A;
+}
+
+.font_f18bold {
+  font-family: "Pretendard";
+  font-size: 18px;
+  font-weight: 700;
   color: #414B5A;
 }
 
@@ -59,8 +73,8 @@
   transform: translate(-19px, -10px);
 }
 #recipe_yjy .targetThumb img.other {
-  transform: translate(-10%, 0%);
-  height: 113%;
+  transform: translate(-8%, 0%);
+  height: 108%;
 }
 @media (max-width: 991px) {
   #recipe_yjy .targetThumb {
@@ -122,6 +136,8 @@
 #recipe_yjy a {
   text-decoration: none;
   color: #1F2937;
+  display: block;
+  line-height: 1.2;
 }
 #recipe_yjy h2 {
   color: #FE663F;
