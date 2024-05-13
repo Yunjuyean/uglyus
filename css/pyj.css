@@ -1,6 +1,31 @@
-@charset "UTF-8";
-/* 폼 컨텐츠 css */
-/* 폰트 */
+.map_font {
+  font-family: "Pretendard";
+  font-size: 18px;
+  font-weight: 600;
+  color: #414B5A;
+}
+
+.strawberry {
+  max-width: 460px;
+  max-height: auto;
+}
+
+.mapbuttonstyle_pyj {
+  width: 147px;
+  height: 37px;
+  background-color: #FE663F;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  font-family: "Pretendard";
+  font-size: 18px;
+  font-weight: 600 !important;
+}
+.mapbuttonstyle_pyj a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .formfont_title_pyj {
   font-family: "Pretendard";
   font-size: 30px;
@@ -29,7 +54,6 @@
   color: #414B5A !important;
 }
 
-/* 배경 */
 .contents_background_pyj {
   background-color: #FFF4DF;
 }
@@ -41,7 +65,6 @@
   border-radius: 20px;
 }
 
-/* 폼 입력칸 스타일 */
 .input_box_1_pyj {
   border: 1px solid #cccccc;
   padding: 10px;
@@ -58,8 +81,7 @@
   height: 33px;
 }
 
-/* 버튼 */
-.buttonstyle_pyj {
+.formbuttonstyle_pyj {
   width: 400px;
   height: 60px;
   background-color: #FE663F;
