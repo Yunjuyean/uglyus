@@ -1,0 +1,22 @@
+// color
+$uglyred : #FF2F2F;
+$uglyorange : #FE663F;
+$uglybrown : #CD8F50;
+$uglygreen : #5EAB42;
+$uglyblack : #1F2937;
+$uglygray : #414B5A;
+
+
+.font_f30bold{
+    font-family: 'Pretendard';
+    font-size: 30px;
+    font-weight: 700;
+    color: $uglyblack;
+    }
+
+    .font_f18regular{
+        font-family: 'Pretendard';
+        font-size: 18px;
+        font-weight: 500;
+        color: $uglygray;
+        }
