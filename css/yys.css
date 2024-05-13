@@ -1,185 +1,72 @@
-/* 
-#hd_yys nav{
-    height: 80px;
+@charset "UTF-8";
+#hd_yys {
+  background-color: #ffffff;
+}
+#hd_yys .nav {
+  height: 80px;
+}
+#hd_yys link {
+  list-style: none;
+}
+#hd_yys #navbar_yys {
+  width: 100%;
+}
+#hd_yys #navbar_yys .nav_w-97 {
+  width: 97% !important;
+}
+#hd_yys #navbar_yys .font_navi :hover a {
+  color: #FF6943 !important;
+}
+#hd_yys #navbar_yys .font_navi {
+  font-family: "Pretendard";
+  font-size: 22px;
+  font-weight: 400;
+  color: #414B5A;
+}
+#hd_yys #navbar_yys .font_login {
+  font-family: "Pretendard";
+  font-size: 14px;
+  font-weight: 400;
+  color: #414B5A;
+  list-style: none;
+}
+#hd_yys #navbar_yys .login :hover a {
+  color: #FF6943 !important;
 }
 
-#login li a:hover{
-color: #FD6A46;
-transition: 0.20s;
+#mainbanner_yys {
+  max-width: 1920px;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
+#mainbanner_yys .swiper {
+  padding: 150px 0;
 }
-
-#login li a{
-    color: #1F2937;
-    
+#mainbanner_yys .swiper .swiper-slide.swiper-slide-active {
+  transform: scale(1.3);
+  position: relative;
+  z-index: 10000;
 }
-  
-.
-
-.login{
-    
-width: 100px;
-white-space: nowrap;
-
-.nav_logo_img{
-    
-    width: auto ; /* 이미지의 너비를 100px로 설정 */
-    /* height: auto; 이미지의 높이를 자동으로 조절하여 비율을 유지 */
-    /* margin-left: auto; h2 요소를 오른쪽으로 이동 */
-    /* margin-right: 48px; 오른쪽으로 3rem 만큼 여백 설정 */
-
-/* } */ */
-
-
-/* }
-.container_fluid h2{
-    width: 0;
-    position: relative;
-    z-index: 10000;
+#mainbanner_yys link {
+  list-style: none;
 }
-.rounded_full{
-    border-radius: 9999px;}
-
-.border_gray_800 {
-
-   border-color: rgb(31 41 55 / var(--tw-border-opacity));
-
-}
-.border{ border-width: 1px;
- }
-.w_57px{
-    width: 70px;
-
-}
-.h_30px{
-    height: 30px;
-    line-height: 1;
-}
-#navbar ul li a{
-    color: black;
+#mainbanner_yys .swiper-pagination {
+  bottom: unset !important;
 }
 
-#navbar ul li :hover {
-    color: #FD6A46;
-    transition: 0.20s;
+#navbar_yys {
+  width: 80%;
 }
 
-.text_14px{font-size: 14px;}
-li{list-style: none;}
-
-.nav_w_1824{width: 1824px;}
-
-.font_f14regular_e {
-    font-family: "Pretendard";
-    font-size: 14px;
-    font-weight: 400;
-    color: #414B5A;
-} */
-
-/* #navbar_yys{
-    width: 95%;
-
-} */
-
-link{list-style: none;
+#quick-menu_yys .quick-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50vh; /* 뷰포트 높이의 50% */
+  background-color: #f0f0f0; /* 배경색 설정 */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+  z-index: 999; /* 다른 요소 위에 표시되도록 설정 */
+  display: none; /* 초기에는 보이지 않도록 설정 */
 }
-
-.swiper-pagination{
-    bottom: unset !important
-}
-
-#navbar_yys{
-
-
-    .nav_w-97{
-        width: 97% !important;
-    }
-
-    .font_navi :hover a{
-        color: #FF6943 !important;
-    }
-
-    .font_navi{
-        font-family: "Pretendard";
-        font-size: 22px;
-        font-weight: 400;
-        color: #414B5A;
-      }
-
-    .login{
-        color: #414B5A !important;
-        list-style: none;
-    }
-    .login :hover a{
-        color: #FF6943 !important;
-    }
-   
-}
-
-#mainbanner_yys{
-    .swiper{margin: 80px 0;}
-
-}
-#event_banner_yys{
-    .event_banner{
-        width:100% !important; 
-        height: 0;
-        padding-top: 35%;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        
-             
-            
-    }
-    
-}
-
-#quick-menu_yys{
-    .quick-menu{
-        position: fixed; /* 고정 위치 */
-        top: 50%; /* 화면 상단으로부터 50% 위치 */
-        transform: translateY(-50%); /* 수직 중앙 정렬 */
-        right: 20px; /* 화면 오른쪽으로부터 20px 위치 */
-        z-index: 1000; /* 다른 요소 위에 표시 */
-
-     .ul{list-style-type: none; /* 목록 기호 제거 */
-        padding: 0; /* 내부 간격 제거 */
-        margin: 0; /* 외부 간격 제거 */
-
-          .li{margin-bottom: 10px; /* 각 아이템 간격 */
-
-             .a{
-             display: block; /* 인라인 요소를 블록 요소로 변환 */
-             padding: 10px; /* 내부 간격 */
-             background-color: #333; /* 배경색 */
-             color: #fff; /* 글자색 */
-             text-decoration: none; /* 링크에 밑줄 제거 */
-             border-radius: 5px; /* 둥근 모서리 */
-            transition: background-color 0.3s; /* 배경색 변경 시 부드럽게 변화 */
-               }
-             }
-        } 
- 
-    }
-    .aside{
-        position:fixed !important;
-        bottom:50%;
-        right: 30% ;
-        left: 0;
-        width: 90px;
-        height: 90px;
-       
-        
-        background-color:#FE663F;
-        border-radius: 0;
-        transition: 0.5s;
-        padding-right: 20px;
-    }
-
-    aside:hover{height: 100px;}
-    
+#quick-menu_yys .quick-menu.open {
+  display: block; /* 클릭 시 보이도록 설정 */
 }

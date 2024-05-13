@@ -43,7 +43,7 @@
     <!-- 커스터 마이징 -->
     <link rel="stylesheet" href="./css/common.min.css">
   
-    <link rel="stylesheet" href="./css/yys.css">
+    <link rel="stylesheet" href="./css/yys.min.css">
     
 </head>
 <body>
@@ -51,12 +51,12 @@
     <header id="hd_yys" class="  bg-white ">
 
             <nav class=" navbar-expand-lg fixed-top bg-white " id="navbar_yys">
-                <div class="container-fluid d-flex nav_w-97  my-2" >
+                <div class="container-fluid d-flex nav_w-97  my-2  " >
                     <h1 ><a class="navbar-brand me-3 " href="https://uglyus.co.kr/main"><img  src="./img/img_yys/svg/ugly_us_logo.svg"  alt=""></a></h1>
                     
                     <div class="collapse navbar-collapse d-flex justify-content-center align-items-center ">
                         <ul class="navbar-nav font_navi">
-                            <li class="nav-mission me-5">
+                            <li class="nav-mission me-5 ">
                                 <a class="nav-link" href="#about">우리의미션</a>
                             </li>
                             <li class="nev-delivery me-5">
@@ -66,17 +66,17 @@
                                 <a class="nav-link" href="#preinterview">싱싱마켓</a>
                             </li>
                             
-                            <li class="nav-community ">
+                            <li class="nav-community me-5 ">
                                 <a class="nav-link" href="#preinterview">커뮤니티</a>
                             </li>
                         </ul>
                     </div>
                     <div class=" login font_login d-flex justify-content-end align-items-center mb-0 px-0 " >
                 
-                        <li class="nav-item me-3 font_f14regular_e list-style-none">
+                        <li class="nav-item me-3 font_login list-style-none">
                             <a class="nav-link" href="#about">로그인</a>
                         </li>   
-                        <li class="nav-item font_f14regular_e ">
+                        <li class="nav-item font_login ">
                             <a class="nav-link" href="#portfolio">회원가입</a>
                         </li>
                     
@@ -84,10 +84,10 @@
                 </div>
             </nav>
 
+        </header>
+        <section id="mainbanner_yys">
 
-            <section id="mainbanner_yys">
-
-                <div class="swiper " >
+                <div class="swiper  " >
                     <!-- 슬라이드들 -->
                     <div class="swiper-wrapper  ">
                         <div class="swiper-slide">
@@ -105,13 +105,15 @@
                         <div class="swiper-slide">
                             <li><a href=""><img src="./img/img_yys/img/main_yys.jpg" alt="이미지 5" class="img-fluid"></a>
                         </div>
+                        
                         <!-- 추가적인 슬라이드들을 여기에 추가 -->
                     </div>
 
                 </div>
                 <!-- 페이지네이션 -->
                 <div class="swiper-pagination"></div>
-            </section>  
+        </section>  
+
                 <!-- Swiper JS -->
                 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
                 
@@ -119,9 +121,9 @@
                 <script>
                     var swipermainBanner = new Swiper("#mainbanner_yys .swiper", {
                     loop: true,
-                    spaceBetween: 60,
+                    spaceBetween: 10,
                     centeredSlides: true,
-                    slidesPerView: 1.6,
+                    slidesPerView: 1.1,
                     autoplay: {
                         delay: 5000,
                         disableOnInteraction: false,
@@ -136,12 +138,18 @@
                     },
                     breakpoints: {
                         // 768px 미만에서는 한 번에 하나의 슬라이드만 보여지도록 설정
-                        768: {
-                            slidesPerView: 1,
-                        },
-                        // 992px 미만에서는 슬라이드가 가운데로 오도록 설정
-                        992: {
-                            slidesPerView: 1.6,
+                        // 768: {
+                        //     slidesPerView: 1.3,
+                        //     spaceBetween: 30,
+                        // },
+                        // // 992px 미만에서는 슬라이드가 가운데로 오도록 설정
+                        // 992: {
+                        //     slidesPerView: 2,
+                        //     spaceBetween: 90,
+                        // },
+                        1400: {
+                            slidesPerView: 2,
+                            spaceBetween: 90,
                         },
                     },
                 });
@@ -149,26 +157,33 @@
         
         
 
-    </header>
+    
 
-    <section id="event_banner_yys">
+    <!-- <section id="event_banner_yys">
         <div class="event_banner ">
             <h2><a href="https://uglyus.co.kr/main"><img src="./img/img_yys/img/collab_banner.jpg" alt="콜라보배너" class="img-fluid"></a></h2>
 
         </div>
 
-    </section>
+    </section> -->
 
     <section id="quick-menu_yys ">
+        <button id="menu-toggle">+</button> <!-- 클릭 시 메뉴를 토글할 버튼 추가 -->
         <div class="quick-menu aside ">
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴2</a></li>
+                <li><a href="">메뉴3</a></li>
+                <li><a href="">메뉴4</a></li>
             </ul>
         </div>
-
+        <script>
+            // 메뉴 토글 버튼 클릭 시 퀵 메뉴를 열고 닫는 함수
+            document.getElementById('menu-toggle').addEventListener('click', function() {
+                var quickMenu = document.getElementById('quick-menu');
+                quickMenu.classList.toggle('open'); // 'open' 클래스를 toggle하여 메뉴를 열거나 닫음
+            });
+        </script>
     </section>
 
     <section id="we_jjh">
