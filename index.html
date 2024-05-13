@@ -34,134 +34,166 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <!-- 플러그인 -->
-    <link
-    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- 커스터 마이징 -->
-    <link rel="stylesheet" href="./css/common.min.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/jjh.css">
     <link rel="stylesheet" href="./css/gms.css">
     <link rel="stylesheet" href="./css/pyj.min.css">
-    <link rel="stylesheet" href="./css/yjy.css">
-    <link rel="stylesheet" href="./css/yys.css">
+    <link rel="stylesheet" href="./css/yjy.min.css">
+    <link rel="stylesheet" href="./css/yys.min.css">
+
     
 </head>
 <body>
-    <header id="hd_yys" class="fixed-top border-bottom bg-white ">
-        <nav class="navbar navbar-expand-lg  ">
-            <div class="container-fluid nav_w_1824" id="navbar">
-                <h1><a class="navbar-brand " href="https://uglyus.co.kr/main"><img  src="./img/img_yys/svg/ugly_us_logo.svg" alt=""></a></h1>
+
+    <header id="hd_yys" class="  bg-white ">
+
+            <nav class=" navbar-expand-lg fixed-top bg-white " id="navbar_yys">
+                <div class="container-fluid d-flex nav_w-97  my-2  " >
+                    <h1 ><a class="navbar-brand me-3 " href="https://uglyus.co.kr/main"><img  src="./img/img_yys/svg/ugly_us_logo.svg"  alt=""></a></h1>
+                    
+                    <div class="collapse navbar-collapse d-flex justify-content-center align-items-center ">
+                        <ul class="navbar-nav font_navi">
+                            <li class="nav-mission me-5 ">
+                                <a class="nav-link" href="#about">우리의미션</a>
+                            </li>
+                            <li class="nev-delivery me-5">
+                                <a class="nav-link" href="#portfolio">정기배송</a>
+                            </li>
+                            <li class="nav-market me-5">
+                                <a class="nav-link" href="#preinterview">싱싱마켓</a>
+                            </li>
+                            
+                            <li class="nav-community me-5 ">
+                                <a class="nav-link" href="#preinterview">커뮤니티</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" login font_login d-flex justify-content-end align-items-center mb-0 px-0 " >
                 
-                <div class="collapse navbar-collapse d-flex justify-content-center align-items-center pe-3" id="navbarNav">
-                    <ul class="navbar-nav font_navi">
-                        <li class="nav-mission me-5">
-                            <a class="nav-link" href="#about">우리의미션</a>
+                        <li class="nav-item me-3 font_login list-style-none">
+                            <a class="nav-link" href="#about">로그인</a>
+                        </li>   
+                        <li class="nav-item font_login ">
+                            <a class="nav-link" href="#portfolio">회원가입</a>
                         </li>
-                        <li class="nev-delivery me-5">
-                            <a class="nav-link" href="#portfolio">정기배송</a>
-                        </li>
-                        <li class="nav-market me-5">
-                            <a class="nav-link" href="#preinterview">싱싱마켓</a>
-                        </li>
+                    
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <section id="mainbanner_yys">
+
+                <div class="swiper  " >
+                    <!-- 슬라이드들 -->
+                    <div class="swiper-wrapper  ">
+                        <div class="swiper-slide">
+                            <li><a href="#"><img src="./img/img_yys/img/main_gms.jpg" class="img-fluid" alt="이미지 1"></a></li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li><a href=""><img src="./img/img_yys/img/main_jjh.jpg" alt="이미지 2" class="img-fluid"></a></li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li><a href=""><img src="./img/img_yys/img/main_pyj.jpg" alt="이미지 3" class="img-fluid"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <li><a href=""><img src="./img/img_yys/img/main_yjy.jpg" alt="이미지 4" class="img-fluid"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <li><a href=""><img src="./img/img_yys/img/main_yys.jpg" alt="이미지 5" class="img-fluid"></a>
+                        </div>
                         
-                        <li class="nav-community ">
-                            <a class="nav-link" href="#preinterview">커뮤니티</a>
-                        </li>
-                    </ul>
+                        <!-- 추가적인 슬라이드들을 여기에 추가 -->
+                    </div>
+
                 </div>
-                <div class="navbar-nav-login login d-flex justify-content-end align-items-center mb-0 px-0  " id="login">
-            
-                    <li class="nav-item me-3 font_f14regular_e">
-                        <a class="nav-link" href="#about">로그인</a>
-                    </li>   
-                    <li class="nav-item font_f14regular_e ">
-                        <a class="nav-link" href="#portfolio">회원가입</a>
-                    </li>
+                <!-- 페이지네이션 -->
+                <div class="swiper-pagination"></div>
+        </section>  
+
+                <!-- Swiper JS -->
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
                 
-                </div>
-            </div>
-        </nav>
-    </header>
-    <section id="about" class="vh-30 bg-primary"></section>
-    <script src="./bootstrap.bundle.js"></script>
+                <!-- 스와이퍼 초기화 스크립트 -->
+                <script>
+                    var swipermainBanner = new Swiper("#mainbanner_yys .swiper", {
+                    loop: true,
+                    spaceBetween: 10,
+                    centeredSlides: true,
+                    slidesPerView: 1.1,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: "#mainbanner_yys .swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: "#mainbanner_yys .swiper-button-next",
+                        prevEl: "#mainbanner_yys .swiper-button-prev",
+                    },
+                    breakpoints: {
+                        // 768px 미만에서는 한 번에 하나의 슬라이드만 보여지도록 설정
+                        // 768: {
+                        //     slidesPerView: 1.3,
+                        //     spaceBetween: 30,
+                        // },
+                        // // 992px 미만에서는 슬라이드가 가운데로 오도록 설정
+                        // 992: {
+                        //     slidesPerView: 2,
+                        //     spaceBetween: 90,
+                        // },
+                        1400: {
+                            slidesPerView: 2,
+                            spaceBetween: 90,
+                        },
+                    },
+                });
+                </script>
+        
+        
 
-</header>
-<section id="mainbanner_yys" >
+    
 
-    <div class="swiper-container">
-        <!-- 슬라이드들 -->
-        <div class="swiper-wrapper mainbanner">
-            <div class="swiper-slide">
-                <img src="./img/img_yys/img/메인이미지 양, 3.jpg" alt="이미지 1">
-            </div>
-            <div class="swiper-slide">
-                <img src="./img/img_jjh/JPG/can.jpg" alt="이미지 2">
-            </div>
-            <div class="swiper-slide">
-                <img src="./img/img_pyj/mainslider1_pyj.png" alt="이미지 3">
-            </div>
-            <div class="swiper-slide">
-                <img src="./img/img_yjy/main_image/tomato.jpg" alt="이미지 4">
-            </div>
-            <div class="swiper-slide">
-                <img src="./img/img_yys/img/메인이미지 양, 3.jpg" alt="이미지 5">
-            </div>
-            <!-- 추가적인 슬라이드들을 여기에 추가 -->
+    <!-- <section id="event_banner_yys">
+        <div class="event_banner ">
+            <h2><a href="https://uglyus.co.kr/main"><img src="./img/img_yys/img/collab_banner.jpg" alt="콜라보배너" class="img-fluid"></a></h2>
+
         </div>
-        <!-- 페이지네이션 -->
-        <div class="swiper-pagination "></div>
-        <!-- 이전 및 다음 버튼 -->
-        
-        
-    </div>
-    
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
-    <!-- 스와이퍼 초기화 스크립트 -->
-    <script>
-        var swipermainBanner = new Swiper("#mainbanner_yys .swiper-container", {
-        loop: true,
-        spaceBetween: 60,
-        centeredSlides: true,
-        slidesPerView: 1.6,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: "#mainbanner_yys .swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: "#mainbanner_yys .swiper-button-next",
-            prevEl: "#mainbanner_yys .swiper-button-prev",
-        },
-        breakpoints: {
-            // 768px 미만에서는 한 번에 하나의 슬라이드만 보여지도록 설정
-            768: {
-                slidesPerView: 1,
-            },
-            // 992px 미만에서는 슬라이드가 가운데로 오도록 설정
-            992: {
-                slidesPerView: 1.6,
-            },
-        },
-    });
-    </script>
-    <section id="event_yys">
 
+    </section> -->
+
+    <section id="quick-menu_yys ">
+        <button id="menu-toggle">+</button> <!-- 클릭 시 메뉴를 토글할 버튼 추가 -->
+        <div class="quick-menu aside ">
+            <ul>
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴2</a></li>
+                <li><a href="">메뉴3</a></li>
+                <li><a href="">메뉴4</a></li>
+            </ul>
+        </div>
+        <script>
+            // 메뉴 토글 버튼 클릭 시 퀵 메뉴를 열고 닫는 함수
+            document.getElementById('menu-toggle').addEventListener('click', function() {
+                var quickMenu = document.getElementById('quick-menu');
+                quickMenu.classList.toggle('open'); // 'open' 클래스를 toggle하여 메뉴를 열거나 닫음
+            });
+        </script>
     </section>
+
+    
     <section id="we_jjh">
         <div class="container-fluid text-center">
-
-
-            <h2 class="font_title_k letter_spacing">We are Ugly Us!</h2>
-
+            <h2 class="font_title_k letter_spacing ">We are Ugly Us!</h2>
             <div class="adbanner my-4">
                 <img class="trans" src="./img/img_jjh/JPG/we_03.png" alt="이미지" >
             </div>
@@ -201,29 +233,103 @@
       
     <!--section#foodrecipe.section-->
     <section id="recipe_yjy" class="section"> 
-        <!-- .container>.title.text-center>h2.maintitle+p.subtitle -->
-        <div class="container">
-            <div class="title text-center">
-                <h2 class="maintitle">출구 없는 레시피</h2>
-                <p class="subtitle">나만의 레시피를 알려주세요</p>
-            </div>
-        </div>
-        <!-- .row>ul.d-flex.flex-wrap.col-lg-6>li.col-12+li.col-sm-6*2 -->
-        <div class="row">
-            <ul class="d-flex flex-wrap col-lg-6">
-                <li class="col-12"><img src="./img/img_yjy/recipe/Jeonju_Bibimbap.jpg" class="img-fluid" alt="전주비빔밥"></li>
-                <li class="col-sm-6"><img src="./img/img_yjy/recipe/Vietnamese spring _roll.jpg" alt="월남쌈"></li>
-                <li class="col-sm-6"><img src="./img/img_yjy/recipe/cucumber.jpg" alt="오이소박이"></li>
-            </ul>
-        </div>
-        <!-- .row>ul.d-flex.flex-wrap.col-lg-6>li.col-12.order-3+li.col-sm-6.order-2+li.col-sm-6.order-1 -->
-        <div class="row">
-            <ul class="d-flex flex-wrap col-lg-6">
-                <li class="col-12 order-3"><img src="./img/img_yjy/recipe/Jjambbong.jpg" alt="짬뽕"></li>
-                <li class="col-sm-6 order-2"><img src="./img/img_yjy/recipe/pumpkin_porridge.jpg" alt="호박죽"></li>
-                <li class="col-sm-6 order-1"><img src="./img/img_yjy/recipe/Mille_Feuille Nabe.jpg" alt="밀푀유나베"></li>
-            </ul>
-        </div>
+        <div class="container text-center">
+            <h2 class="font_title_k letter_spacing mb-0">출구 없는 레시피</h2>
+            <p class="font_f18bold letter_spacing mb-0 mt-4">나만의 레시피를 알려주세요</p>
+
+            <div class="row mt-4">
+                <ul class="row col-6">
+                    <li class="col-12 mb-4">
+                        <div class="overflow-hidden orange d-flex flex-column after justify-content-between">
+                            <a href="" class="d-block overflow-hidden targetThumb"><img src="./img/img_yjy/recipe/Jeonju_Bibimbap.jpg" alt="전주비빔밥" class=""></a>
+                            <div class="j-text">
+                                <a href=""><p class="font_yjy letter_spacing my-0 text-start px-4">한끼뚝딱 전주비빔밥</p></a>
+                                <div class="d-flex justify-content-between">
+                                    <p class="font_yjy18 px-4 mb-0">#한식 #시금치 #당근</p>
+                                    <p class="font_yjy18 text-right px-4 mb-0">윤주연님</p>
+                                </div>
+                            </div>
+                            
+                        </div>                      
+                                            
+
+                    </li>
+                    <li class="col-6 overflow-hidden">
+                        <div>
+                            <a href="" class="d-block overflow-hidden targetThumb_a"><img src="./img/img_yjy/recipe/Vietnamese spring _roll.jpg" alt="월남쌈" class=""></a>
+                        </div>
+                        <div class="v-text">
+                            <a href=""><p class="font_subtitle_k letter_spacing my-0 text-start">한 입 가득 월남쌈</p></a>
+                            <div class="d-flex justify-content-between">
+                                <p class="font_text">#볼 빵빵 #새싹채소 #파프리카</p>
+                                <p class="font_text text-right">정장훈 님</p>
+                            </div>
+                        </div>
+                            
+                                               
+                    </li>
+                    <li class="col-6 overflow-hidden">
+                        <div>
+                            <a href="" class="d-block overflow-hidden targetThumb_b"><img src="./img/img_yjy/recipe/cucumber.jpg" alt="오이소박이" class=""></a>
+                        </div>
+                        <div class="c-text">
+                            <a href=""><p class="font_subtitle_k letter_spacing my-0 text-start">아삭아삭 오이소박이</p></a>
+                            <div class="d-flex justify-content-between">
+                                <p class="font_text">#새콤달콤 #오이 #부추</p>
+                                <p class="font_text text-right">박연주 님</p>
+                            </div>
+                        </div>
+                            
+                        
+                        
+                    </li>
+                </ul>
+
+                <ul class="row col-6">
+                    <li class="col-12 order-lg-2 mt-4">
+                        <div class="orange overflow-hidden d-flex flex-column after justify-content-between">
+                            <a href="" class="d-block overflow-hidden targetThumb "><img src="./img/img_yjy/recipe/Jjambbong.jpg" alt="짬뽕" class="other"></a>
+                            <div class="jjam-text">
+                                <a href=""><p class="font_yjy letter_spacing my-0 text-start px-4">해장엔? 짬뽕</p></a>
+                             <div class="d-flex justify-content-between">
+                                <p class="font_yjy18 px-4 mb-0">#칼칼한 #청경채 #콩나물</p>
+                                <p class="font_yjy18 text-right px-4 mb-0">윤여선 님</p>
+                            </div>
+                            </div>
+                            
+                        </div>
+                       
+                    </li>
+                    <li class="col-6 order-lg-1">
+                        <div class="overflow-hidden">
+                            <a href="" class="d-block overflow-hidden targetThumb_c"><img src="./img/img_yjy/recipe/pumpkin_porridge.jpg" alt="호박죽" class=""></a>
+                            <div class="p-text">
+                                <a href=""><p class="font_subtitle_k letter_spacing my-0 text-start">달콤한 호박죽</p></a>
+                            <div class="d-flex justify-content-between">
+                                <p class="font_text">#든든한 #단호박 #잣</p>
+                                <p class="font_text text-right">방보영 님</p>
+                            </div>
+                            </div>
+                            
+                        </div>
+                       
+                    </li>
+                    <li class="col-6 order-lg-1">
+                        <div class="overflow-hidden">
+                            <a href="" class="d-block overflow-hidden targetThumb_d"><img src="./img/img_yjy/recipe/Mille_Feuille Nabe.jpg" alt="밀푀유나베" class=""></a>
+                            <div class="m-text">
+                                <a href=""><p class="font_subtitle_k letter_spacing my-0 text-start">한 솥 가득 밀푀유나베</p></a>
+                            <div class="d-flex justify-content-between">
+                                <p class="font_text">#집들이 #배추 #버섯</p>
+                                <p class="font_text text-right">고민서 님</p>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                </ul>
+      
     </section>
 
     <section id="map_pyj" class="letter_spacing section_blank">
@@ -303,9 +409,11 @@
                 </div>
             </div>
         </div>
-    </section>
 
+    </section>
+ 
     <footer id="ft_yys">
+
 
     </footer>
 </body>
