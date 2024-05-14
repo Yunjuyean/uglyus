@@ -39,13 +39,10 @@
     #mainbanner_yys{
         min-width: 1920px;
 
-        h1{
-            .img{
-                color: aqua;
-            }
-        }
+        
         .swiper{
             padding:120px 0;
+            overflow: hidden;
             .w-1824{width: 1824px;}  
             
             .swiper-pagination{

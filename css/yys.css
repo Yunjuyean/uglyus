@@ -37,11 +37,9 @@
 #mainbanner_yys {
   min-width: 1920px;
 }
-#mainbanner_yys h1 .img {
-  color: aqua;
-}
 #mainbanner_yys .swiper {
   padding: 120px 0;
+  overflow: hidden;
 }
 #mainbanner_yys .swiper .w-1824 {
   width: 1824px;
