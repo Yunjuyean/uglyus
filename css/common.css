@@ -1,35 +1,3 @@
-.letter_spacing {
-  letter-spacing: -0.5px;
-}
-
-.line_height_1 {
-  line-height: 1rem;
-}
-
-.line_height_125 {
-  line-height: 1.25rem;
-}
-
-.line_height_15 {
-  line-height: 1.5rem;
-}
-
-.line_height_18 {
-  line-height: 1.8rem;
-}
-
-.line_height_25 {
-  line-height: 2.5rem;
-}
-
-.line_height_30 {
-  line-height: 3rem;
-}
-
-.line_height_40 {
-  line-height: 4rem;
-}
-
 .border-radius {
   border-radius: 20px;
 }
@@ -39,6 +7,14 @@
   font-size: 22px;
   font-weight: 400;
   color: #1F2937;
+  letter-spacing: -0.5px;
+  line-height: 1.25rem;
+}
+@media (max-width: 767px) {
+  .font_navi {
+    letter-spacing: -0.5px;
+    line-height: 0.8rem;
+  }
 }
 
 .font_login {
@@ -46,20 +22,78 @@
   font-size: 14px;
   font-weight: 600;
   color: #1F2937;
+  letter-spacing: -0.5px;
+  line-height: 1rem;
+}
+@media (max-width: 767px) {
+  .font_login {
+    letter-spacing: -0.5px;
+    line-height: 0.8rem;
+  }
 }
 
-.font_title_k {
+.font_con_title_k {
   font-family: "Pretendard";
   font-size: 38px;
   font-weight: 700;
   color: #FE663F;
+  letter-spacing: -0.5px;
+  line-height: 2.5rem;
+}
+@media (max-width: 767px) {
+  .font_con_title_k {
+    letter-spacing: -0.5px;
+    line-height: 0;
+    font-size: 20px;
+  }
 }
 
-.font_title_e {
+.font_con_title_e {
   font-family: "Rubik";
   font-size: 38px;
   font-weight: 700;
   color: #FE663F;
+  letter-spacing: -0.5px;
+  line-height: 2.5rem;
+}
+@media (max-width: 767px) {
+  .font_con_title_e {
+    letter-spacing: -0.5px;
+    line-height: 0;
+    font-size: 20px;
+  }
+}
+
+.font_title_k {
+  font-family: "Pretendard";
+  font-size: 30px;
+  font-weight: 700;
+  color: #1F2937;
+  letter-spacing: -0.5px;
+  line-height: 1.8rem;
+}
+@media (max-width: 767px) {
+  .font_title_k {
+    letter-spacing: -0.5px;
+    line-height: 1rem;
+    font-size: 16px;
+  }
+}
+
+.font_title_e {
+  font-family: "Rubik";
+  font-size: 30px;
+  font-weight: 700;
+  color: #1F2937;
+  letter-spacing: -0.5px;
+  line-height: 1.8rem;
+}
+@media (max-width: 767px) {
+  .font_title_e {
+    letter-spacing: -0.5px;
+    line-height: 1rem;
+    font-size: 16px;
+  }
 }
 
 .font_subtitle_k {
@@ -67,6 +101,15 @@
   font-size: 22px;
   font-weight: 700;
   color: #414B5A;
+  letter-spacing: -0.5px;
+  line-height: 1.8rem;
+}
+@media (max-width: 767px) {
+  .font_subtitle_k {
+    letter-spacing: -0.5px;
+    line-height: 0.9rem;
+    font-size: 14px;
+  }
 }
 
 .font_subtitle_e {
@@ -74,6 +117,32 @@
   font-size: 22px;
   font-weight: 700;
   color: #414B5A;
+  letter-spacing: -0.5px;
+  line-height: 1.8rem;
+}
+@media (max-width: 767px) {
+  .font_subtitle_e {
+    letter-spacing: -0.5px;
+    line-height: 0.9rem;
+    font-size: 14px;
+  }
+}
+
+.font_leadcopy {
+  font-family: "Pretendard";
+  font-size: 18px;
+  font-weight: 600;
+  color: #414B5A;
+  letter-spacing: -0.5px;
+  line-height: 1.8rem;
+}
+@media (max-width: 767px) {
+  .font_leadcopy {
+    letter-spacing: -0.5px;
+    line-height: 0.8rem;
+    font-size: 12px;
+    font-weight: 500;
+  }
 }
 
 .font_text {
@@ -81,6 +150,32 @@
   font-size: 16px;
   font-weight: 400;
   color: #414B5A;
+  letter-spacing: -0.5px;
+  line-height: 1.5rem;
+}
+@media (max-width: 767px) {
+  .font_text {
+    letter-spacing: -0.5px;
+    line-height: 0.8rem;
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
+.font_button {
+  font-family: "Pretendard";
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: -0.5px;
+  line-height: 1.5rem;
+}
+@media (max-width: 767px) {
+  .font_button {
+    letter-spacing: -0.5px;
+    line-height: 0.8rem;
+    font-size: 12px;
+  }
 }
 
 .font_f18bold {
@@ -130,23 +225,35 @@
   margin-bottom: 23px;
 }
 
-.contents_blank {
+.contents_L_blank {
+  margin-left: 20px;
+}
+
+.contents_R_blank {
   margin-right: 20px;
+}
+
+.contents_B_blank {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .section_blank {
-    margin-bottom: 220px;
+    margin-bottom: 80px;
   }
   .title_blank {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   .text_blank {
-    margin-bottom: 23px;
+    margin-bottom: 10px;
   }
-  .contents_blank {
-    margin-right: 20px;
-    margin-bottom: 20px;
+  .contents_L_blank {
+    margin-left: 10px;
+  }
+  .contents_R_blank {
+    margin-right: 10px;
+  }
+  .contents_B_blank {
+    margin-bottom: 10px;
   }
 }

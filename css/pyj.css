@@ -1,13 +1,12 @@
-.map_font {
-  font-family: "Pretendard";
-  font-size: 18px;
-  font-weight: 600;
-  color: #414B5A;
+.dummy {
+  width: 100%;
+  height: 100%;
 }
 
-.strawberry {
-  max-width: 460px;
-  max-height: auto;
+.mapimg {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
 }
 
 .mapbuttonstyle_pyj {
@@ -16,14 +15,10 @@
   background-color: #FE663F;
   border-radius: 20px;
   border: none;
-  color: #fff;
-  font-family: "Pretendard";
-  font-size: 18px;
-  font-weight: 600 !important;
 }
 .mapbuttonstyle_pyj a {
+  color: #fff;
   text-decoration: none;
-  color: #ffffff;
 }
 
 .formfont_title_pyj {

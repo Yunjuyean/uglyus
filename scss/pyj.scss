@@ -7,16 +7,14 @@ $uglyblack : #1F2937;
 $uglygray : #414B5A;
 
 // 맵 컨텐츠 
-// 맵 폰트
-.map_font{
-  font-family: 'Pretendard';
-  font-size: 18px;
-  font-weight: 600;
-  color:$uglygray;
-}
 // 이미지
-.strawberry{
-  max-width: 460px;
+.dummy{
+  width:100%;
+  height: 100%;
+}
+.mapimg{
+  max-width:1000px;
+  width:100%;
   height: auto;
 }
 // 맵 버튼
@@ -26,13 +24,9 @@ $uglygray : #414B5A;
   background-color: $uglyorange;
   border-radius: 20px;
   border: none;
-  color: #fff;
-  font-family: 'Pretendard';
-  font-size: 18px;
-  font-weight: 600 !important;
     a{
-        text-decoration: none;
-        color : #ffffff;
+      color: #fff;
+      text-decoration: none;
     }
 }
 // 폼 컨텐츠 css

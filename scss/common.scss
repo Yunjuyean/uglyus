@@ -7,45 +7,16 @@ $uglyblack : #1F2937;
 $uglygray : #414B5A;
 
 
-// 자간+행간
-.letter_spacing{
-    letter-spacing: -0.5px;
-}
-.line_height_08{
-    line-height: 0.8rem;
-}
-.line_height_09{
-    line-height: 0.9rem;
-}
-.line_height_1{
-    line-height: 1rem;
-}
-.line_height_125{
-    line-height: 1.25rem;
-}
-.line_height_15{
-    line-height: 1.5rem;
-}
-.line_height_18{
-    line-height: 1.8rem;
-}
-.line_height_25{
-    line-height: 2.5rem;
-}
-.line_height_30 {
-    line-height: 3rem;
-}
-.line_height_40 {
-    line-height: 4rem;
-}
-
 // border-radius 공통 스타일 (버튼,이미지)
 .border-radius{
     border-radius: 20px;
 }
 
-
-// 데스트탑(web) 전용 가이드
+// 반응형 css (자간+행간, 그리드 가이드, 폰트)
+@mixin letter_line($letter_spacing, $line_height) {
+    letter-spacing: $letter_spacing;
+    line-height: $line_height;
+}
 
 // font_style
 // k : 한글폰트(pretendard)
@@ -55,42 +26,121 @@ $uglygray : #414B5A;
     font-size: 22px;
     font-weight: 400;
     color: $uglyblack;
+        @include letter_line(-0.5px, 1.25rem);
+        @media (max-width : 767px) {
+            @include letter_line(-0.5px, 0.8rem);
+        }
 }
 .font_login{
     font-family: 'Pretendard';
     font-size: 14px;
     font-weight: 600;
     color: $uglyblack;
+        @include letter_line(-0.5px, 1rem);
+        @media (max-width : 767px) {
+            @include letter_line(-0.5px, 0.8rem);
+        }
 }
-.font_title_k{
+.font_con_title_k{
     font-family: 'Pretendard';
     font-size: 38px;
     font-weight: 700;
     color: $uglyorange;
+        @include letter_line(-0.5px, 2.5rem);
+        @media (max-width : 767px) {
+            @include letter_line(-0.5px, 0);
+            font-size: 20px;
+        }
 }
-.font_title_e{
+.font_con_title_e{
     font-family: 'Rubik';
     font-size: 38px;
     font-weight: 700;
     color: $uglyorange;
+        @include letter_line(-0.5px, 2.5rem);
+        @media (max-width : 767px) {
+            @include letter_line(-0.5px, 0);
+            font-size: 20px;
+        }
+}
+.font_title_k{
+    font-family: 'Pretendard';
+    font-size: 30px;
+    font-weight: 700;
+    color: $uglyblack;
+        @include letter_line(-0.5px, 1.8rem);
+        @media (max-width : 767px) {
+            @include letter_line(-0.5px, 1rem);
+            font-size: 16px;
+        }
+}
+.font_title_e{
+    font-family: 'Rubik';
+    font-size: 30px;
+    font-weight: 700;
+    color: $uglyblack;
+    @include letter_line(-0.5px, 1.8rem);
+    @media (max-width : 767px) {
+        @include letter_line(-0.5px, 1rem);
+        font-size: 16px;
+    }
 }
 .font_subtitle_k{
     font-family: 'Pretendard';
     font-size: 22px;
     font-weight: 700;
     color:$uglygray;
+        @include letter_line(-0.5px, 1.8rem);
+        @media (max-width : 767px) {
+            @include letter_line(-0.5px, 0.9rem);
+            font-size: 14px;
+        }
 }
 .font_subtitle_e{
     font-family: 'Rubik';
     font-size: 22px;
     font-weight: 700;
     color:$uglygray;
+        @include letter_line(-0.5px, 1.8rem);
+        @media (max-width : 767px) {
+            @include letter_line(-0.5px, 0.9rem);
+            font-size: 14px;
+        }
+}
+.font_leadcopy{
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 600;
+    color:$uglygray;
+        @include letter_line(-0.5px, 1.8rem);
+        @media (max-width : 767px) {
+            @include letter_line(-0.5px, 0.8rem);
+            font-size: 12px;
+            font-weight: 500;
+        }
 }
 .font_text{
     font-family: 'Pretendard';
     font-size: 16px;
     font-weight: 400;
     color:$uglygray;
+        @include letter_line(-0.5px, 1.5rem);
+        @media (max-width : 767px) {
+            @include letter_line(-0.5px, 0.8rem);
+            font-size: 12px;
+            font-weight: 300;
+        }
+}
+.font_button{
+    font-family: 'Pretendard';
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+        @include letter_line(-0.5px, 1.5rem);
+        @media (max-width : 767px) {
+            @include letter_line(-0.5px, 0.8rem);
+            font-size: 12px;
+        }
 }
 .font_f18bold{
     font-family: 'Pretendard';
@@ -122,8 +172,10 @@ $uglygray : #414B5A;
     font-weight: 700;
     color: $uglygray;
 }
-
-// 그리드가이드
+ 
+  
+  
+// 그리드가이드(반응형 구현 완료)
 .section_blank{
     margin-bottom: 220px;
 }
@@ -142,7 +194,7 @@ $uglygray : #414B5A;
 .contents_B_blank{
     margin-bottom: 20px;
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 767px) {
     .section_blank{
         margin-bottom: 80px;
     }
@@ -161,67 +213,4 @@ $uglygray : #414B5A;
     .contents_B_blank{
         margin-bottom: 10px;
     }
-}
-
-
-
-// 모바일(mobile) 전용 가이드
-// 모바일 관련 css는 전부 앞글자에 m 표기했습니다.
-
-// font_style
-// k : 한글폰트(pretendard)
-// e : 영어폰트(rubik)
-.mfont_20bold_k{
-    font-family: 'Pretendard';
-    font-size: 20px;
-    font-weight: 700;
-    color: $uglyorange;
-}
-.mfont_20bold_e{
-    font-family: 'Rubik';
-    font-size: 20px;
-    font-weight: 700;
-    color: $uglyorange;
-}
-.mfont_16bold{
-    font-family: 'Pretendard';
-    font-size: 16px;
-    font-weight: 700;
-    color: $uglyblack;
-}
-.mfont_14semi{
-    font-family: 'Pretendard';
-    font-size: 14px;
-    font-weight: 500;
-    color: $uglygray
-}
-.mfont_lead12semi{
-    font-family: 'Pretendard';
-    font-size: 12px;
-    font-weight: 500;
-    color: $uglygray
-}
-.mfont_black12semi{
-    font-family: 'Pretendard';
-    font-size: 12px;
-    font-weight: 400;
-    color: $uglyblack;
-}
-.mfont_white12semi{
-    font-family: 'Pretendard';
-    font-size: 12px;
-    font-weight: 400;
-    color: #fff
-}
-.mfont_12regular{
-    font-family: 'Pretendard';
-    font-size: 12px;
-    font-weight: 300;
-    color: $uglygray
-}
-.mfont_12light{
-    font-family: 'Pretendard';
-    font-size: 12px;
-    font-weight: 200;
-    color: $uglygray
 }
