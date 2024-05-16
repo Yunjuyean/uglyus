@@ -1,4 +1,60 @@
 @charset "UTF-8";
+@media (max-width: 1400px) {
+  #navbar_yys .big_menu {
+    display: none !important;
+  }
+  #navbar_yys .login {
+    margin-left: auto !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 0;
+  }
+  #mainbanner_yys .swiper .swiper-slide.swiper-slide-active {
+    position: relative;
+    transform: scale(1.2) !important;
+    z-index: 10000 !important;
+    padding: 0 !important;
+  }
+  #mainbanner_yys h1 img {
+    transform: scale(0.5);
+    min-width: 74px; /* 원하는 너비로 조정 */
+    height: auto; /* 이미지의 가로 세로 비율을 유지하면서 크기 조정 */
+  }
+}
+@media (max-width: 700px) {
+  #navbar_yys .big_menu {
+    display: none !important;
+  }
+  #navbar_yys .login {
+    margin-left: auto !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 0;
+  }
+  #mainbanner_yys .swiper {
+    padding: 40px 0 20px 0 !important;
+  }
+  #mainbanner_yys .swiper .swiper-pagination {
+    padding: 0 !important;
+    bottom: unset !important;
+  }
+  #mainbanner_yys .swiper .swiper-pagination span {
+    width: 7px !important;
+    height: 6px !important;
+    border-radius: 100% !important;
+  }
+  #mainbanner_yys .swiper .swiper-slide.swiper-slide-active {
+    position: relative;
+    transform: scale(1) !important;
+    z-index: 10000 !important;
+    padding: 0 !important;
+  }
+  #mainbanner_yys h1 img {
+    transform: scale(0.5);
+    min-width: 74px; /* 원하는 너비로 조정 */
+    height: auto; /* 이미지의 가로 세로 비율을 유지하면서 크기 조정 */
+  }
+}
 #hd_yys {
   background-color: #ffffff;
 }
@@ -35,7 +91,7 @@
   max-width: 1920px;
 }
 #mainbanner_yys .swiper {
-  padding: 180px 0;
+  padding: 180px 0 120px 0;
   overflow: hidden;
 }
 #mainbanner_yys .swiper .swiper-pagination {

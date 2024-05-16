@@ -59,7 +59,7 @@
                     <h1 ><a class="navbar-brand me-3 " href="https://uglyus.co.kr/main"><img  src="./img/img_yys/svg/ugly_us_logo.svg"  alt=""></a></h1>
                     
                     <div class="collapse navbar-collapse d-flex justify-content-center align-items-center ">
-                        <ul class="navbar-nav font_navi">
+                        <ul class="navbar-nav font_navi big_menu">
                             <li class="nav-mission me-5 ">
                                 <a class="nav-link" href="#about">우리의미션</a>
                             </li>
@@ -75,7 +75,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class=" login " >
+                    <div class=" login" >
                         <ul class="d-flex px-0 my-0  ">
                             <li class=" me-3 font_login ">
                                 <a class="nav-link font_login" href="#about">로그인</a>
@@ -126,7 +126,7 @@
                 <script>
                     var swipermainBanner = new Swiper("#mainbanner_yys .swiper", {
                     loop: true,
-                    spaceBetween: 10,
+                    spaceBetween: 800,
                     centeredSlides: true,
                     slidesPerView: 1.1,
                     autoplay: {
@@ -141,16 +141,16 @@
                     
                     breakpoints: {
                         // 768px 미만에서는 한 번에 하나의 슬라이드만 보여지도록 설정
-                        //  768: {
-                        //      slidesPerView: 1.3,
-                        //      spaceBetween: 30,
-                        //  },
+                         768: {
+                             slidesPerView: 1,
+                             spaceBetween: 60,
+                         },
                         // // // 992px 미만에서는 슬라이드가 가운데로 오도록 설정
-                        //  992: {
-                        //      slidesPerView: 2,
-                        //      spaceBetween: 90,
-                        //  },
-                        768: {
+                         992: {
+                             slidesPerView: 1,
+                             spaceBetween: 60,
+                         },
+                        1400: {
                             slidesPerView: 1.6,
                             spaceBetween: 90,
                         },
