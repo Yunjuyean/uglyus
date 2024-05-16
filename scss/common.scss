@@ -142,24 +142,24 @@ $uglygray : #414B5A;
 .contents_B_blank{
     margin-bottom: 20px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 990px) {
     .section_blank{
-        margin-bottom: 220px;
+        margin-bottom: 80px;
     }
     .title_blank{
-        margin-bottom: 40px;
+        margin-bottom: 10px;
     }
     .text_blank{
-        margin-bottom: 23px;
+        margin-bottom: 10px;
     }
     .contents_L_blank{
-        margin-left: 20px;
+        margin-left: 10px;
     }
     .contents_R_blank{
-        margin-right: 20px;
+        margin-right: 10px;
     }
     .contents_B_blank{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 }
 
@@ -224,65 +224,4 @@ $uglygray : #414B5A;
     font-size: 12px;
     font-weight: 200;
     color: $uglygray
-}
-
-// 그리드가이드
-.msection_blank{
-    margin-bottom: 80px;
-}
-.mcontents_L_blank{
-    margin-left: 10px;
-}
-.mcontents_R_blank{
-    margin-right: 10px;
-}
-.mcontents_B_blank{
-    margin-bottom: 10px;
-}
-@media screen and (max-width: 576px) {
-    .msection_blank{
-        margin-bottom: 80px;
-    }
-    .mcontents_L_blank{
-        margin-left: 10px;
-    }
-    .mcontents_R_blank{
-        margin-right: 10px;
-    }
-    .mcontents_B_blank{
-        margin-bottom: 10px;
-    }
-}
-
-
-// 반응형 br 유사 클래스
-// lg 
-.lg_block{
-    display: block;
-}
-.lg_none{
-    display: none;
-}
-@media screen and (max-width: 991px) {
-    .lg_block{
-        display: block;
-    }
-    .lg_none{
-        display: none;
-    }
-}
-// xs
-.xs_block{
-    display: block;
-}
-.xs_none{
-    display: none;
-}
-@media screen and (max-width: 576px) {
-    .xs_block{
-        display: block;
-    }
-    .xs_none{
-        display: none;
-    }
 }
