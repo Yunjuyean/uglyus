@@ -1,0 +1,160 @@
+.after:after {
+  content: "";
+}
+
+.font_yjy18 {
+  font-family: "Pretendard";
+  font-size: 18px;
+  font-weight: 500;
+  color: #1F2937;
+}
+
+.font_yjy {
+  font-family: "Pretendard";
+  font-size: 30px;
+  font-weight: 800;
+  color: #1F2937;
+}
+
+.font_f18bold {
+  font-family: "Pretendard";
+  font-size: 18px;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.font_subtitle_k {
+  font-family: "Pretendard";
+  font-size: 22px;
+  font-weight: 800;
+  color: #414B5A;
+}
+
+.font_text {
+  font-family: "Pretendard";
+  font-size: 16px;
+  font-weight: 500;
+  color: #414B5A;
+}
+
+.font_f18bold {
+  font-family: "Pretendard";
+  font-size: 18px;
+  font-weight: 700;
+  color: #414B5A;
+}
+
+.adbanner {
+  height: 15vw;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.trans {
+  transform: translate(-15%, -28%);
+  border-radius: 20px;
+}
+
+#recipe_yjy li > div {
+  border-radius: 20px;
+}
+#recipe_yjy li > div.orange {
+  background-color: #FFD98F;
+  height: 550px;
+}
+#recipe_yjy li:not(:first-child) > div {
+  border-radius: 20px 20px 0 0;
+}
+#recipe_yjy .targetThumb {
+  height: 450px;
+}
+#recipe_yjy .targetThumb img {
+  height: 108%;
+  transform: translate(-19px, -10px);
+}
+#recipe_yjy .targetThumb img.other {
+  transform: translate(-8%, 0%);
+  height: 108%;
+}
+@media (max-width: 991px) {
+  #recipe_yjy .targetThumb {
+    height: 120px;
+  }
+}
+#recipe_yjy .targetThumb_a {
+  height: 260px;
+  border-radius: 20px;
+}
+#recipe_yjy .targetThumb_a img {
+  transform: translate(-30%, -11%);
+  height: 118%;
+}
+@media (max-width: 991px) {
+  #recipe_yjy .targetThumb_a {
+    height: 120px;
+  }
+}
+#recipe_yjy .targetThumb_b {
+  height: 260px;
+  border-radius: 20px;
+}
+#recipe_yjy .targetThumb_b img {
+  transform: translate(-2%, -28%);
+  height: 153%;
+}
+@media (max-width: 991px) {
+  #recipe_yjy .targetThumb_b {
+    height: 120px;
+  }
+}
+#recipe_yjy .targetThumb_c {
+  height: 260px;
+  border-radius: 20px;
+}
+#recipe_yjy .targetThumb_c img {
+  transform: translate(-2%, -8%);
+  height: 117%;
+}
+@media (max-width: 991px) {
+  #recipe_yjy .targetThumb_c {
+    height: 120px;
+  }
+}
+#recipe_yjy .targetThumb_d {
+  height: 260px;
+  border-radius: 20px;
+}
+#recipe_yjy .targetThumb_d img {
+  transform: translate(-31%, -5%);
+  height: 110%;
+}
+@media (max-width: 991px) {
+  #recipe_yjy .targetThumb_d {
+    height: 120px;
+  }
+}
+#recipe_yjy a {
+  text-decoration: none;
+  color: #1F2937;
+  display: block;
+  line-height: 1.2;
+}
+#recipe_yjy h2 {
+  color: #FE663F;
+}
+#recipe_yjy .v-text {
+  position: relative;
+  top: 20px;
+}
+#recipe_yjy .c-text {
+  position: relative;
+  top: 20px;
+}
+#recipe_yjy .p-text {
+  position: relative;
+  top: 20px;
+}
+#recipe_yjy .m-text {
+  position: relative;
+  top: 20px;
+}
