@@ -1,6 +1,6 @@
     @media (max-width: 1400px){
-        #navbar_yys{
-            .big_menu{
+        #hd_yys{
+            .gnb_a{
                 display: none !important;
             }
             .login{
@@ -53,8 +53,8 @@
     }
 
     @media (max-width: 700px){
-        #navbar_yys{
-            .big_menu{
+        #hd_yys{
+            .gnb_a{
                 display: none !important;
             }
             .login{
@@ -106,16 +106,126 @@
         }
 
     }
+a{text-decoration: none !important}
 
-        #hd_yys{
-            .big_menu{
+#hd_yys{
+            position: fixed;
+    
+            
+
+            h1{
+                a{
+                    white-space: nowrap !important
+                    
+                }
+            }
+            .gnb {
+                
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left:0; right:0;
+                    top:100%;
+                    height:0;
+                    transition: 0.5s;
+                    background-color: #FF6943 !important;
+                    border-bottom:none !important;
+                    
+                }
+                &:hover{
+                    &:before{
+                        height:184px;
+                        border-bottom: 1px solid #cc5638 !important;
+                        // border-bottom:none !important;
+                        transition:height 0.5s ;
+                    }
+                    
+                    .gnb_li{
+                        transition: 0.5s;
+                        padding:0 50px;
+                        .gnb_ul{
+                            height:184px;
+                            display: block;
+                            
+                            
+
+                        }
+                    }
+                }
+                .gnb_li{
+
+
+                    
+                    .gnb_ul_li {
+                        min-width: 300px;
+                        padding-bottom: 30px;
+                        text-align: center;
+                        font-family: "Pretendard";
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #ffffff;
+            
+                      }
+                        
+                    }
+                    
+                    .gnb_a{
+                        font-family: "Pretendard";
+                        font-size: 22px;
+                        font-weight: 400;
+                        color: #414B5A;
+                        &:hover{
+                            transition: 0.2s;
+                            
+                            
+                            color: #FF6943 !important;
+                        }
+                        
+                    }
+                    .gnb_ul{
+                        
+                        display: none;
+                        // min-width:12rem !important;
+                        overflow: hidden;
+                        height: 0;
+                        top: 100%;
+                        margin-top: 30px !important;
+                        transition:  0.5s;
+                        left:-93px;
+                        text-align:center;
+                        text-wrap: nowrap !important;
+                        transition:height 1.2s ;
+                        
+                        &:after,
+                        &:before{
+                            content: "";
+                            display: block;
+                            height: 1rem;
+                        }
+                        
+                            
+                            a{
+                                color: #414B5A;
+                                &:hover{
+                                    color: white !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            
+        
+    
+        // #hd_yys{
+        //     .big_menu{
+        //         .d2{display: none;}
                 
 
-            }
+        //     }
            
-         }
+         
            
-            background-color: #ffffff;
+            
             .nav{
                 height: 80px;
             }
@@ -125,16 +235,9 @@
             #navbar_yys{
                 width: 100%;
                 
-                .font_navi  a:hover {
-                    color: #FF6943 !important;
-                }
+                
             
-                .font_navi{
-                    font-family: "Pretendard";
-                    font-size: 22px;
-                    font-weight: 400;
-                    color: #414B5A;
-                }
+               
             
                 .font_login{
                     font-family: "Pretendard";
@@ -148,7 +251,7 @@
                 }
                 
             }
-        }
+        
 
         #mainbanner_yys{
             max-width: 1920px;
@@ -211,25 +314,26 @@
         //     }
             
         // }
-        #navbar_yys{
-            width: 80%;
+        // #navbar_yys{
+        //     width: 80%;
             
-        }
+        // }
 
         #quick-menu_yys
         {  .quick-menu{
             position: fixed;
             top: 0;
-            right: 0;
+            left: 0 !important;
             height: 50vh; /* 뷰포트 높이의 50% */
             background-color: #f0f0f0; /* 배경색 설정 */
             padding: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
             z-index: 999; /* 다른 요소 위에 표시되도록 설정 */
-            display: none; /* 초기에는 보이지 않도록 설정 */}
+            
 
-            .quick-menu.open {
-                display: block; /* 클릭 시 보이도록 설정 */
+            .quick-menu.aside {
+                display: none; /* 초기에는 보이지 않도록 설정 */}
+                // display: block; /* 클릭 시 보이도록 설정 */
             }
         }
 

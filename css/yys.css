@@ -1,13 +1,16 @@
 @charset "UTF-8";
 @media (max-width: 1400px) {
-  #navbar_yys .big_menu {
+  #hd_yys .gnb_a {
     display: none !important;
   }
-  #navbar_yys .login {
+  #hd_yys .login {
     margin-left: auto !important;
     white-space: nowrap;
     text-overflow: ellipsis;
     margin-right: 0;
+  }
+  #mainbanner_yys .swiper {
+    padding: 0;
   }
   #mainbanner_yys .swiper .swiper-slide.swiper-slide-active {
     position: relative;
@@ -15,24 +18,22 @@
     z-index: 10000 !important;
     padding: 0 !important;
   }
-  #mainbanner_yys h1 img {
+  #mainbanner_yys .swiper .swiper-pagination {
+    padding: 0 !important;
+    bottom: unset !important;
+  }
+  #mainbanner_yys .swiper .swiper-pagination span {
+    width: 7px !important;
+    height: 6px !important;
+    border-radius: 100% !important;
+  }
+  #mainbanner_yys .swiper h1 img {
     transform: scale(0.5);
     min-width: 74px; /* 원하는 너비로 조정 */
     height: auto; /* 이미지의 가로 세로 비율을 유지하면서 크기 조정 */
   }
-}
-@media (max-width: 700px) {
-  #navbar_yys .big_menu {
-    display: none !important;
-  }
-  #navbar_yys .login {
-    margin-left: auto !important;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    margin-right: 0;
-  }
   #mainbanner_yys .swiper {
-    padding: 40px 0 20px 0 !important;
+    padding: 0 !important;
   }
   #mainbanner_yys .swiper .swiper-pagination {
     padding: 0 !important;
@@ -55,35 +56,102 @@
     height: auto; /* 이미지의 가로 세로 비율을 유지하면서 크기 조정 */
   }
 }
+a {
+  text-decoration: none !important;
+}
+
 #hd_yys {
-  background-color: #ffffff;
+  position: fixed;
 }
-#hd_yys .nav {
-  height: 80px;
+#hd_yys h1 a {
+  white-space: nowrap !important;
 }
-#hd_yys link {
-  list-style: none;
+#hd_yys .gnb:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 0;
+  transition: 0.5s;
+  background-color: #FF6943 !important;
+  border-bottom: none !important;
 }
-#hd_yys #navbar_yys {
-  width: 100%;
+#hd_yys .gnb:hover:before {
+  height: 184px;
+  border-bottom: 1px solid #cc5638 !important;
+  transition: height 0.5s;
 }
-#hd_yys #navbar_yys .font_navi a:hover {
-  color: #FF6943 !important;
+#hd_yys .gnb:hover .gnb_li {
+  transition: 0.5s;
+  padding: 0 50px;
 }
-#hd_yys #navbar_yys .font_navi {
+#hd_yys .gnb:hover .gnb_li .gnb_ul {
+  height: 184px;
+  display: block;
+}
+#hd_yys .gnb .gnb_li .gnb_ul_li {
+  min-width: 300px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: "Pretendard";
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+#hd_yys .gnb .gnb_a {
   font-family: "Pretendard";
   font-size: 22px;
   font-weight: 400;
   color: #414B5A;
 }
-#hd_yys #navbar_yys .font_login {
+#hd_yys .gnb .gnb_a:hover {
+  transition: 0.2s;
+  color: #FF6943 !important;
+}
+#hd_yys .gnb .gnb_ul {
+  display: none;
+  overflow: hidden;
+  height: 0;
+  top: 100%;
+  margin-top: 30px !important;
+  transition: 0.5s;
+  left: -93px;
+  text-align: center;
+  text-wrap: nowrap !important;
+  transition: height 1.2s;
+}
+#hd_yys .gnb .gnb_ul:after, #hd_yys .gnb .gnb_ul:before {
+  content: "";
+  display: block;
+  height: 1rem;
+}
+#hd_yys .gnb .gnb_ul a {
+  color: #414B5A;
+}
+#hd_yys .gnb .gnb_ul a:hover {
+  color: white !important;
+}
+
+.nav {
+  height: 80px;
+}
+
+link {
+  list-style: none;
+}
+
+#navbar_yys {
+  width: 100%;
+}
+#navbar_yys .font_login {
   font-family: "Pretendard";
   font-size: 14px;
   font-weight: 400;
   color: #414B5A;
   list-style: none;
 }
-#hd_yys #navbar_yys .login a:hover {
+#navbar_yys .login a:hover {
   color: #FF6943 !important;
 }
 
@@ -114,21 +182,16 @@
   list-style: none;
 }
 
-#navbar_yys {
-  width: 80%;
-}
-
 #quick-menu_yys .quick-menu {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0 !important;
   height: 50vh; /* 뷰포트 높이의 50% */
   background-color: #f0f0f0; /* 배경색 설정 */
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
   z-index: 999; /* 다른 요소 위에 표시되도록 설정 */
-  display: none; /* 초기에는 보이지 않도록 설정 */
 }
-#quick-menu_yys .quick-menu.open {
-  display: block; /* 클릭 시 보이도록 설정 */
+#quick-menu_yys .quick-menu .quick-menu.aside {
+  display: none; /* 초기에는 보이지 않도록 설정 */
 }
