@@ -45,14 +45,14 @@
     <link rel="stylesheet" href="./css/jjh.css">
     <link rel="stylesheet" href="./css/gms.min.css">
     <link rel="stylesheet" href="./css/pyj.min.css">
-    <link rel="stylesheet" href="./css/yjy.min.css">
+    <!-- <link rel="stylesheet" href="./css/yjy.min.css"> -->
     <link rel="stylesheet" href="./css/yys.min.css">
 
     
 </head>
 <body>
 
-    <header id="hd_yys" class="  bg-white ">
+    <header id="hd_yys" class="  bg-white d-none ">
 
             <nav class=" navbar-expand-lg fixed-top bg-white " id="navbar_yys">
                 <div class="container-fluid d-flex nav_w-97  my-2  " >
@@ -89,7 +89,7 @@
             </nav>
 
         </header>
-        <section id="mainbanner_yys">
+        <section id="mainbanner_yys" class="d-none">
 
                 <div class="swiper  " >
                     <!-- 슬라이드들 -->
@@ -163,16 +163,17 @@
 
     
 
-    <!-- <section id="event_banner_yys">
+    <section id="event_banner_yys" class="d-none">
         <div class="event_banner ">
             <h2><a href="https://uglyus.co.kr/main"><img src="./img/img_yys/img/collab_banner.jpg" alt="콜라보배너" class="img-fluid"></a></h2>
 
         </div>
 
-    </section> -->
+    </section>
 
-    <section id="quick-menu_yys ">
-        <button id="menu-toggle">+</button> <!-- 클릭 시 메뉴를 토글할 버튼 추가 -->
+    <section id="quick-menu_yys " class="d-none">
+        <button id="menu-toggle">+</button> 
+        <!-- 클릭 시 메뉴를 토글할 버튼 추가 -->
         <div class="quick-menu aside ">
             <ul>
                 <li><a href="">메뉴1</a></li>
@@ -181,17 +182,18 @@
                 <li><a href="">메뉴4</a></li>
             </ul>
         </div>
-        <script>
+        <script class="d-none">
             // 메뉴 토글 버튼 클릭 시 퀵 메뉴를 열고 닫는 함수
             document.getElementById('menu-toggle').addEventListener('click', function() {
                 var quickMenu = document.getElementById('quick-menu');
-                quickMenu.classList.toggle('open'); // 'open' 클래스를 toggle하여 메뉴를 열거나 닫음
+                quickMenu.classList.toggle('open'); 
+                // 'open' 클래스를 toggle하여 메뉴를 열거나 닫음
             });
         </script>
     </section>
 
     
-    <section id="we_jjh">
+    <!-- <section id="we_jjh">
         <div class="container-fluid text-center">
             <h2 class="font_title_k letter_spacing ">We are Ugly Us!</h2>
             <div class="adbanner my-4">
@@ -221,8 +223,8 @@
                 </li>
             </ul>
            </div>
-    </section>
-    <section id="review_gms">
+    </section> -->
+    <!-- <section id="review_gms">
 
         <container>
             <div class="text-center">
@@ -357,7 +359,7 @@
                 </div>
             </div>
         </container>
-    </section>
+    </section> -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script>
             // Swiper 초기화
@@ -375,14 +377,14 @@
                 }
             });
         </script>
-    <section id="store_jjh">
+    <section id="store_jjh" class="d-none">
 
     </section>
 
 
       
     <!--section#foodrecipe.section-->
-    <section id="recipe_yjy" class="section"> 
+    <section id="recipe_yjy" class="section d-none"> 
         <div class="container text-center">
             <h2 class="font_title_k letter_spacing mb-0">출구 없는 레시피</h2>
             <p class="font_f18bold letter_spacing mb-0 mt-4">나만의 레시피를 알려주세요</p>
@@ -482,7 +484,7 @@
       
     </section>
 
-    <section id="map_pyj" class="section_blank">
+    <section id="map_pyj" class="section_blank d-none">
         <div class="text-center">
             <h2 class="font_con_title_k title_blank">Ugly Us Map</h2>
             <p class="font_text title_blank">여러분이 구해준 채소 한 알, 어디서 왔을까요?</p>
@@ -494,20 +496,26 @@
                     <img class="border-radius dummy img-fluid" src="./img/img_pyj/map/dummy.jpg" alt="임시 이미지">
                 </div>
 
-                <div class="col-lg-3 col-6 d-flex flex-column justify-content-between align-items-start ps-lg-3 mt-4 mt-lg-0">
+                <div class="col-lg-3 col-12 d-flex flex-column justify-content-between align-items-start ps-lg-3 mt-3 mt-lg-0">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-lg-12 col-6">
                         <img class="mapimg border-radius text_blank img-fluid" src="./img/img_pyj/map/strawberryjam.png" alt="권두보 생산자님">
                         </div>
-                        <div class="col-6">
-                            <p class="font_subtitle_k text_blank">자연 그대로 건강하고 정직한 딸기로 만들었습니다.</p>
+                        <div class="col-lg-12 col-6 ps-0 ps-lg-3">
+                            <p class="font_subtitle_k text_blank">
+                                <span class="map_title_pyj">자연 그대로</span>
+                                <span class="d-block d-xl-inline">건강하고 정직한</span>
+                                <span class="d-block d-xl-inline">딸기로 만들었습니다.</span>
+                            </p>
                             <p class="font_leadcopy text_blank">권두보님의 이야기</p>
                             <p class="font_text text_blank">
-                                <span class="d-none d-lg-inline">딸기 농사를 지은지 벌써 20년이 넘었네요. 저는 제가 살려고 유기농을 시작했다보니 어떻게 하면 더 건강한 농산물을 만들까가 농사의 제 1 기준이에요. 어글리어스 홈페이지를 봤는데 친환경 가치에 공감하고, 지지하는 고객분들이 많이 보였어요. 여러분에게 정말 건강하게 자란 딸기를 꼭 맛보여드리고 싶습니다.</span>
-                                <span class="d-block d-lg-none">+ 더보기</span>
+                                <span class="plus_text_pyj">딸기 농사를 지은지 벌써 20년이 넘었네요.<span class="map_text_pyj">저는 제가 살려고 유기농을 시작했다보니 어떻게 하면 더 건강한 농산물을 만들까가 농사의 제 1 기준이에요. 어글리어스 홈페이지를 봤는데 친환경 가치에 공감하고, 지지하는 고객분들이 많이 보였어요.</span> 여러분에게 정말 건강하게 자란 딸기를 꼭 맛보여드리고 싶습니다.</span>
+                                <span class="Plus_button_pyj">+ 더보기</span>
                             </p>
                         </div>
-                        <button type="button" class="font_button mapbuttonstyle_pyj"><a href="#">구매하러가기</a></button>
+                        <div class="d-flex d-lg-block justify-content-center">
+                            <button type="button" class="font_button mapbuttonstyle_pyj"><a href="#">구매하러가기</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -519,14 +527,14 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-5 me-lg-auto">
                     <div class="mb-5 text-center">
-                        <h2 class="formfont_title_pyj mb-4">생산자님! <span class="d-block d-lg-inline">구출이 필요한 농산물이 있나요?</span></h2>
-                        <p class="formfont_text_pyj mb-0">구출이 필요한 농산물이 있다면 정보 확인 후 연락 드리겠습니다.</p>
-                        <p class="formfont_text_pyj mb-0 d-none d-lg-block">회신까지 2~3일 정도 소요될 수 있으며, 최대한 빠르게 연락 드릴 수 있도록 하겠습니다.</p>
+                        <h2 class="font_title_k_pyj title_blank">생산자님! <span class="form_title_pyj">구출이 필요한 농산물이 있나요?</span></h2>
+                        <p class="font_text mb-0">구출이 필요한 농산물이 있다면 정보 확인 후 연락 드리겠습니다.</p>
+                        <p class="font_text mb-0 d-none d-lg-block">회신까지 2~3일 정도 소요될 수 있으며, 최대한 빠르게 연락 드릴 수 있도록 하겠습니다.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
-                    <form class="form_background_pyj px-5 py-5" action="/submit-form" method="post">
+                    <form class="form_background_pyj p-5" action="/submit-form" method="post">
                         <h2 class="formfont_subtitle_pyj text-center mb-5">농산물 납품 문의</h2>
 
                         <div class="mb-3 ">

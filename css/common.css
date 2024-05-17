@@ -10,26 +10,14 @@
   letter-spacing: -0.5px;
   line-height: 1.25rem;
 }
-@media (max-width: 767px) {
-  .font_navi {
-    letter-spacing: -0.5px;
-    line-height: 0.8rem;
-  }
-}
 
 .font_login {
   font-family: "Pretendard";
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   color: #1F2937;
   letter-spacing: -0.5px;
   line-height: 1rem;
-}
-@media (max-width: 767px) {
-  .font_login {
-    letter-spacing: -0.5px;
-    line-height: 0.8rem;
-  }
 }
 
 .font_con_title_k {
@@ -40,11 +28,10 @@
   letter-spacing: -0.5px;
   line-height: 2.5rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .font_con_title_k {
-    letter-spacing: -0.5px;
-    line-height: 0;
-    font-size: 20px;
+    font-size: 30px;
+    line-height: 2rem;
   }
 }
 
@@ -56,11 +43,10 @@
   letter-spacing: -0.5px;
   line-height: 2.5rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .font_con_title_e {
-    letter-spacing: -0.5px;
-    line-height: 0;
-    font-size: 20px;
+    font-size: 30px;
+    line-height: 2rem;
   }
 }
 
@@ -72,11 +58,10 @@
   letter-spacing: -0.5px;
   line-height: 1.8rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .font_title_k {
-    letter-spacing: -0.5px;
-    line-height: 1rem;
-    font-size: 16px;
+    font-size: 24px;
+    line-height: 2rem;
   }
 }
 
@@ -88,11 +73,10 @@
   letter-spacing: -0.5px;
   line-height: 1.8rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .font_title_e {
-    letter-spacing: -0.5px;
-    line-height: 1rem;
-    font-size: 16px;
+    font-size: 24px;
+    line-height: 2rem;
   }
 }
 
@@ -104,11 +88,10 @@
   letter-spacing: -0.5px;
   line-height: 1.8rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .font_subtitle_k {
-    letter-spacing: -0.5px;
-    line-height: 0.9rem;
-    font-size: 14px;
+    font-size: 17px;
+    line-height: 1.4rem;
   }
 }
 
@@ -120,11 +103,10 @@
   letter-spacing: -0.5px;
   line-height: 1.8rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .font_subtitle_e {
-    letter-spacing: -0.5px;
-    line-height: 0.9rem;
-    font-size: 14px;
+    font-size: 17px;
+    line-height: 1.4rem;
   }
 }
 
@@ -136,12 +118,10 @@
   letter-spacing: -0.5px;
   line-height: 1.8rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .font_leadcopy {
-    letter-spacing: -0.5px;
-    line-height: 0.8rem;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 15px;
+    line-height: 1rem;
   }
 }
 
@@ -153,12 +133,10 @@
   letter-spacing: -0.5px;
   line-height: 1.5rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .font_text {
-    letter-spacing: -0.5px;
-    line-height: 0.8rem;
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 13px;
+    line-height: 1rem;
   }
 }
 
@@ -169,13 +147,6 @@
   color: #fff;
   letter-spacing: -0.5px;
   line-height: 1.5rem;
-}
-@media (max-width: 767px) {
-  .font_button {
-    letter-spacing: -0.5px;
-    line-height: 0.8rem;
-    font-size: 12px;
-  }
 }
 
 .font_f18bold {
@@ -237,7 +208,7 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section_blank {
     margin-bottom: 80px;
   }
