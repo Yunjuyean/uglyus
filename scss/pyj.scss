@@ -6,9 +6,37 @@ $uglygreen : #5EAB42;
 $uglyblack : #1F2937;
 $uglygray : #414B5A;
 
-
-/* 폼 컨텐츠 css */
-/* 폰트 */
+// 맵 컨텐츠 
+// 맵 폰트
+.map_font{
+  font-family: 'Pretendard';
+  font-size: 18px;
+  font-weight: 600;
+  color:$uglygray;
+}
+// 이미지
+.strawberry{
+  max-width: 460px;
+  height: auto;
+}
+// 맵 버튼
+.mapbuttonstyle_pyj{
+  width: 147px;
+  height: 37px;
+  background-color: $uglyorange;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  font-family: 'Pretendard';
+  font-size: 18px;
+  font-weight: 600 !important;
+    a{
+        text-decoration: none;
+        color : #ffffff;
+    }
+}
+// 폼 컨텐츠 css
+// 폰트 
 .formfont_title_pyj{
     font-family: 'Pretendard';
     font-size: 30px;
@@ -34,12 +62,12 @@ $uglygray : #414B5A;
     font-family: 'Pretendard';
     font-size: 14px;
     font-weight: 500;
-    color: $uglygray 
+    color: $uglygray
     !important
   }
 
   
-  /* 배경 */
+  // 배경
   .contents_background_pyj{
     background-color: #FFF4DF;
   }
@@ -50,7 +78,7 @@ $uglygray : #414B5A;
     border-radius: 20px;
   }
 
-  /* 폼 입력칸 스타일 */
+  // 폼 입력칸 스타일
   .input_box_1_pyj{
     border: 1px solid #cccccc;
     padding: 10px;
@@ -66,8 +94,8 @@ $uglygray : #414B5A;
     height: 33px;
   }
   
-  /* 버튼 */
-  .buttonstyle_pyj{
+  // 폼 버튼
+  .formbuttonstyle_pyj{
     width: 400px;
     height: 60px;
     background-color: $uglyorange;

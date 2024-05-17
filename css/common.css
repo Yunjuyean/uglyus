@@ -2,6 +2,14 @@
   letter-spacing: -0.5px;
 }
 
+.line_height_08 {
+  line-height: 0.8rem;
+}
+
+.line_height_09 {
+  line-height: 0.9rem;
+}
+
 .line_height_1 {
   line-height: 1rem;
 }
@@ -130,23 +138,97 @@
   margin-bottom: 23px;
 }
 
-.contents_blank {
+.contents_L_blank {
+  margin-left: 20px;
+}
+
+.contents_R_blank {
   margin-right: 20px;
+}
+
+.contents_B_blank {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 990px) {
   .section_blank {
-    margin-bottom: 220px;
+    margin-bottom: 80px;
   }
   .title_blank {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   .text_blank {
-    margin-bottom: 23px;
+    margin-bottom: 10px;
   }
-  .contents_blank {
-    margin-right: 20px;
-    margin-bottom: 20px;
+  .contents_L_blank {
+    margin-left: 10px;
   }
+  .contents_R_blank {
+    margin-right: 10px;
+  }
+  .contents_B_blank {
+    margin-bottom: 10px;
+  }
+}
+.mfont_20bold_k {
+  font-family: "Pretendard";
+  font-size: 20px;
+  font-weight: 700;
+  color: #FE663F;
+}
+
+.mfont_20bold_e {
+  font-family: "Rubik";
+  font-size: 20px;
+  font-weight: 700;
+  color: #FE663F;
+}
+
+.mfont_16bold {
+  font-family: "Pretendard";
+  font-size: 16px;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.mfont_14semi {
+  font-family: "Pretendard";
+  font-size: 14px;
+  font-weight: 500;
+  color: #414B5A;
+}
+
+.mfont_lead12semi {
+  font-family: "Pretendard";
+  font-size: 12px;
+  font-weight: 500;
+  color: #414B5A;
+}
+
+.mfont_black12semi {
+  font-family: "Pretendard";
+  font-size: 12px;
+  font-weight: 400;
+  color: #1F2937;
+}
+
+.mfont_white12semi {
+  font-family: "Pretendard";
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.mfont_12regular {
+  font-family: "Pretendard";
+  font-size: 12px;
+  font-weight: 300;
+  color: #414B5A;
+}
+
+.mfont_12light {
+  font-family: "Pretendard";
+  font-size: 12px;
+  font-weight: 200;
+  color: #414B5A;
 }
