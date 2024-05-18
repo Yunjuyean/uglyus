@@ -1,3 +1,5 @@
+$or-color: #983016;
+
 @media (min-width: 1400px) {
     #hd_yys {
         .gnb_a {
@@ -244,20 +246,151 @@ a {
     }
 }
 
-#quick-menu_yys {
-    .quick-menu {
-        position: fixed;
-        top: 0;
-        left: 0 !important;
-        height: 50vh; /* 뷰포트 높이의 50% */
-        background-color: #f0f0f0; /* 배경색 설정 */
-        padding: 20px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
-        z-index: 999; /* 다른 요소 위에 표시되도록 설정 */
-    }
+// #quick-menu_yys {
+//     position: relative;
+//     #quikBtn {
+//         &::before{background-color: #FF6943 !important;
+//             position: fixed;
+//             top: 0;
+//             right: 0 !important;
+//              /* 뷰포트 높이의 50% */
+            
+//             padding: 30px;
+//             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+//             z-index: 99999999; /* 다른 요소 위에 표시되도록 설정 */
 
-    .quick-menu.aside {
-        display: none; /* 초기에는 보이지 않도록 설정 */
-    }
+//         }
+//         &:hover{
+//             display: block !important;
+//             max-width: 100px;
+//             height: 200px;
+//             .qIcon_span{
+//                 display: block !important;
+
+
+//             }
+//         }
+//     }
+    
+
+//     .quick-menu.aside {
+//         display: none; /* 초기에는 보이지 않도록 설정 */
+//     }
+// }
+// #quick-menu_yys{
+//     flex-direction: row-reverse !important;
+//     position: relative;
+//     padding-right: auto !important;
+//     // max-width: 1920px;
+    
+    
+    
+//     #quikBtn{
+        
+//         background-color: #FF6943 !important;
+//         position: fixed;
+//         height: 0 !important;
+//         top: 50vh;
+//         overflow: hidden !important;
+//     }
+//     &:hover{
+//         max-height: 50px;
+//         border-bottom: 0 0 30px 30px;
+
+//         #quikMenu_in{
+//             display: block !important;
+        
+            
+//         }
+
+
+//     }
+//     #quikMenu_in{
+//         display: none !important;
+//     }
+    
+
+
+      
+
+
+// }
+
+
+// 22
+// #quik {
+//     position: relative;
+//     bottom: 2rem;
+//     right: 1rem;
+
+//     /* 새로운 내용: 부모 요소에 z-index 추가 */
+//     z-index: 10000;
+
+//     #quikBtn {
+//         position: fixed ;
+//         transform: translateY(.9rem);
+//         z-index: 100000 !important;
+//         img {
+//             height: 5rem;
+//         }
+//     }
+//     #quikMenu {
+//         position: fixed;
+//         top: 50%; transform: translateY(-50%);
+        
+//         &::before {
+//             content: "";
+//             display: block;
+//             background: #3D71FF;
+//             height: .5rem;
+            
+//             z-index: 100000 !important;
+//         }
+//         background: #3D71FF;
+//         border-radius: 0 0 3rem 3rem;
+//         .qIcon {
+//             position: absolute;
+//             background: #6A92FE;
+//             border-radius: 50%;
+//             box-shadow: 3px 3px 3px #00000030;
+//             line-height: 1;
+//             a {
+//                 font-size: 1.7rem;
+//                 color: #fff;
+//             }
+//         }
+//     }
+    
+// }
+
+
+
+#quikBtn{
+    position: fixed;
+    z-index: 10;
+    display: block;
+    flex-wrap: nowrap;
+    width: auto;
+    overflow: visible;
+    background:transparent;
+    bottom:24px;
+    right:25px;
+    
+   .or{
+    background-color: #cc5638;
+    border: unset !important;
+   }
+    
+
+    // position: fixed;
+    // z-index: 10;
+    // display: block;
+    // flex-wrap: nowrap;s
+    // width:auto;
+    // overflow: visible;
+    // background: transparent;
+    // bottom: 24px;
+    // right: 25px;
+
 }
 

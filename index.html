@@ -193,57 +193,63 @@
 
     </section> -->
 
-    <section id="quick-menu_yys ">
-        <button id="menu-toggle">+</button> <!-- 클릭 시 메뉴를 토글할 버튼 추가 -->
-        <div class="quick-menu aside ">
-            <ul>
-                <li><a href="">메뉴1</a></li>
-                <li><a href="">메뉴2</a></li>
-                <li><a href="">메뉴3</a></li>
-                <li><a href="">메뉴4</a></li>
-            </ul>
-        </div>
-        <script>
-            // 메뉴 토글 버튼 클릭 시 퀵 메뉴를 열고 닫는 함수
-            document.getElementById('menu-toggle').addEventListener('click', function() {
-                var quickMenu = document.getElementById('quick-menu');
-                quickMenu.classList.toggle('open'); // 'open' 클래스를 toggle하여 메뉴를 열거나 닫음
-            });
-        </script>
-    </section>
+    
+    
+    
 
     
-    <section id="we_jjh">
-        <div class="container-fluid text-center">
-            <h2 class="font_title_k letter_spacing ">We are Ugly Us!</h2>
-            <div class="adbanner my-4">
-                <img class="trans" src="./img/img_jjh/JPG/we_03.png" alt="이미지" >
-            </div>
-            <div class="textarea">
-                <strong class="font_f30bold letter_spacing_jj line_height_18 d-block mb-4">Ugly Us는 지속 가능한 식탁을 만듭니다.</strong>
-                <p class="letter_spacing line_height_125 plus mb-0">농산물의 폐기는 유통과 소비 모든 단계에서 사회적 손실을 야기합니다.</p>
-                <p class="letter_spacing line_height_125 plus mb-0">어글리어스는 불필요한 낭비를 줄여 환경 보호에 기여하고, 농부의 노력에 대한 정당한 보상을 제공합니다.</p>
-            </div>
-            <ul class="d-flex justify-content-center my-4">
-                <li class="me-5">
-                    <img class="my-4" src="./img/img_jjh/PNG/back.png" alt="임시 이미지" width="100" height="100">
-                    <strong class="d-block font_f30bold letter_spacing line_height_18 d-block">가장 소량씩,가장 신선하게!</strong>
-                    <p class="font_text letter_spacing line_height_30">30% off, 합리적인 가격으로 만나요</p>
-                </li>
-                <li class="mx-5 px-5 ">
-                    <img class="my-4 " src="./img/img_jjh/PNG/down.png" alt="임시 이미지" width="100" height="100">
-                    <strong class="font_f30bold letter_spacing line_height_18 d-block">친환경 채소를 가장 저렴하게!</strong>
-                    <p class="font_text letter_spacing line_height_30">적은양으로 부담없이 즐겨요.</p>
-                </li>
-                <li>
-                    <li class="ms-5">
-                    <img class="my-4" src="./img/img_jjh/PNG/echo.png" alt="임시 이미지" width="100" height="100">
-                    <strong class="font_f30bold letter_spacing line_height_18 d-block">환경에 한 발 나은 선택!</strong>
-                    <p class="font_text letter_spacing line_height_30">환경에 더 가까운 생산과 소비를 지지해요.</p>
-                </li>
-            </ul>
-           </div>
-    </section>
+    <aside id="quik" class="d-flex  flex-column align-items-end">
+        <i id="quikBtn">
+            <img src="./img/img_yys/svg/plus.svg" alt="퀵버튼">
+            <span class="visually-hidden">퀵버튼</span>
+        </i>
+        <ul id="quikMenu" class="d-none px-1 pb-2 mb-0">
+            <li class="my-2 qIcon p-2">
+                <a class="or" href="javascript:void(0)">
+                    <i class="bi bi-chat or"></i>
+                    <span class=" or">
+                    마이
+                    <br>
+                    페이지</span>
+                </a>
+            </li>
+            <li class="my-2 qIcon p-2">
+                <a class="or" href="javascript:void(0)">
+                    <i class="bi bi-instagram or"></i>
+                    <span class=" or">마켓</span>
+                </a>
+            </li>
+            <li class="my-2 qIcon p-2">
+                <a class="or" href="javascript:void(0)">
+                    <i class="bi bi-instagram or"></i>
+                    <span class=" or">이벤트</span>
+                </a>
+            </li>
+            <li class="my-2 qIcon p-2">
+                <a class="or" href="javascript:void(0)">
+                    <i class="bi bi-instagram or"></i>
+                    <span class=" or">고객센터</span>
+                </a>
+            </li>
+        </ul>
+        
+    </aside>
+    <script>
+            const quikBtn = document.getElementById("quikBtn");
+            const quikMenu = document.getElementById("quikMenu");      
+                let status = true;
+                quikBtn.addEventListener("click", function(){
+                    if(status){
+                        quikMenu.classList.remove("d-none");
+                        status = false;
+                    } else {
+                        quikMenu.classList.add("d-none");
+                        status = true;
+                    }
+                });
+            
+    </script>     
+
     <section id="review_gms">
 
         <container>
