@@ -72,6 +72,12 @@
     height: auto; /* 이미지의 가로 세로 비율을 유지하면서 크기 조정 */
   }
 }
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .d-flex {
   display: flex !important;
 }
@@ -102,60 +108,103 @@ a {
 
 #hd_yys {
   position: fixed;
+  padding: 0 3rem;
 }
-#hd_yys .nav {
+#hd_yys s .nav {
   height: 80px;
 }
 #hd_yys link {
   list-style: none;
 }
-#hd_yys #navbar_yys {
-  width: 100%;
-}
-#hd_yys #navbar_yys .font_login {
+#hd_yys .font_login {
   font-family: "Pretendard";
   font-size: 14px;
   font-weight: 400;
   color: #414B5A;
   list-style: none;
 }
-#hd_yys #navbar_yys .login a:hover {
+#hd_yys .login a:hover {
   color: #FF6943 !important;
 }
 #hd_yys h1 a {
   white-space: nowrap !important;
 }
+#hd_yys .gnb:hover:before {
+  height: calc(13rem + 20px);
+}
+#hd_yys .gnb:hover .gnb_li .gnb_ul {
+  height: calc(13rem + 20px);
+}
 #hd_yys .gnb:before {
   content: "";
   position: absolute;
   left: 0;
-  right: 0;
   top: 100%;
+  right: 0;
   height: 0;
+  background-color: #FF6943;
   transition: 0.5s;
-  background-color: #FF6943 !important;
-  border-bottom: none !important;
 }
-#hd_yys .gnb:hover:before {
-  height: 184px;
-  border-bottom: 1px solid #cc5638 !important;
-  transition: height 0.5s;
+#hd_yys .gnb .gnb_li {
+  line-height: 2;
 }
-#hd_yys .gnb:hover .gnb_li {
+#hd_yys .gnb .gnb_li .gnb_a {
+  padding: 0 2rem;
+  display: block;
+  font-size: 1.3rem;
+  line-height: 100px;
+}
+#hd_yys .gnb .gnb_li .gnb_ul {
+  top: 100%;
+  left: 0;
+  min-width: 120px;
+  height: 0;
+  overflow: hidden;
   transition: 0.5s;
-  padding: 0 50px;
 }
-#hd_yys .gnb:hover .gnb_li .gnb_ul {
-  height: 184px;
+#hd_yys .gnb .gnb_li .gnb_ul_li .gnb_ul {
+  height: calc(13rem + 20px);
+  top: 100%;
+  left: 0;
+  min-width: 120px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
 }
-#hd_yys .gnb .gnb_li .gnb_ul_li {
-  min-width: 300px;
-  padding-bottom: 30px;
-  text-align: center;
+#hd_yys .gnb .gnb_a {
   font-family: "Pretendard";
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
-  color: #ffffff;
+  color: #414B5A;
+}
+#hd_yys .gnb .gnb_a:hover {
+  transition: 0.2s;
+  color: #FF6943 !important;
+}
+#hd_yys .gnb .gnb_ul {
+  display: none;
+  overflow: hidden;
+  height: 0;
+  top: 100%;
+  margin-top: 30px !important;
+  transition: height 1.2s;
+  left: -93px;
+  text-align: center;
+  white-space: nowrap !important;
+}
+#hd_yys .gnb .gnb_ul:after, #hd_yys .gnb .gnb_ul:before {
+  content: "";
+  display: block;
+  height: 1rem;
+}
+#hd_yys .gnb .gnb_li .gnb_ul_li .gnb_ul {
+  height: calc(13rem + 20px);
+  top: 100%;
+  left: 0;
+  min-width: 120px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
 }
 #hd_yys .gnb .gnb_a {
   font-family: "Pretendard";

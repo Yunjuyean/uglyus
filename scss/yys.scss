@@ -94,9 +94,13 @@ $or-color: #983016;
     justify-content: $justify-center;
     align-items: $align-center;
   }
+
 .flexcenter {
-    @include flex-center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
   }
+
 .d-flex{
     display: flex !important;
 }
@@ -121,6 +125,7 @@ a {
 
 #hd_yys {
     position: fixed;
+    padding: 0 3rem;s
 
     .nav {
         height: 80px;
@@ -130,9 +135,7 @@ a {
         list-style: none;
     }
 
-    #navbar_yys {
-        width: 100%;
-
+    
         .font_login {
             font-family: "Pretendard";
             font-size: 14px;
@@ -144,7 +147,7 @@ a {
         .login a:hover {
             color: #FF6943 !important;
         }
-    }
+    
 
     h1 {
         a {
@@ -152,45 +155,118 @@ a {
         }
     }
 
-    .gnb {
-        &:before {
+    .gnb{
+        &:hover{
+            &:before{
+                height:calc(13rem + 20px);//공백 맞추어야 기호 적용됨
+
+            }
+            .gnb_li{
+
+                .gnb_a{
+                }
+                .gnb_ul{
+                    height:calc(13rem + 20px);
+                    .gnb_ul_li{
+                        
+    
+                    }
+                }
+            }
+
+        }///gnb hover 상태임
+        &:before{
             content: "";
             position: absolute;
             left: 0;
-            right: 0;
             top: 100%;
+            right: 0;
             height: 0;
+            background-color: #FF6943;
             transition: 0.5s;
-            background-color: #FF6943 !important;
-            border-bottom: none !important;
+
+
         }
-
-        &:hover {
-            &:before {
-                height: 184px;
-                border-bottom: 1px solid #cc5638 !important;
-                transition: height 0.5s;
+        .gnb_li{
+            line-height: 2;
+            .gnb_a{//대메뉴 a
+                padding: 0 2rem;
+                display: block;//인라인 태그 블럭처리 하여야함
+                font-size: 1.3rem;
+                line-height: 100px;//가장큰객체의 높이를 넣어줘서 맞춰준다.
             }
-
-            .gnb_li {
+            .gnb_ul{
+               
+                top: 100%;
+                left: 0;
+                min-width: 120px;
+                height: 0;
+                overflow: hidden;
                 transition: 0.5s;
-                padding: 0 50px;
-                .gnb_ul {
-                    height: 184px;
-                    
+
+                .gnb_ul_li{
+
+                }
+            }
+        }
+        .gnb_li {
+            .gnb_ul_li {
+                .gnb_ul{
+                    height: calc(13rem + 20px);
+                    top: 100%;
+                    left: 0;
+                    min-width: 120px;
+                    height: 0;
+                    overflow: hidden;
+                    transition: 0.5s;
                 }
             }
         }
 
+        .gnb_a {
+            font-family: "Pretendard";
+            font-size: 22px;
+            font-weight: 400;
+            color: #414B5A;
+
+            &:hover {
+                transition: 0.2s;
+                color: #FF6943 !important;
+            }
+        }
+
+        .gnb_ul {
+            display: none;
+            overflow: hidden;
+            height: 0;
+            top: 100%;
+            margin-top: 30px !important;
+            transition: height 1.2s;
+            left: -93px;
+            text-align: center;
+            white-space: nowrap !important;
+
+            &:after,
+            &:before {
+                content: "";
+                display: block;
+                height: 1rem;
+            }
+    
+    
+    }
+
         .gnb_li {
             .gnb_ul_li {
-                min-width: 300px;
-                padding-bottom: 30px;
-                text-align: center;
-                font-family: "Pretendard";
-                font-size: 18px;
-                font-weight: 400;
-                color: #ffffff;
+                .gnb_ul{
+                    height: calc(13rem + 20px);
+                    top: 100%;
+                    left: 0;
+                    min-width: 120px;
+                    height: 0;
+                    overflow: hidden;
+                    transition: 0.5s;
+                }
             }
         }
 

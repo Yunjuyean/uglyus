@@ -6,19 +6,59 @@ $uglygreen : #5EAB42;
 $uglyblack : #1F2937;
 $uglygray : #414B5A;
 
-// 맵 컨텐츠 
-// 맵 폰트
-.map_font{
-  font-family: 'Pretendard';
-  font-size: 18px;
-  font-weight: 600;
-  color:$uglygray;
+// @mixin letter_line($letter_spacing, $line_height) {
+//   letter-spacing: $letter_spacing;
+//   line-height: $line_height;
+// }
+
+// 반응형
+.map_title_pyj{
+  display: inline;
+    @media (max-width : 1780px){
+      display:block;
+    }
+    @media (max-width : 540px){
+      display:none;
+    }
 }
+.map_text_pyj{
+  display: inline;
+    @media (max-width : 840px){
+      display: none;
+    }
+}
+.plus_text_pyj{
+  display: inline;
+    @media (max-width : 680px){
+      display: none;
+  }
+}
+.Plus_button_pyj{
+  display: none;
+    @media (max-width : 680px){
+      display: block;
+  }
+}
+.form_title_pyj{
+  display: inline;
+    @media (max-width : 1800px){
+      display:block;
+    }
+}
+
+
+// 맵 컨텐츠 
 // 이미지
-.strawberry{
-  max-width: 460px;
+.dummy{
+  width:100%;
+  height: 100%;
+}
+.mapimg{
+  max-width:1000px;
+  width:100%;
   height: auto;
 }
+
 // 맵 버튼
 .mapbuttonstyle_pyj{
   width: 147px;
@@ -26,54 +66,69 @@ $uglygray : #414B5A;
   background-color: $uglyorange;
   border-radius: 20px;
   border: none;
-  color: #fff;
-  font-family: 'Pretendard';
-  font-size: 18px;
-  font-weight: 600 !important;
     a{
-        text-decoration: none;
-        color : #ffffff;
+      color: #fff;
+      text-decoration: none;
     }
 }
+
+
+
 // 폼 컨텐츠 css
 // 폰트 
-.formfont_title_pyj{
-    font-family: 'Pretendard';
-    font-size: 30px;
-    font-weight: 700;
-    color: $uglyblack 
-    !important
-  }
+.font_title_k_pyj{
+  font-family: 'Pretendard';
+  font-size: 30px;
+  font-weight: 700;
+  color: $uglyblack;
+  letter-spacing: -0.5px;
+  line-height: 1.8rem;
+      @media (max-width : 1800px){
+        line-height: 2.5rem;
+      }
+      @media (max-width : 480px){
+          font-size: 24px;
+          line-height: 2rem;
+      }
+    }
   .formfont_subtitle_pyj{
     font-family: 'Pretendard';
     font-size: 22px;
     font-weight: 700;
-    color: $uglyblack 
-    !important
+    color:$uglyblack;
+    letter-spacing: -0.5px;
+    line-height: 1.8rem;
+        @media (max-width : 480px){
+            font-size: 17px;
+            line-height: 1.4rem;
+        }
   }
-  .formfont_text_pyj{
-    font-family: 'Pretendard';
+  .formfont_text_pyj {
+    font-family: "Pretendard";
     font-size: 16px;
     font-weight: 600;
-    color: $uglyblack 
-    !important
+    color: $uglyblack;
+      @media (max-width : 480px){
+        font-size: 14px;
+    }
   }
   .formfont_placehold_pyj{
     font-family: 'Pretendard';
     font-size: 14px;
     font-weight: 500;
-    color: $uglygray
-    !important
+    color: $uglygray;
+      @media (max-width : 480px){
+        font-size: 12px;
+    }
   }
 
-  
   // 배경
   .contents_background_pyj{
     background-color: #FFF4DF;
   }
   .form_background_pyj{
-    width: 500px;
-    height: 600px;
+    max-width: 500px;
+    max-height: 600px;
     background-color: #fff;
     border-radius: 20px;
   }
@@ -81,14 +136,14 @@ $uglygray : #414B5A;
   // 폼 입력칸 스타일
   .input_box_1_pyj{
     border: 1px solid #cccccc;
-    padding: 10px;
+    padding-right: 10px;
     border-radius: 5px;
     width: 400px;
     height: 33px;
   }
   .input_box_2_pyj{
     border: 1px solid #cccccc;
-    padding: 10px;
+    padding-right: 10px;
     border-radius: 5px;
     width: 130px;
     height: 33px;
@@ -104,6 +159,5 @@ $uglygray : #414B5A;
     color: #fff;
     font-family: 'Pretendard';
     font-size: 22px;
-    font-weight: 600 
-    !important
+    font-weight: 600;
   }
