@@ -1,3 +1,5 @@
+$or-color: #983016;
+
 @media (min-width: 1400px) {
     #hd_yys {
         .gnb_a {
@@ -87,45 +89,53 @@
         }
     }
 }
+@mixin flex-center {
+    display: $display-flex;
+    justify-content: $justify-center;
+    align-items: $align-center;
+  }
 
+.flexcenter {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+.d-flex{
+    display: flex !important;
+}
+.jcc{
+    justify-content: center !important;
+}
+.jcb{
+    justify-content: space-between !important;
+}
+.aic{
+    align-items: center !important;
+}
+.rel{
+    position: relative !important;
+}
+.abs{
+    position: absolute !important;
+}
 a {
     text-decoration: none !important;
 }
 
-#hd_yys {
+
+
+   
+
+    
+        
+    
+ #hd_yys{
     position: fixed;
-
-    .nav {
-        height: 80px;
-    }
-
-    link {
-        list-style: none;
-    }
-
-    #navbar_yys {
-        width: 100%;
-
-        .font_login {
-            font-family: "Pretendard";
-            font-size: 14px;
-            font-weight: 400;
-            color: #414B5A;
-            list-style: none;
-        }
-
-        .login a:hover {
-            color: #FF6943 !important;
-        }
-    }
-
-    h1 {
-        a {
-            white-space: nowrap !important;
-        }
-    }
-
+    padding: 0 48px;
+    z-index: 1000px;
     .gnb {
+        
         &:before {
             content: "";
             position: absolute;
@@ -136,11 +146,12 @@ a {
             transition: 0.5s;
             background-color: #FF6943 !important;
             border-bottom: none !important;
+            margin-bottom:0 !important;
         }
 
         &:hover {
             &:before {
-                height: 184px;
+                height: 190px;
                 border-bottom: 1px solid #cc5638 !important;
                 transition: height 0.5s;
             }
@@ -150,7 +161,7 @@ a {
                 padding: 0 50px;
                 .gnb_ul {
                     height: 184px;
-                    display: block;
+                    
                 }
             }
         }
@@ -168,6 +179,7 @@ a {
         }
 
         .gnb_a {
+            line-height: 100px;
             font-family: "Pretendard";
             font-size: 22px;
             font-weight: 400;
@@ -180,12 +192,12 @@ a {
         }
 
         .gnb_ul {
-            display: none;
+            
             overflow: hidden;
             height: 0;
             top: 100%;
             margin-top: 30px !important;
-            transition: height 1.2s;
+            transition: height 0.2s;
             left: -93px;
             text-align: center;
             white-space: nowrap !important;
@@ -194,7 +206,7 @@ a {
             &:before {
                 content: "";
                 display: block;
-                height: 1rem;
+                
             }
 
             a {
@@ -208,15 +220,32 @@ a {
                     color: white !important;
                 }
             }
+
         }
+      
+        
     }
-}
+    .font_login {
+        font-family: "Pretendard";
+        font-size: 14px;
+        font-weight: 400;
+        color: #414B5A;
+        list-style: none;
+    }
+
+    .login a:hover {
+        color: #FF6943 !important;
+    }
+    
+ }
+    
+
 
 #mainbanner_yys {
     max-width: 1920px;
 
     .swiper {
-        padding: 180px 0 120px 0;
+        padding:186px 0 146px 0;
         overflow: hidden;
 
         .swiper-pagination {
@@ -243,21 +272,216 @@ a {
         list-style: none;
     }
 }
+#quik{
+    
+    
 
-#quick-menu_yys {
-    .quick-menu {
-        position: fixed;
-        top: 0;
-        left: 0 !important;
-        height: 50vh; /* 뷰포트 높이의 50% */
-        background-color: #f0f0f0; /* 배경색 설정 */
-        padding: 20px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
-        z-index: 999; /* 다른 요소 위에 표시되도록 설정 */
-    }
+   
 
-    .quick-menu.aside {
-        display: none; /* 초기에는 보이지 않도록 설정 */
-    }
+
+    .quikBtn{
+        &::before{
+            
+        }
+
+        display: inline-block;
+        top: 50vh;
+        position: fixed !important;
+        z-index: 100000;
+        display: block;
+        flex-wrap: nowrap;
+        width: 80px;
+        height: 80px;
+        overflow: visible;
+        background-color: #FF6943 !important;
+        bottom:24px;
+        right:25px;
+         img{
+            margin: 17px;
+            display: block;
+            overflow: visible;
+            
+
+        }
+    
+        .quikMenu{position: absolute;
+            background-color: #FF6943;
+
+            max-height: 494px;
+            transition: max-height 0.5s;
+            bottom: 100%;
+
+            
+            &::before{
+                position: absolute;
+                background-color: #FF6943;
+
+                max-height: 494px;
+                transition: max-height 0.5s;
+                bottom: 100%;
+
+            }
+            &::after{
+                display: block;
+            }
+            
+            left: 0;
+            height: 0;
+            top: 0;
+            bottom: 0;
+        }
+        
+       .or{
+        background-color: #cc5638;
+        border: unset !important;
+       }
+    
 }
+
+
+    
+
+    // position: fixed;
+    // z-index: 10;
+    // display: block;
+    // flex-wrap: nowrap;s
+    // width:auto;
+    // overflow: visible;
+    // background: transparent;
+    // bottom: 24px;
+    // right: 25px;
+
+}
+#ft_yys{
+    #snsIcon{
+        .iconColor{
+            
+            background-color: #983016 !important;
+        }
+
+    }
+
+}
+
+
+// #quick-menu_yys {
+//     position: relative;
+//     #quikBtn {
+//         &::before{background-color: #FF6943 !important;
+//             position: fixed;
+//             top: 0;
+//             right: 0 !important;
+//              /* 뷰포트 높이의 50% */
+            
+//             padding: 30px;
+//             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+//             z-index: 99999999; /* 다른 요소 위에 표시되도록 설정 */
+
+//         }
+//         &:hover{
+//             display: block !important;
+//             max-width: 100px;
+//             height: 200px;
+//             .qIcon_span{
+//                 display: block !important;
+
+
+//             }
+//         }
+//     }
+    
+
+//     .quick-menu.aside {
+//         display: none; /* 초기에는 보이지 않도록 설정 */
+//     }
+// }
+// #quick-menu_yys{
+//     flex-direction: row-reverse !important;
+//     position: relative;
+//     padding-right: auto !important;
+//     // max-width: 1920px;
+    
+    
+    
+//     #quikBtn{
+        
+//         background-color: #FF6943 !important;
+//         position: fixed;
+//         height: 0 !important;
+//         top: 50vh;
+//         overflow: hidden !important;
+//     }
+//     &:hover{
+//         max-height: 50px;
+//         border-bottom: 0 0 30px 30px;
+
+//         #quikMenu_in{
+//             display: block !important;
+        
+            
+//         }
+
+
+//     }
+//     #quikMenu_in{
+//         display: none !important;
+//     }
+    
+
+
+      
+
+
+// }
+
+
+// 22
+// #quik {
+//     position: relative;
+//     bottom: 2rem;
+//     right: 1rem;
+
+//     /* 새로운 내용: 부모 요소에 z-index 추가 */
+//     z-index: 10000;
+
+//     #quikBtn {
+//         position: fixed ;
+//         transform: translateY(.9rem);
+//         z-index: 100000 !important;
+//         img {
+//             height: 5rem;
+//         }
+//     }
+//     #quikMenu {
+//         position: fixed;
+//         top: 50%; transform: translateY(-50%);
+        
+//         &::before {
+//             content: "";
+//             display: block;
+//             background: #3D71FF;
+//             height: .5rem;
+            
+//             z-index: 100000 !important;
+//         }
+//         background: #3D71FF;
+//         border-radius: 0 0 3rem 3rem;
+//         .qIcon {
+//             position: absolute;
+//             background: #6A92FE;
+//             border-radius: 50%;
+//             box-shadow: 3px 3px 3px #00000030;
+//             line-height: 1;
+//             a {
+//                 font-size: 1.7rem;
+//                 color: #fff;
+//             }
+//         }
+//     }
+    
+// }
+
+
+
+
 

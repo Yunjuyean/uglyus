@@ -51,45 +51,46 @@
     
 </head>
 <body>
-    <header id="hd_yys" class="  fixed-top bg-white d-flex justify-content-between align-items-center d-none">
 
-            <nav class=" navbar-expand-lg  bg-white " id="navbar_yys">
-                <div class="py-2 px-5 d-flex justify-content-between   align-items-center " >
-                    <h1 ><a class="navbar-brand me-3 " href="https://uglyus.co.kr/main"><img  src="./img/img_yys/svg/ugly_us_logo.svg"  alt=""></a></h1>
+    <header id="hd_yys" class="fixed-top  bg-white d-flex jcb aic ">
+
+            
+           
+                    <h1 ><a class=" me-3 " href="https://uglyus.co.kr/main"><img  src="./img/img_yys/svg/ugly_us_logo.svg"  alt="어글리어스 로고"></a></h1>
                     
                     
                         
-                        <ul class="navbar-nav font_navi d-flex position: relative gnb">
+                        <ul class=" font_navi  flexcenter gnb mb-0 ps-0">
 
-                            <li class="nav-mission me-5 gnb_li  position-relative">
+                            <li class="nav-mission me-5 gnb_li  rel">
                                 <a class="d-block gnb_a" href="#about"><span>우리의미션</span></a>
-                                <ul class="gnb_ul position-absolute">
+                                <ul class="gnb_ul abs">
                                     <li class="gnb_ul_li"><a href="">미션</a></li>
                                     <li class="gnb_ul_li"><a href="">소싱철학</a></li>
                                 </ul>
                             </li>
 
-                            <li class="nav-mission me-5 gnb_li position-relative ">
+                            <li class="nav-mission me-5 gnb_li rel ">
                                 <a class="d-block gnb_a" href="#about"><span>정기배송</span></a>
-                                <ul class="gnb_ul position-absolute">
+                                <ul class="gnb_ul abs">
                                     <li class="gnb_ul_li"><a href="">후기</a></li>
                                     <li class="gnb_ul_li"><a href="">혜택</a></li>
                                     <li class="gnb_ul_li"><a href="">이용안내</a></li>
                                 </ul>
                             </li>
 
-                            <li class="nav-mission me-5 gnb_li position-relative">
+                            <li class="nav-mission me-5 gnb_li rel">
                                 <a class="d-block gnb_a" href="#about"><span>싱싱마켓</span></a>
-                                <ul class="gnb_ul position-absolute">
+                                <ul class="gnb_ul abs">
                                     <li class="gnb_ul_li"><a href="">추천상품</a></li>
                                     <li class="gnb_ul_li"><a href="">인기상품</a></li>
                                     <li class="gnb_ul_li"><a href="">대기중인상품</a></li>
                                 </ul>
                             </li>
                             
-                            <li class="nav-mission me-5 gnb_li  position-relative">
+                            <li class="nav-mission me-5 gnb_li  rel">
                                 <a class="d-block gnb_a" href="#about"><span>커뮤니티</span></a>
-                                <ul class="gnb_ul position-absolute">
+                                <ul class="gnb_ul abs">
                                     <li class="gnb_ul_li"><a href="">오늘의 레시피</a></li>
                                     <li class="gnb_ul_li"><a href="">채소이야기</a></li>
                                     <li class="gnb_ul_li"><a href="">어글리어스 밥풀루언서</a></li>
@@ -108,11 +109,11 @@
                             </ul>
                             
                         </div>
-                </div>
-            </nav>
+               
+
         </header>
 
-        <section id="mainbanner_yys" class="d-none">
+        <section id="mainbanner_yys" class="">
                 <div class="swiper ms-0 me-0" >
                     <!-- 슬라이드들 -->
                     <div class="swiper-wrapper    ">
@@ -139,10 +140,10 @@
         </section>  
 
                 <!-- Swiper JS -->
-                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
                 
                 <!-- 스와이퍼 초기화 스크립트 -->
-                <script>
+            <script>
                     var swipermainBanner = new Swiper("#mainbanner_yys .swiper", {
                     loop: true,
                     spaceBetween: 800,
@@ -175,232 +176,123 @@
                         },
                     },
                 });
-                </script>
+            </script>
         
-    <section id="event_banner_yys" class="d-none">
+    <section id="event_banner_yys" class=" d-none">
         <div class="event_banner ">
             <h2><a href="https://uglyus.co.kr/main"><img src="./img/img_yys/img/collab_banner.jpg" alt="콜라보배너" class="img-fluid"></a></h2>
 
         </div>
-    </section>
 
-    <section id="quick-menu_yys " class="d-none">
-        <button id="menu-toggle">+</button> 
-        <!-- 클릭 시 메뉴를 토글할 버튼 추가 -->
-        <div class="quick-menu aside ">
-            <ul>
-                <li><a href="">메뉴1</a></li>
-                <li><a href="">메뉴2</a></li>
-                <li><a href="">메뉴3</a></li>
-                <li><a href="">메뉴4</a></li>
-            </ul>
-        </div>
-        <script class="d-none">
-            // 메뉴 토글 버튼 클릭 시 퀵 메뉴를 열고 닫는 함수
-            document.getElementById('menu-toggle').addEventListener('click', function() {
-                var quickMenu = document.getElementById('quick-menu');
-                quickMenu.classList.toggle('open'); 
-                // 'open' 클래스를 toggle하여 메뉴를 열거나 닫음
-            });
-        </script>
-    </section>
+    </section> 
 
-    <section id="we_jjh" class="d-none">
-        <div class="container-fluid text-center">
-            <h2 class="font_title_k letter_spacing ">We are Ugly Us!</h2>
-            <div class="adbanner my-4">
-                <img class="trans" src="./img/img_jjh/JPG/we_03.png" alt="이미지" >
-            </div>
-            <div class="textarea">
-                <strong class="font_f30bold letter_spacing_jj line_height_18 d-block mb-4">Ugly Us는 지속 가능한 식탁을 만듭니다.</strong>
-                <p class="letter_spacing line_height_125 plus mb-0">농산물의 폐기는 유통과 소비 모든 단계에서 사회적 손실을 야기합니다.</p>
-                <p class="letter_spacing line_height_125 plus mb-0">어글리어스는 불필요한 낭비를 줄여 환경 보호에 기여하고, 농부의 노력에 대한 정당한 보상을 제공합니다.</p>
-            </div>
-            <ul class="d-flex justify-content-center my-4">
-                <li class="me-5">
-                    <img class="my-4" src="./img/img_jjh/PNG/back.png" alt="임시 이미지" width="100" height="100">
-                    <strong class="d-block font_f30bold letter_spacing line_height_18 d-block">가장 소량씩,가장 신선하게!</strong>
-                    <p class="font_text letter_spacing line_height_30">30% off, 합리적인 가격으로 만나요</p>
-                </li>
-                <li class="mx-5 px-5 ">
-                    <img class="my-4 " src="./img/img_jjh/PNG/down.png" alt="임시 이미지" width="100" height="100">
-                    <strong class="font_f30bold letter_spacing line_height_18 d-block">친환경 채소를 가장 저렴하게!</strong>
-                    <p class="font_text letter_spacing line_height_30">적은양으로 부담없이 즐겨요.</p>
-                </li>
-                <li>
-                    <li class="ms-5">
-                    <img class="my-4" src="./img/img_jjh/PNG/echo.png" alt="임시 이미지" width="100" height="100">
-                    <strong class="font_f30bold letter_spacing line_height_18 d-block">환경에 한 발 나은 선택!</strong>
-                    <p class="font_text letter_spacing line_height_30">환경에 더 가까운 생산과 소비를 지지해요.</p>
-                </li>
-            </ul>
-           </div>
-    </section>
+    
+    
+    
 
-    <section id="review_gms" class="d-none">
+    
+    <aside id="quik" class="d-flex ">
+        <i class="quikBtn"">
+            <img src="./img/img_yys/svg/plus.svg" alt="퀵버튼">
+            <span class="visually-hidden">퀵버튼</span>
+        </i>
+        <ul class=" quikMenu d-none px-1  pb-2 mb-0 ">
+            <i class="carrot_top">
+                <img src="./img/img_yys/svg/carrot_top.svg" alt="">
+            </i>
+            <li class="my-2 qIcon p-2">
+                <a class="or align-items-center" href="javascript:void(0)">
+                    <i class="bi bi-chat or d-flex align-items-center justify-content-center"></i>
+                    <br>
+                    <span class=" or align-items-center justify-content-center d-flex">
+                    마이
+                    </span>
+                    <span>페이지</span>
+                    
+                    
+                </a>
+            </li>
+            <li class="my-2 qIcon p-2">
+                <a class="or align-items-center" href="javascript:void(0)">
+                    <i class="bi bi-instagram or align-items-center justify-content-center d-flex "></i>
+                    <br>
+                    <span class=" or align-items-center justify-content-center d-flex">마켓</span>
+                </a>
+            </li>
+            <li class="my-2 qIcon p-2">
+                <a class="or align-items-center" href="javascript:void(0)">
+                    <i class="bi bi-instagram or align-items-center justify-content-center d-flex"></i>
+                    <br>
+                    <span class=" or align-items-center justify-content-center d-flex">이벤트</span>
+                </a>
+            </li>
+            <li class="my-2 qIcon p-2">
+                <a class="or " href="javascript:void(0)">
+                    <i class="bi bi-instagram or align-items-center justify-content-center d-flex"></i>
+                    <br>
+                    <span class=" or align-items-center justify-content-center d-flex">고객센터</span>
+                </a>
+            </li>
+        </ul>
+        
+    </aside>
+    <script>
+            const quikBtn = document.getElementById("quikBtn");
+            const quikMenu = document.getElementById("quikMenu");      
+                let status = true;
+                quikBtn.addEventListener("click", function(){
+                    if(status){
+                        quikMenu.classList.remove("d-none");
+                        status = false;
+                    } else {
+                        quikMenu.classList.add("d-none");
+                        status = true;
+                    }
+                });
+            
+    </script>     
+
+    <section id="review_gms section_blank">
         <container>
-            <div class="text-center">
-                <h2 class = "font_title_e mb-4">Review</h2>
-                <p class = "font_text mb-5">구매자 분들의 진심을 담은 실제  후기 입니다.</p>
+            <div class="text-center py-5">
+                <h2 class = "font_con_title_e mb-4 title_blank">Review</h2>
+                <p class = "font_leadcopy mb-5 title_blank">구매자 분들의 진심을 담은 실제  후기 입니다.</p>
             </div>
                 <div>
-                    <div class="row justify-content-center pb-5">
-                        <div class="col-2 px-0 rounded overflow-hidden position-relative move90_right_gms">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-    
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 1</span>
-                                        <div class="position-relative">
-                                          <img src="./img/img_gms/naver.review.svg" alt="네이버실시간리뷰" class="review_img_gms" >
-                                        </div>
-                                     </div>
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 2</span>
-                                      <img src="./img/img_gms/x.reivew.svg" alt="트위터리뷰" class="review_img_gms">
-                                    </div>
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 3</span>
-                                      <img src="./img/img_gms/instagram.review.svg" alt="인스타리뷰" class="review_img_gms">
-                                    </div>
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 4</span>
-                                      <img src="./img/img_gms/youtube.review.svg" alt="유튜브리뷰" class="review_img_gms">
-                                    </div>
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 5</span>
-                                      <img src="./img/img_gms/naver.bolg.review.svg" alt="네이버블로그리뷰" class="review_img_gms">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row justify-content-center align-items-center">
                         
-                        <div class="col-2 px-0 rounded overflow-hidden position-relative move30_right_gms">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 2</span>
-                                      <div class="position-relative">
-                                      <img src="./img/img_gms/x.reivew.svg" alt="트위터리뷰" class="review_img_gms">
-                                      </div>
-                                    </div>
+                            <div class="container d-flex justify-content-center align-items-center">
+                                
     
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 3</span>
-                                      <img src="./img/img_gms/instagram.review.svg" alt="인스타리뷰" class="review_img_gms">
-                                    </div>
-    
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 4</span>
-                                      <img src="./img/img_gms/youtube.review.svg" alt="유튜브리뷰" class="review_img_gms">
-                                    </div>
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 5</span>
-                                      <img src="./img/img_gms/naver.bolg.review.svg" alt="네이버블로그리뷰" class="review_img_gms">
-                                    </div>
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 1</span>
-                                      <img src="./img/img_gms/naver.review.svg" alt="네이버실시간리뷰" class="review_img_gms" > 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2 px-0 py-5 rounded overflow-hidden position-relative">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper center_image_gms_wrapper">
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 3</span>
-                                     <div class="position-relative">                               
-                                        <img src="./img/img_gms/instagram.review.svg" alt="인스타리뷰" class="center_image_gms">
-                                      </div>
-                                    </div>
-                                    
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 4</span>
-                                      <img src="./img/img_gms/youtube.review.svg" alt="유튜브리뷰" class="center_image_gms">
-                                    </div>
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 5</span>
-                                      <img src="./img/img_gms/naver.review.svg" alt="네이버실시간리뷰" class="center_image_gms" >
-                                    </div>
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 1</span>
-                                      <img src="./img/img_gms/naver.review.svg" alt="네이버실시간리뷰" class="center_image_gms"> 
-                                    </div>
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 2</span>
-                                      <img src="./img/img_gms/x.reivew.svg" alt="트위터리뷰" class="center_image_gms">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2 px-0 rounded overflow-hidden position-relative move30_left_gms">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 4</span>
-                                      <div class="position-relative"> 
-                                      <img src="./img/img_gms/youtube.review.svg" alt="유튜브리뷰" class="review_img_gms">
-                                      </div>
-                                    </div>
-    
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 5</span>
-                                      <img src="./img/img_gms/naver.bolg.review.svg" alt="네이버블로그리뷰" class="review_img_gms">
-                                    </div>
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 1</span>
-                                      <img src="./img/img_gms/naver.review.svg" alt="네이버실시간리뷰" class="review_img_gms" >
-                                    </div>
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 2</span>
+                                    <div class="col-2 px-3 box d-flex align-items-center justify-content-center move90_right_gms m_review_showing_gms "><span class="visually-hidden">리뷰 1</span>
+                                          <img src="./img/img_gms/naver.review.svg" alt="네이버실시간리뷰" class="review_img_gms m_review_showing_gms">
+                                     </div>
+                                    <div class="col-2 px-3 box d-flex align-items-center justify-content-center move30_right_gms"><span class="visually-hidden">리뷰 2</span>
                                       <img src="./img/img_gms/x.reivew.svg" alt="트위터리뷰" class="review_img_gms">
                                     </div>
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 3</span>
-                                      <img src="./img/img_gms/instagram.review.svg" alt="인스타리뷰" class="review_img_gms">
+                                    <div class="col-2 px-3 box d-flex align-items-center justify-content-center move_center_gms"><span class="visually-hidden">리뷰 3</span>
+                                      <img src="./img/img_gms/instagram.review.svg" alt="인스타리뷰" class="center_image_gms">
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2 px-0 rounded overflow-hidden position-relative move100_left_gms">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 5</span>
-                                      <div class="position-relative"> 
-                                      <img src="./img/img_gms/naver.bolg.review.svg" alt="네이버블로그리뷰" class="review_img_gms">
-                                    </div>
-                                  </div>  
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 1</span>
-                                      <img src="./img/img_gms/naver.review.svg" alt="네이버실시간리뷰" class="review_img_gms" > 
-                                    </div>
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 2</span>
-                                      <img src="./img/img_gms/x.reivew.svg" alt="트위터리뷰" class="review_img_gms">
-                                    </div>
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 3</span>
-                                      <img src="./img/img_gms/instagram.review.svg" alt="인스타리뷰" class="review_img_gms">
-                                    </div>
-                                    <div class="swiper-slide d-flex align-items-center justify-content-center"><span class="visually-hidden">리뷰 4</span>
+                                    <div class="col-2 px-3 box d-flex align-items-center justify-content-center move30_left_gms"><span class="visually-hidden">리뷰 4</span>
                                       <img src="./img/img_gms/youtube.review.svg" alt="유튜브리뷰" class="review_img_gms">
                                     </div>
-                                </div>
+                                    <div class="col-2 px-3 box d-flex align-items-center justify-content-center move100_left_gms m_review_showing_gms"><span class="visually-hidden">리뷰 5</span>
+                                      <img src="./img/img_gms/naver.bolg.review.svg" alt="네이버블로그리뷰" class="review_img_gms m_review_showing_gms">
+                                    </div>
+                        </div>
+                            <div class="more_button-wrapper_gms d-flex justify-content-center align-items-center">
+                                <button class="more_button_gms font_button">더보기</button>
                             </div>
                         </div>
-                    </div>
                 </div>
-                </div>
-            </div>
-            <div class="more_button-wrapper_gms d-flex justify-content-center align-items-center">
-                    <button class="more_button_gms">더보기</button>
-                
-            </div>
-        </container>
-    </section>
+                    </container>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-            // Swiper 초기화
-            var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 1, // 한 번에 보여지는 슬라이드 수
-                spaceBetween: 30, // 슬라이드 사이의 간격
-                pagination: {
-                    el: '.swiper-pagination', // 페이지네이션 요소 선택자
-                    clickable: true // 페이지네이션을 클릭할 수 있도록 활성화
-                },
-                loop: true, // 무한 루프 설정
-                autoplay: {
-                    delay: 3000, // 슬라이드 간의 시간 지연 (3초)
-                    disableOnInteraction: false // 사용자와 상호 작용할 때 자동 재생을 중지하지 않음
-                }
-            });
-        </script>
-
-    <section id="store_jjh" class="d-none">
+    <section id="store_jjh" class="">
 
     </section>
 
     <!--section#foodrecipe.section-->
-    <section id="recipe_yjy" class="section d-none"> 
+    <section id="recipe_yjy" class="section d-nonegit> 
         <div class="container text-center">
             <h2 class="font_title_k letter_spacing mb-0">출구 없는 레시피</h2>
             <p class="font_f18bold letter_spacing mb-0 mt-4">나만의 레시피를 알려주세요</p>
@@ -594,11 +486,23 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="snsicon">
-                    <li><a href=""><img src="./img/img_yys/svg/face_book.svg" alt=""></a></li>
-                    <li><a href=""><img src="./img/img_yys/svg/insta.svg alt=""></a></li>
-                    <li><a href=""><img src="./img/img_yys/svg/kakao_stroy.svg" alt=""></a></li>
-                    <li><a href=""><img src="./img/img_yys/svg/x.svg" alt=""></a></li>
+                <ul id="snsIcon">
+                    <i class="iconColor">
+                        <img src="./img/img_yys/svg/face_book.svg" class="iconColor" alt="페이스북">
+                        <span class="visually-hidden">페이스북</span>
+                    </i>
+                    <i class="iconColor">
+                        <img src="./img/img_yys/svg/insta.svg" class="iconColor" alt="인스타그램">
+                        <span class="visually-hidden">인스타그램</span>
+                    </i>
+                    <i class="iconColor">
+                        <img src="./img/img_yys/svg/kakao_stroy.svg " class="iconColor" alt="카카오스토리">
+                        <span class="visually-hidden">카카오스토리</span>
+                    </i>
+                    <i class="iconColor">
+                        <img src="./img/img_yys/svg/x.svg" class="iconColor" alt="엑스">
+                        <span class="visually-hidden ">엑스</span>
+                    </i>
                 </ul>
             </div>
 

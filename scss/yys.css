@@ -72,44 +72,34 @@
     height: auto; /* 이미지의 가로 세로 비율을 유지하면서 크기 조정 */
   }
 }
-.flexcenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.d-flex {
-  display: flex !important;
-}
-
-.jcc {
-  justify-content: center !important;
-}
-
-.jcb {
-  justify-content: space-between !important;
-}
-
-.aic {
-  align-items: center !important;
-}
-
-.rel {
-  position: relative !important;
-}
-
-.abs {
-  position: absolute !important;
-}
-
 a {
   text-decoration: none !important;
 }
 
 #hd_yys {
   position: fixed;
-  padding: 0 48px;
-  z-index: 1000px;
+}
+#hd_yys .nav {
+  height: 80px;
+}
+#hd_yys link {
+  list-style: none;
+}
+#hd_yys #navbar_yys {
+  width: 100%;
+}
+#hd_yys #navbar_yys .font_login {
+  font-family: "Pretendard";
+  font-size: 14px;
+  font-weight: 400;
+  color: #414B5A;
+  list-style: none;
+}
+#hd_yys #navbar_yys .login a:hover {
+  color: #FF6943 !important;
+}
+#hd_yys h1 a {
+  white-space: nowrap !important;
 }
 #hd_yys .gnb:before {
   content: "";
@@ -121,10 +111,9 @@ a {
   transition: 0.5s;
   background-color: #FF6943 !important;
   border-bottom: none !important;
-  margin-bottom: 0 !important;
 }
 #hd_yys .gnb:hover:before {
-  height: 190px;
+  height: 184px;
   border-bottom: 1px solid #cc5638 !important;
   transition: height 0.5s;
 }
@@ -134,6 +123,7 @@ a {
 }
 #hd_yys .gnb:hover .gnb_li .gnb_ul {
   height: 184px;
+  display: block;
 }
 #hd_yys .gnb .gnb_li .gnb_ul_li {
   min-width: 300px;
@@ -145,7 +135,6 @@ a {
   color: #ffffff;
 }
 #hd_yys .gnb .gnb_a {
-  line-height: 100px;
   font-family: "Pretendard";
   font-size: 22px;
   font-weight: 400;
@@ -156,11 +145,12 @@ a {
   color: #FF6943 !important;
 }
 #hd_yys .gnb .gnb_ul {
+  display: none;
   overflow: hidden;
   height: 0;
   top: 100%;
   margin-top: 30px !important;
-  transition: height 0.2s;
+  transition: height 1.2s;
   left: -93px;
   text-align: center;
   white-space: nowrap !important;
@@ -168,6 +158,7 @@ a {
 #hd_yys .gnb .gnb_ul:after, #hd_yys .gnb .gnb_ul:before {
   content: "";
   display: block;
+  height: 1rem;
 }
 #hd_yys .gnb .gnb_ul a {
   color: #414B5A;
@@ -179,22 +170,12 @@ a {
   color: #414B5A;
   color: white !important;
 }
-#hd_yys .font_login {
-  font-family: "Pretendard";
-  font-size: 14px;
-  font-weight: 400;
-  color: #414B5A;
-  list-style: none;
-}
-#hd_yys .login a:hover {
-  color: #FF6943 !important;
-}
 
 #mainbanner_yys {
   max-width: 1920px;
 }
 #mainbanner_yys .swiper {
-  padding: 186px 0 146px 0;
+  padding: 180px 0 120px 0;
   overflow: hidden;
 }
 #mainbanner_yys .swiper .swiper-pagination {
@@ -217,51 +198,22 @@ a {
   list-style: none;
 }
 
-#quik .quikBtn {
-  display: inline-block;
-  top: 50vh;
-  position: fixed !important;
-  z-index: 100000;
+#quikBtn {
+  position: fixed;
+  z-index: 10;
   display: block;
   flex-wrap: nowrap;
-  width: 80px;
-  height: 80px;
+  width: auto;
   overflow: visible;
-  background-color: #FF6943 !important;
+  background: transparent;
   bottom: 24px;
   right: 25px;
 }
-#quik .quikBtn img {
-  margin: 17px;
-  display: block;
-  overflow: visible;
-}
-#quik .quikBtn .quikMenu {
-  position: absolute;
-  background-color: #FF6943;
-  max-height: 494px;
-  transition: max-height 0.5s;
-  bottom: 100%;
-  left: 0;
-  height: 0;
-  top: 0;
-  bottom: 0;
-}
-#quik .quikBtn .quikMenu::before {
-  position: absolute;
-  background-color: #FF6943;
-  max-height: 494px;
-  transition: max-height 0.5s;
-  bottom: 100%;
-}
-#quik .quikBtn .quikMenu::after {
-  display: block;
-}
-#quik .quikBtn .or {
+#quikBtn .or {
   background-color: #cc5638;
   border: unset !important;
 }
 
 #ft_yys #snsIcon .iconColor {
   background-color: #983016 !important;
-}
+}/*# sourceMappingURL=yys.css.map */
