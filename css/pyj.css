@@ -6,7 +6,7 @@
     display: block;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 630px) {
   .map_title_pyj {
     display: none;
   }
@@ -15,7 +15,7 @@
 .map_text_pyj {
   display: inline;
 }
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   .map_text_pyj {
     display: none;
   }
@@ -24,7 +24,7 @@
 .plus_text_pyj {
   display: inline;
 }
-@media (max-width: 576px) {
+@media (max-width: 520px) {
   .plus_text_pyj {
     display: none;
   }
@@ -33,9 +33,9 @@
 .Plus_button_pyj {
   display: none;
 }
-@media (max-width: 576px) {
+@media (max-width: 520px) {
   .Plus_button_pyj {
-    display: block;
+    display: flex;
   }
 }
 
@@ -69,8 +69,30 @@
 }
 @media (max-width: 991px) {
   .font_subtitle_pyj {
-    font-size: 14px;
-    line-height: 1.1rem;
+    font-size: 20px;
+    line-height: 1.8rem;
+  }
+}
+@media (max-width: 385px) {
+  .font_subtitle_pyj {
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+}
+
+.font_leadcopy_pyj {
+  font-family: "Pretendard";
+  font-size: 18px;
+  font-weight: 600;
+  color: #414B5A;
+  letter-spacing: -0.5px;
+  line-height: 1.8rem;
+}
+@media (max-width: 991px) {
+  .font_leadcopy_pyj {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.3rem;
   }
 }
 
@@ -84,6 +106,12 @@
 .mapbuttonstyle_pyj a {
   color: #fff;
   text-decoration: none;
+}
+
+@media (max-width: 690px) {
+  .Plus_flex_pyj {
+    justify-content: end;
+  }
 }
 
 .font_title_k_pyj {

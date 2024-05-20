@@ -13,26 +13,26 @@ $uglygray : #414B5A;
     @media (max-width : 1780px){
       display:block;
     }
-    @media (max-width : 540px){
+    @media (max-width : 630px){
       display:none;
     }
 }
 .map_text_pyj{
   display: inline;
-    @media (max-width : 768px){
+    @media (max-width : 830px){
       display: none;
     }
 }
 .plus_text_pyj{
   display: inline;
-    @media (max-width : 576px){
+    @media (max-width : 520px){
       display: none;
   }
 }
 .Plus_button_pyj{
   display: none;
-    @media (max-width : 576px){
-      display: block;
+    @media (max-width : 520px){
+      display: flex;
   }
 }
 .form_title_pyj{
@@ -64,10 +64,28 @@ $uglygray : #414B5A;
   letter-spacing: -0.5px;
   line-height: 1.8rem;
       @media (max-width : 991px){
-          font-size: 14px;
-          line-height: 1.1rem;
+          font-size: 20px;
+          line-height: 1.8rem;
+      }
+      @media (max-width : 385px) {
+          font-size: 16px;
+          line-height: 1.5rem;
       }
 }
+.font_leadcopy_pyj{
+  font-family: 'Pretendard';
+  font-size: 18px;
+  font-weight: 600;
+  color:$uglygray;
+  letter-spacing: -0.5px;
+  line-height: 1.8rem;
+      @media (max-width : 991px){
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 1.3rem;
+      }     
+}
+
 
 // 맵 버튼
 .mapbuttonstyle_pyj{
@@ -84,6 +102,11 @@ $uglygray : #414B5A;
 
 
 // 폼 컨텐츠 css
+.Plus_flex_pyj{
+  @media (max-width : 690px){
+    justify-content: end;
+  }
+}
 // 폰트 
 .font_title_k_pyj{
   font-family: 'Pretendard';
