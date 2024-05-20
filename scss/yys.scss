@@ -89,7 +89,32 @@ $or-color: #983016;
         }
     }
 }
-
+@mixin flex-center {
+    display: $display-flex;
+    justify-content: $justify-center;
+    align-items: $align-center;
+  }
+.flexcenter {
+    @include flex-center;
+  }
+.d-flex{
+    display: flex !important;
+}
+.jcc{
+    justify-content: center !important;
+}
+.jcb{
+    justify-content: space-between !important;
+}
+.aic{
+    align-items: center !important;
+}
+.rel{
+    position: relative !important;
+}
+.abs{
+    position: absolute !important;
+}
 a {
     text-decoration: none !important;
 }
@@ -152,7 +177,7 @@ a {
                 padding: 0 50px;
                 .gnb_ul {
                     height: 184px;
-                    display: block;
+                    
                 }
             }
         }

@@ -72,6 +72,30 @@
     height: auto; /* 이미지의 가로 세로 비율을 유지하면서 크기 조정 */
   }
 }
+.d-flex {
+  display: flex !important;
+}
+
+.jcc {
+  justify-content: center !important;
+}
+
+.jcb {
+  justify-content: space-between !important;
+}
+
+.aic {
+  align-items: center !important;
+}
+
+.rel {
+  position: relative !important;
+}
+
+.abs {
+  position: absolute !important;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -123,7 +147,6 @@ a {
 }
 #hd_yys .gnb:hover .gnb_li .gnb_ul {
   height: 184px;
-  display: block;
 }
 #hd_yys .gnb .gnb_li .gnb_ul_li {
   min-width: 300px;
@@ -198,16 +221,22 @@ a {
   list-style: none;
 }
 
-#quick-menu_yys .quick-menu {
+#quikBtn {
   position: fixed;
-  top: 0;
-  left: 0 !important;
-  height: 50vh; /* 뷰포트 높이의 50% */
-  background-color: #f0f0f0; /* 배경색 설정 */
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
-  z-index: 999; /* 다른 요소 위에 표시되도록 설정 */
+  z-index: 10;
+  display: block;
+  flex-wrap: nowrap;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  bottom: 24px;
+  right: 25px;
 }
-#quick-menu_yys .quick-menu.aside {
-  display: none; /* 초기에는 보이지 않도록 설정 */
+#quikBtn .or {
+  background-color: #cc5638;
+  border: unset !important;
+}
+
+#ft_yys #snsIcon .iconColor {
+  background-color: #983016 !important;
 }
