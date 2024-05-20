@@ -6,10 +6,6 @@ $uglygreen : #5EAB42;
 $uglyblack : #1F2937;
 $uglygray : #414B5A;
 
-// @mixin letter_line($letter_spacing, $line_height) {
-//   letter-spacing: $letter_spacing;
-//   line-height: $line_height;
-// }
 
 // 반응형
 .map_title_pyj{
@@ -23,19 +19,19 @@ $uglygray : #414B5A;
 }
 .map_text_pyj{
   display: inline;
-    @media (max-width : 840px){
+    @media (max-width : 768px){
       display: none;
     }
 }
 .plus_text_pyj{
   display: inline;
-    @media (max-width : 680px){
+    @media (max-width : 576px){
       display: none;
   }
 }
 .Plus_button_pyj{
   display: none;
-    @media (max-width : 680px){
+    @media (max-width : 576px){
       display: block;
   }
 }
@@ -59,6 +55,20 @@ $uglygray : #414B5A;
   height: auto;
 }
 
+// 맵 폰트
+.font_subtitle_pyj{
+  font-family: 'Pretendard';
+  font-size: 22px;
+  font-weight: 700;
+  color:$uglygray;
+  letter-spacing: -0.5px;
+  line-height: 1.8rem;
+      @media (max-width : 991px){
+          font-size: 14px;
+          line-height: 1.1rem;
+      }
+}
+
 // 맵 버튼
 .mapbuttonstyle_pyj{
   width: 147px;
@@ -73,7 +83,6 @@ $uglygray : #414B5A;
 }
 
 
-
 // 폼 컨텐츠 css
 // 폰트 
 .font_title_k_pyj{
@@ -82,13 +91,10 @@ $uglygray : #414B5A;
   font-weight: 700;
   color: $uglyblack;
   letter-spacing: -0.5px;
-  line-height: 1.8rem;
-      @media (max-width : 1800px){
-        line-height: 2.5rem;
-      }
-      @media (max-width : 480px){
-          font-size: 24px;
-          line-height: 2rem;
+  line-height: 2.5rem;
+      @media (max-width : 991px){
+        font-size: 22px;
+        line-height: 1.8rem;
       }
     }
   .formfont_subtitle_pyj{
@@ -98,7 +104,7 @@ $uglygray : #414B5A;
     color:$uglyblack;
     letter-spacing: -0.5px;
     line-height: 1.8rem;
-        @media (max-width : 480px){
+        @media (max-width : 991px){
             font-size: 17px;
             line-height: 1.4rem;
         }
@@ -108,7 +114,7 @@ $uglygray : #414B5A;
     font-size: 16px;
     font-weight: 600;
     color: $uglyblack;
-      @media (max-width : 480px){
+      @media (max-width : 991px){
         font-size: 14px;
     }
   }
@@ -117,7 +123,7 @@ $uglygray : #414B5A;
     font-size: 14px;
     font-weight: 500;
     color: $uglygray;
-      @media (max-width : 480px){
+      @media (max-width : 991px){
         font-size: 12px;
     }
   }
@@ -136,17 +142,26 @@ $uglygray : #414B5A;
   // 폼 입력칸 스타일
   .input_box_1_pyj{
     border: 1px solid #cccccc;
-    padding-right: 10px;
+    padding-left: 10px !important;
     border-radius: 5px;
-    width: 400px;
+    max-width: 400px;
     height: 33px;
+      @media (max-width : 991px){
+        max-width: 300px;
+      }
   }
   .input_box_2_pyj{
     border: 1px solid #cccccc;
-    padding-right: 10px;
+    padding-left: 10px !important;
     border-radius: 5px;
-    width: 130px;
+    max-width: 130px;
     height: 33px;
+      @media (max-width : 991px){
+        max-width: 97px;
+      }
+  }
+  .mx_1{
+    margin: 0 0.25rem;
   }
   
   // 폼 버튼
@@ -160,4 +175,10 @@ $uglygray : #414B5A;
     font-family: 'Pretendard';
     font-size: 22px;
     font-weight: 600;
+      @media (max-width : 991px){
+        max-width: 300px;
+        height: 50px;
+        font-size: 18px;
+        font-weight: 500;
+      }
   }

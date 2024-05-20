@@ -15,7 +15,7 @@
 .map_text_pyj {
   display: inline;
 }
-@media (max-width: 840px) {
+@media (max-width: 768px) {
   .map_text_pyj {
     display: none;
   }
@@ -24,7 +24,7 @@
 .plus_text_pyj {
   display: inline;
 }
-@media (max-width: 680px) {
+@media (max-width: 576px) {
   .plus_text_pyj {
     display: none;
   }
@@ -33,7 +33,7 @@
 .Plus_button_pyj {
   display: none;
 }
-@media (max-width: 680px) {
+@media (max-width: 576px) {
   .Plus_button_pyj {
     display: block;
   }
@@ -59,6 +59,21 @@
   height: auto;
 }
 
+.font_subtitle_pyj {
+  font-family: "Pretendard";
+  font-size: 22px;
+  font-weight: 700;
+  color: #414B5A;
+  letter-spacing: -0.5px;
+  line-height: 1.8rem;
+}
+@media (max-width: 991px) {
+  .font_subtitle_pyj {
+    font-size: 14px;
+    line-height: 1.1rem;
+  }
+}
+
 .mapbuttonstyle_pyj {
   width: 147px;
   height: 37px;
@@ -77,17 +92,12 @@
   font-weight: 700;
   color: #1F2937;
   letter-spacing: -0.5px;
-  line-height: 1.8rem;
+  line-height: 2.5rem;
 }
-@media (max-width: 1800px) {
+@media (max-width: 991px) {
   .font_title_k_pyj {
-    line-height: 2.5rem;
-  }
-}
-@media (max-width: 480px) {
-  .font_title_k_pyj {
-    font-size: 24px;
-    line-height: 2rem;
+    font-size: 22px;
+    line-height: 1.8rem;
   }
 }
 
@@ -99,7 +109,7 @@
   letter-spacing: -0.5px;
   line-height: 1.8rem;
 }
-@media (max-width: 480px) {
+@media (max-width: 991px) {
   .formfont_subtitle_pyj {
     font-size: 17px;
     line-height: 1.4rem;
@@ -112,7 +122,7 @@
   font-weight: 600;
   color: #1F2937;
 }
-@media (max-width: 480px) {
+@media (max-width: 991px) {
   .formfont_text_pyj {
     font-size: 14px;
   }
@@ -124,7 +134,7 @@
   font-weight: 500;
   color: #414B5A;
 }
-@media (max-width: 480px) {
+@media (max-width: 991px) {
   .formfont_placehold_pyj {
     font-size: 12px;
   }
@@ -143,18 +153,32 @@
 
 .input_box_1_pyj {
   border: 1px solid #cccccc;
-  padding-right: 10px;
+  padding-left: 10px !important;
   border-radius: 5px;
-  width: 400px;
+  max-width: 400px;
   height: 33px;
+}
+@media (max-width: 991px) {
+  .input_box_1_pyj {
+    max-width: 300px;
+  }
 }
 
 .input_box_2_pyj {
   border: 1px solid #cccccc;
-  padding-right: 10px;
+  padding-left: 10px !important;
   border-radius: 5px;
-  width: 130px;
+  max-width: 130px;
   height: 33px;
+}
+@media (max-width: 991px) {
+  .input_box_2_pyj {
+    max-width: 97px;
+  }
+}
+
+.mx_1 {
+  margin: 0 0.25rem;
 }
 
 .formbuttonstyle_pyj {
@@ -167,4 +191,12 @@
   font-family: "Pretendard";
   font-size: 22px;
   font-weight: 600;
+}
+@media (max-width: 991px) {
+  .formbuttonstyle_pyj {
+    max-width: 300px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
