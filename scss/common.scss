@@ -12,11 +12,6 @@ $uglygray : #414B5A;
     border-radius: 20px;
 }
 
-// 반응형 css (자간+행간, 그리드 가이드, 폰트)
-// @mixin letter_line($letter_spacing, $line_height) {
-//     letter-spacing: $letter_spacing;
-//     line-height: $line_height;
-// }
 
 // font_style
 // k : 한글폰트(pretendard)
@@ -28,10 +23,10 @@ $uglygray : #414B5A;
     color: $uglyblack;
     letter-spacing: -0.5px;
     line-height: 1.25rem;
-        // @include letter_line(-0.5px, 1.25rem);
-        // @media (max-width : 767px) {
-        //     @include letter_line(-0.5px, 0.8rem);
-        // }
+        @media (max-width : 991px){
+            font-size: 12px;
+            font-weight: 300;
+        }
 }
 .font_login{
     font-family: 'Pretendard';
@@ -40,10 +35,9 @@ $uglygray : #414B5A;
     color: $uglyblack;
     letter-spacing: -0.5px;
     line-height: 1rem;
-        // @include letter_line(-0.5px, 1rem);
-        // @media (max-width : 767px) {
-        //     @include letter_line(-0.5px, 0.8rem);
-        // }
+        @media (max-width : 991px){
+            font-size: 12px;
+        }
 }
 .font_con_title_k{
     font-family: 'Pretendard';
@@ -52,15 +46,9 @@ $uglygray : #414B5A;
     color: $uglyorange;
     letter-spacing: -0.5px;
     line-height: 2.5rem;
-        @media (max-width : 480px){
-            font-size: 30px;
-            line-height: 2rem;
+        @media (max-width : 991px){
+            font-size: 20px;
         }
-        // @include letter_line(-0.5px, 2.5rem);
-        // @media (max-width : 767px) {
-        //     @include letter_line(-0.5px, 0);
-        //     font-size: 20px;
-        // }
 }
 .font_con_title_e{
     font-family: 'Rubik';
@@ -69,15 +57,9 @@ $uglygray : #414B5A;
     color: $uglyorange;
     letter-spacing: -0.5px;
     line-height: 2.5rem;
-        @media (max-width : 480px){
-            font-size: 30px;
-            line-height: 2rem;
+        @media (max-width : 991px){
+            font-size: 20px;
         }
-        // @include letter_line(-0.5px, 2.5rem);
-        // @media (max-width : 767px) {
-        //     @include letter_line(-0.5px, 0);
-        //     font-size: 20px;
-        // }
 }
 .font_title_k{
     font-family: 'Pretendard';
@@ -87,14 +69,8 @@ $uglygray : #414B5A;
     letter-spacing: -0.5px;
     line-height: 1.8rem;
         @media (max-width : 991px){
-            font-size: 24px;
-            line-height: 2rem;
+            font-size: 16px;
         }
-        // @include letter_line(-0.5px, 1.8rem);
-        // @media (max-width : 767px) {
-        //     @include letter_line(-0.5px, 1rem);
-        //     font-size: 16px;
-        // }
 }
 .font_title_e{
     font-family: 'Rubik';
@@ -103,15 +79,9 @@ $uglygray : #414B5A;
     color: $uglyblack;
     letter-spacing: -0.5px;
     line-height: 1.8rem;
-    @media (max-width : 991px){
-        font-size: 24px;
-        line-height: 2rem;
-    }
-    // @include letter_line(-0.5px, 1.8rem);
-    // @media (max-width : 767px) {
-    //     @include letter_line(-0.5px, 1rem);
-    //     font-size: 16px;
-    // }
+        @media (max-width : 991px){
+            font-size: 16px;
+        }
 }
 .font_subtitle_k{
     font-family: 'Pretendard';
@@ -120,15 +90,9 @@ $uglygray : #414B5A;
     color:$uglygray;
     letter-spacing: -0.5px;
     line-height: 1.8rem;
-        @media (max-width : 480px){
-            font-size: 17px;
-            line-height: 1.4rem;
+        @media (max-width : 991px){
+            font-size: 14px;
         }
-        // @include letter_line(-0.5px, 1.8rem);
-        // @media (max-width : 767px) {
-        //     @include letter_line(-0.5px, 0.9rem);
-        //     font-size: 14px;
-        // }
 }
 .font_subtitle_e{
     font-family: 'Rubik';
@@ -137,15 +101,9 @@ $uglygray : #414B5A;
     color:$uglygray;
     letter-spacing: -0.5px;
     line-height: 1.8rem;
-        @media (max-width : 480px){
-            font-size: 17px;
-            line-height: 1.4rem;
+        @media (max-width : 991px){
+            font-size: 14px;
         }
-        // @include letter_line(-0.5px, 1.8rem);
-        // @media (max-width : 767px) {
-        //     @include letter_line(-0.5px, 0.9rem);
-        //     font-size: 14px;
-        // }
 }
 .font_leadcopy{
     font-family: 'Pretendard';
@@ -154,16 +112,10 @@ $uglygray : #414B5A;
     color:$uglygray;
     letter-spacing: -0.5px;
     line-height: 1.8rem;
-        @media (max-width : 480px){
-            font-size: 15px;
-            line-height: 1rem;
+        @media (max-width : 991px){
+            font-size: 12px;
+            font-weight: 500;
         }
-        // @include letter_line(-0.5px, 1.8rem);
-        // @media (max-width : 767px) {
-        //     @include letter_line(-0.5px, 0.8rem);
-        //     font-size: 12px;
-        //     font-weight: 500;
-        // }
 }
 .font_text{
     font-family: 'Pretendard';
@@ -172,16 +124,10 @@ $uglygray : #414B5A;
     color:$uglygray;
     letter-spacing: -0.5px;
     line-height: 1.5rem;
-        @media (max-width : 480px){
-            font-size: 13px;
-            line-height: 1rem;
+        @media (max-width : 991px){
+            font-size: 12px;
+            font-weight: 300;
         }
-        // @include letter_line(-0.5px, 1.5rem);
-        // @media (max-width : 767px) {
-        //     @include letter_line(-0.5px, 0.8rem);
-        //     font-size: 12px !important;
-        //     font-weight: 300;
-        // }
 }
 .font_button{
     font-family: 'Pretendard';
@@ -190,11 +136,9 @@ $uglygray : #414B5A;
     color: #fff;
     letter-spacing: -0.5px;
     line-height: 1.5rem;
-        // @include letter_line(-0.5px, 1.5rem);
-        // @media (max-width : 767px) {
-        //     @include letter_line(-0.5px, 0.8rem);
-        //     font-size: 12px;
-        // }
+        @media (max-width : 991px){
+            font-size: 12px;
+        }
 }
 .font_f18bold{
     font-family: 'Pretendard';
@@ -227,7 +171,6 @@ $uglygray : #414B5A;
     color: $uglygray;
 }
  
-  
   
 // 그리드가이드(반응형 구현 완료)
 .section_blank{

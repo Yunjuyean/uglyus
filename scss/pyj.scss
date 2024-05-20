@@ -6,10 +6,10 @@ $uglygreen : #5EAB42;
 $uglyblack : #1F2937;
 $uglygray : #414B5A;
 
-@mixin letter_line($letter_spacing, $line_height) {
-  letter-spacing: $letter_spacing;
-  line-height: $line_height;
-}
+// @mixin letter_line($letter_spacing, $line_height) {
+//   letter-spacing: $letter_spacing;
+//   line-height: $line_height;
+// }
 
 // 반응형
 .map_title_pyj{
@@ -61,7 +61,7 @@ $uglygray : #414B5A;
 
 // 맵 버튼
 .mapbuttonstyle_pyj{
-  max-width: 147px;
+  width: 147px;
   height: 37px;
   background-color: $uglyorange;
   border-radius: 20px;

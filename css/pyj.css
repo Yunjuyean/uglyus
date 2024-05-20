@@ -55,15 +55,12 @@
 
 .mapimg {
   max-width: 1000px;
-  width: 100%;}
-  
-.strawberry {
-  max-width: 460px;
+  width: 100%;
   height: auto;
 }
 
 .mapbuttonstyle_pyj {
-  max-width: 147px;
+  width: 147px;
   height: 37px;
   background-color: #FE663F;
   border-radius: 20px;
