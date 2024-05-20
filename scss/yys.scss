@@ -131,7 +131,9 @@ a {
         
     
  #hd_yys{
+    position: fixed;
     padding: 0 48px;
+    z-index: 1000px;
     .gnb {
         
         &:before {
@@ -243,7 +245,7 @@ a {
     max-width: 1920px;
 
     .swiper {
-        padding:90px 0 120px 0;
+        padding:186px 0 146px 0;
         overflow: hidden;
 
         .swiper-pagination {
@@ -270,21 +272,72 @@ a {
         list-style: none;
     }
 }
-#quikBtn{
-    position: fixed;
-    z-index: 10;
-    display: block;
-    flex-wrap: nowrap;
-    width: auto;
-    overflow: visible;
-    background:transparent;
-    bottom:24px;
-    right:25px;
+#quik{
     
-   .or{
-    background-color: #cc5638;
-    border: unset !important;
-   }
+    
+
+   
+
+
+    .quikBtn{
+        &::before{
+            
+        }
+
+        display: inline-block;
+        top: 50vh;
+        position: fixed !important;
+        z-index: 100000;
+        display: block;
+        flex-wrap: nowrap;
+        width: 80px;
+        height: 80px;
+        overflow: visible;
+        background-color: #FF6943 !important;
+        bottom:24px;
+        right:25px;
+         img{
+            margin: 17px;
+            display: block;
+            overflow: visible;
+            
+
+        }
+    
+        .quikMenu{position: absolute;
+            background-color: #FF6943;
+
+            max-height: 494px;
+            transition: max-height 0.5s;
+            bottom: 100%;
+
+            
+            &::before{
+                position: absolute;
+                background-color: #FF6943;
+
+                max-height: 494px;
+                transition: max-height 0.5s;
+                bottom: 100%;
+
+            }
+            &::after{
+                display: block;
+            }
+            
+            left: 0;
+            height: 0;
+            top: 0;
+            bottom: 0;
+        }
+        
+       .or{
+        background-color: #cc5638;
+        border: unset !important;
+       }
+    
+}
+
 
     
 

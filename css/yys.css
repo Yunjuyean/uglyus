@@ -107,7 +107,9 @@ a {
 }
 
 #hd_yys {
+  position: fixed;
   padding: 0 48px;
+  z-index: 1000px;
 }
 #hd_yys .gnb:before {
   content: "";
@@ -192,7 +194,7 @@ a {
   max-width: 1920px;
 }
 #mainbanner_yys .swiper {
-  padding: 90px 0 120px 0;
+  padding: 186px 0 146px 0;
   overflow: hidden;
 }
 #mainbanner_yys .swiper .swiper-pagination {
@@ -215,18 +217,47 @@ a {
   list-style: none;
 }
 
-#quikBtn {
-  position: fixed;
-  z-index: 10;
+#quik .quikBtn {
+  display: inline-block;
+  top: 50vh;
+  position: fixed !important;
+  z-index: 100000;
   display: block;
   flex-wrap: nowrap;
-  width: auto;
+  width: 80px;
+  height: 80px;
   overflow: visible;
-  background: transparent;
+  background-color: #FF6943 !important;
   bottom: 24px;
   right: 25px;
 }
-#quikBtn .or {
+#quik .quikBtn img {
+  margin: 17px;
+  display: block;
+  overflow: visible;
+}
+#quik .quikBtn .quikMenu {
+  position: absolute;
+  background-color: #FF6943;
+  max-height: 494px;
+  transition: max-height 0.5s;
+  bottom: 100%;
+  left: 0;
+  height: 0;
+  top: 0;
+  bottom: 0;
+}
+#quik .quikBtn .quikMenu::before {
+  position: absolute;
+  background-color: #FF6943;
+  max-height: 494px;
+  transition: max-height 0.5s;
+  bottom: 100%;
+}
+#quik .quikBtn .quikMenu::after {
+  display: block;
+}
+#quik .quikBtn .or {
   background-color: #cc5638;
   border: unset !important;
 }
