@@ -13,10 +13,10 @@ $uglygray : #414B5A;
 }
 
 // 반응형 css (자간+행간, 그리드 가이드, 폰트)
-@mixin letter_line($letter_spacing, $line_height) {
-    letter-spacing: $letter_spacing;
-    line-height: $line_height;
-}
+// @mixin letter_line($letter_spacing, $line_height) {
+//     letter-spacing: $letter_spacing;
+//     line-height: $line_height;
+// }
 
 // font_style
 // k : 한글폰트(pretendard)
