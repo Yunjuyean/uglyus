@@ -70,12 +70,12 @@
 @media (max-width: 991px) {
   .font_subtitle_pyj {
     font-size: 20px;
-    line-height: 1.8rem;
+    line-height: 1.7rem;
   }
 }
 @media (max-width: 385px) {
   .font_subtitle_pyj {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.5rem;
   }
 }
@@ -90,9 +90,13 @@
 }
 @media (max-width: 991px) {
   .font_leadcopy_pyj {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.3rem;
+    font-size: 16px;
+    line-height: 1.4rem;
+  }
+}
+@media (max-width: 385px) {
+  .font_leadcopy_pyj {
+    font-size: 14px;
   }
 }
 

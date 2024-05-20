@@ -47,7 +47,8 @@ $uglygray : #414B5A;
     letter-spacing: -0.5px;
     line-height: 2.5rem;
         @media (max-width : 991px){
-            font-size: 20px;
+            font-size: 28px;
+            line-height: 1.7rem;
         }
 }
 .font_con_title_e{
@@ -58,7 +59,8 @@ $uglygray : #414B5A;
     letter-spacing: -0.5px;
     line-height: 2.5rem;
         @media (max-width : 991px){
-            font-size: 20px;
+            font-size: 28px;
+            line-height: 1.7rem;
         }
 }
 .font_title_k{
@@ -69,7 +71,7 @@ $uglygray : #414B5A;
     letter-spacing: -0.5px;
     line-height: 1.8rem;
         @media (max-width : 991px){
-            font-size: 16px;
+            font-size: 22px;
         }
 }
 .font_title_e{
@@ -80,7 +82,7 @@ $uglygray : #414B5A;
     letter-spacing: -0.5px;
     line-height: 1.8rem;
         @media (max-width : 991px){
-            font-size: 16px;
+            font-size: 22px;
         }
 }
 .font_subtitle_k{
@@ -91,7 +93,8 @@ $uglygray : #414B5A;
     letter-spacing: -0.5px;
     line-height: 1.8rem;
         @media (max-width : 991px){
-            font-size: 14px;
+            font-size: 18px;
+            line-height: 1.6rem;
         }
 }
 .font_subtitle_e{
@@ -102,7 +105,8 @@ $uglygray : #414B5A;
     letter-spacing: -0.5px;
     line-height: 1.8rem;
         @media (max-width : 991px){
-            font-size: 14px;
+            font-size: 18px;
+            line-height: 1.6rem;
         }
 }
 .font_leadcopy{
@@ -113,8 +117,8 @@ $uglygray : #414B5A;
     letter-spacing: -0.5px;
     line-height: 1.8rem;
         @media (max-width : 991px){
-            font-size: 12px;
-            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.4rem;
         }
 }
 .font_text{
@@ -125,8 +129,7 @@ $uglygray : #414B5A;
     letter-spacing: -0.5px;
     line-height: 1.5rem;
         @media (max-width : 991px){
-            font-size: 12px;
-            font-weight: 300;
+            font-size: 14px;
         }
 }
 .font_button{
@@ -137,7 +140,7 @@ $uglygray : #414B5A;
     letter-spacing: -0.5px;
     line-height: 1.5rem;
         @media (max-width : 991px){
-            font-size: 12px;
+            font-size: 14px;
         }
 }
 .font_f18bold{

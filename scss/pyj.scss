@@ -65,10 +65,10 @@ $uglygray : #414B5A;
   line-height: 1.8rem;
       @media (max-width : 991px){
           font-size: 20px;
-          line-height: 1.8rem;
+          line-height: 1.7rem;
       }
       @media (max-width : 385px) {
-          font-size: 16px;
+          font-size: 17px;
           line-height: 1.5rem;
       }
 }
@@ -80,10 +80,12 @@ $uglygray : #414B5A;
   letter-spacing: -0.5px;
   line-height: 1.8rem;
       @media (max-width : 991px){
-          font-size: 12px;
-          font-weight: 500;
-          line-height: 1.3rem;
-      }     
+          font-size: 16px;
+          line-height: 1.4rem;
+      }
+      @media (max-width : 385px){
+        font-size: 14px;
+      } 
 }
 
 

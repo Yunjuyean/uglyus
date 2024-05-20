@@ -41,7 +41,8 @@
 }
 @media (max-width: 991px) {
   .font_con_title_k {
-    font-size: 20px;
+    font-size: 28px;
+    line-height: 1.7rem;
   }
 }
 
@@ -55,7 +56,8 @@
 }
 @media (max-width: 991px) {
   .font_con_title_e {
-    font-size: 20px;
+    font-size: 28px;
+    line-height: 1.7rem;
   }
 }
 
@@ -69,7 +71,7 @@
 }
 @media (max-width: 991px) {
   .font_title_k {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 
@@ -83,7 +85,7 @@
 }
 @media (max-width: 991px) {
   .font_title_e {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 
@@ -97,7 +99,8 @@
 }
 @media (max-width: 991px) {
   .font_subtitle_k {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 1.6rem;
   }
 }
 
@@ -111,7 +114,8 @@
 }
 @media (max-width: 991px) {
   .font_subtitle_e {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 1.6rem;
   }
 }
 
@@ -125,8 +129,8 @@
 }
 @media (max-width: 991px) {
   .font_leadcopy {
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4rem;
   }
 }
 
@@ -140,8 +144,7 @@
 }
 @media (max-width: 991px) {
   .font_text {
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 14px;
   }
 }
 
@@ -155,7 +158,7 @@
 }
 @media (max-width: 991px) {
   .font_button {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
