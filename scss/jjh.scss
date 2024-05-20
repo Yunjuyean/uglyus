@@ -11,6 +11,13 @@
   font-weight: 500;
   color: #414B5A; /* $uglygray 대신 직접 색상 값 사용 */
 }
+.font_f14light {
+  font-family: 'Pretendard';
+  font-size: 14px;
+  font-weight: 300;
+  color: #414B5A; /* $uglygray 대신 직접 색상 값 사용 */
+}
+
 #store_jjh{
 .swiper-container {
   width: 100%;
@@ -25,6 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .swiper-slide img {
@@ -33,12 +41,24 @@
   object-fit: cover;
   transform: scale(0.5);
   transform-origin: center bottom;
+  
+
 }
 
 .swiper-slide.swiper-slide-active img {
   transform: scale(1); /* 활성화된(가운데) 이미지는 원래 크기의 1.2배로 확대됩니다. */
   z-index: 10000 !important;
   position: relative !important;
+  
+}
+
+.btn-orange{
+  background-color: #FE663F;
+  color: white;
+  
+}
+.scaled-image{
+  transform: scale(0.55);
 }
 
 // .swiper-slide-prev img,
@@ -46,7 +66,6 @@
 //   transform: scale(0.5);
 //   transform-origin: center bottom; 
 // }
-
 
 
 
