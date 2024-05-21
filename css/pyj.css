@@ -6,6 +6,7 @@
     display: block;
   }
 }
+
 .map_text_pyj {
   display: inline;
 }
@@ -290,4 +291,28 @@
     font-size: 18px;
     font-weight: 500;
   }
+}
+
+#quick_pyj {
+  position: fixed;
+  bottom: 50vh;
+  right: 20px;
+}
+#quick_pyj .plus_button_pyj {
+  background-color: #FE663F;
+  padding: 10px;
+  cursor: pointer;
+}
+#quick_pyj .plus_button_pyj .quick_svg {
+  width: 80px;
+  height: auto;
+  color: #fff;
+}
+#quick_pyj .plus_button_pyj .plustext_pyj {
+  position: absolute;
+  width: 0;
+  height: 0;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
 }
