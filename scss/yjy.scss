@@ -214,3 +214,27 @@ $rHeight : 450px;
         top: 20px;
      }
 }
+#ft_yys{
+    .ft_sns{
+        li{
+            background-color: $uglyorange;
+        }
+        img{
+            max-width: 42px;
+        }
+    }
+    .ft_btn{
+        background-color: #FE663F;
+        color: white;
+    }
+    h1{
+        img{
+            width: 251px;
+            height: auto;
+        }
+    }
+
+    .footer_yys{
+        margin-left: 80px;
+    }
+}
