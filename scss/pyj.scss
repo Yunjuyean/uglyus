@@ -13,8 +13,8 @@ $uglygray : #414B5A;
     @media (max-width : 1780px){
       display:block;
     }
-    @media (max-width : 630px){
-      display:none;
+    @media (max-width : 560px){
+      // display:none;
     }
 }
 .map_text_pyj{
@@ -23,23 +23,25 @@ $uglygray : #414B5A;
       display: none;
     }
 }
-.plus_text_pyj{
-  display: inline;
-    @media (max-width : 520px){
-      display: none;
-  }
-}
-.Plus_button_pyj{
-  display: none;
-    @media (max-width : 520px){
-      display: flex;
-  }
-}
 .form_title_pyj{
   display: inline;
     @media (max-width : 1800px){
       display:block;
     }
+}
+.form_text_pyj{
+  display: inline;
+    @media (max-width : 352px){
+      display:block;
+    }
+}
+
+// 공백
+.text_blank_pyj{
+  margin-bottom: 23px;
+  @media (max-width : 991px){
+    margin-bottom: 0;
+  }
 }
 
 
@@ -60,16 +62,24 @@ $uglygray : #414B5A;
   font-family: 'Pretendard';
   font-size: 22px;
   font-weight: 700;
-  color:$uglygray;
+  color:$uglyblack;
   letter-spacing: -0.5px;
   line-height: 1.8rem;
       @media (max-width : 991px){
-          font-size: 20px;
-          line-height: 1.7rem;
+          font-size: 30px;
+          line-height: 2.5rem;
       }
-      @media (max-width : 385px) {
-          font-size: 17px;
+      @media (max-width : 690px){
+          font-size: 25px;
+          line-height: 2rem;
+      }
+      @media (max-width : 580px){
+          font-size: 20px;
           line-height: 1.5rem;
+      }
+      @media (max-width : 450px){
+          font-size: 16px;
+          line-height: 1.2rem;
       }
 }
 .font_leadcopy_pyj{
@@ -79,14 +89,69 @@ $uglygray : #414B5A;
   color:$uglygray;
   letter-spacing: -0.5px;
   line-height: 1.8rem;
-      @media (max-width : 991px){
-          font-size: 16px;
-          line-height: 1.4rem;
-      }
-      @media (max-width : 385px){
-        font-size: 14px;
-      } 
+    @media (max-width : 991px){
+      font-size: 22px;
+      line-height: 5rem;
+    }
+    @media (max-width : 690px){
+      font-size: 18px;
+      line-height: 4rem;
+    }
+    @media (max-width : 580px){
+      font-size: 16px;
+      line-height: 3.5rem;
+    }
+    @media (max-width : 450px){
+      font-size: 14px;
+      line-height: 2.5rem;
+    }
 }
+.font_text_pyj{
+  font-family: 'Pretendard';
+  font-size: 16px;
+  font-weight: 400;
+  color:$uglygray;
+  letter-spacing: -0.5px;
+  line-height: 1.5rem;
+      @media (max-width : 991px){
+          font-size: 14px;
+      }
+      @media (max-width : 450px){
+          font-size: 12px;
+      }
+}
+
+// 맵 마커펜 이펙트
+#map_pyj .marker_pyj span{
+  position: relative;
+}
+
+.marker_pyj{
+  .marker_text:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0;
+    background-color: red;
+    color: #fff !important;
+    transition: 0.5s;
+    animation: widthani 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes widthani {
+      0%{
+          width: 0;
+      }
+      100%{
+          width: 100%;
+      } 
+    }
+}
+
 
 
 // 맵 버튼
@@ -104,12 +169,7 @@ $uglygray : #414B5A;
 
 
 // 폼 컨텐츠 css
-.Plus_flex_pyj{
-  @media (max-width : 690px){
-    justify-content: end;
-  }
-}
-// 폰트 
+// 폼 폰트 
 .font_title_k_pyj{
   font-family: 'Pretendard';
   font-size: 30px;
