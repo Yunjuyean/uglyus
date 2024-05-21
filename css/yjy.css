@@ -158,3 +158,21 @@
   position: relative;
   top: 20px;
 }
+
+#ft_yys .ft_sns li {
+  background-color: #FE663F;
+}
+#ft_yys .ft_sns img {
+  max-width: 42px;
+}
+#ft_yys .ft_btn {
+  background-color: #FE663F;
+  color: white;
+}
+#ft_yys h1 img {
+  width: 251px;
+  height: auto;
+}
+#ft_yys .footer_yys {
+  margin-left: 80px;
+}
