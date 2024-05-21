@@ -50,7 +50,23 @@
 #store_jjh .btn-orange {
   background-color: #FE663F;
   color: white;
+  border-radius: 20%;
 }
 #store_jjh .scaled-image {
-  transform: scale(0.55);
+  transform: scale(0.7);
+}
+#store_jjh ul {
+  padding-left: 0;
+}
+#store_jjh .btn-orange {
+  background-color: #FE663F;
+  border: none;
+  border-radius: 20px;
+  color: white;
+}
+#store_jjh .btn-orange:hover {
+  background-color: #FF2F2F;
+}
+#store_jjh .rotate_3 {
+  transform: rotate(3deg);
 }

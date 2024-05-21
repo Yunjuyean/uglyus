@@ -55,10 +55,26 @@
 .btn-orange{
   background-color: #FE663F;
   color: white;
+  border-radius: 20%;
   
 }
 .scaled-image{
-  transform: scale(0.55);
+  transform: scale(0.7);
+}
+
+ul{
+  padding-left: -0;
+}
+
+.btn-orange {
+  background-color: #FE663F;
+  border: none;
+  border-radius: 20px;
+  color: white;
+}
+
+.btn-orange:hover {
+  background-color: #FF2F2F;
 }
 
 // .swiper-slide-prev img,
@@ -67,6 +83,7 @@
 //   transform-origin: center bottom; 
 // }
 
-
-
+.rotate_3 {
+  transform: rotate(3deg);
+}
 }
