@@ -295,20 +295,39 @@
 
 #quick_pyj {
   position: fixed;
-  bottom: 50vh;
+  bottom: calc(50vh - 200px);
   right: 20px;
 }
-#quick_pyj .plus_button_pyj {
-  background-color: #FE663F;
-  padding: 10px;
-  cursor: pointer;
-}
-#quick_pyj .plus_button_pyj .quick_svg {
-  width: 80px;
+#quick_pyj .carrot_svg {
+  width: 60px;
   height: auto;
+  transform: translateX(-40%);
+}
+#quick_pyj .before_button {
+  background-color: #FE663F;
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  height: 90px;
+}
+#quick_pyj .before_button:hover img {
+  filter: brightness(0) invert(1);
+}
+#quick_pyj .before_button:hover a {
   color: #fff;
 }
-#quick_pyj .plus_button_pyj .plustext_pyj {
+#quick_pyj .before_button .quick_button {
+  padding: 10px;
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+#quick_pyj .before_button a {
+  text-decoration: none;
+  color: #983015;
+  line-height: 1rem;
+}
+#quick_pyj .before_button .plustext_pyj {
   position: absolute;
   width: 0;
   height: 0;

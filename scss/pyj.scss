@@ -270,27 +270,49 @@ $uglygray : #414B5A;
 #quick_pyj{
   // display: none;
   position: fixed;
-  bottom: 50vh; 
+  bottom: calc(50vh - 200px); 
   right: 20px;
 
-  .plus_button_pyj{
+  .carrot_svg{
+    width: 60px;
+    height: auto;
+    transform: translateX(-40%);
+  }
+
+  .before_button{
     background-color: $uglyorange;
-    padding: 10px;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    height: 90px;
 
-    .quick_svg{
-        width: 80px;
-        height: auto;
+    &:hover{
+      img{
+        filter: brightness(0) invert(1);
+      }
+      a{
         color: #fff;
+      }
+    }
 
-      }
-      .plustext_pyj{
-        position : absolute;
-        width : 0;
-        height : 0;
-        display : block;
-        overflow : hidden;
-        opacity : 0;
-      }
+    .quick_button{
+      padding: 10px;
+      width: 50px;
+      height: auto;
+      cursor: pointer;
+    }
+    a{
+      text-decoration: none;
+      color: #983015;
+      line-height: 1rem;
+    }
+    .plustext_pyj{
+      position : absolute;
+      width : 0;
+      height : 0;
+      display : block;
+      overflow : hidden;
+      opacity : 0;
+    }
   }
 }

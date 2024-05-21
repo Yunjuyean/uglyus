@@ -42,8 +42,8 @@
 
     <!-- 커스터 마이징 -->
     <link rel="stylesheet" href="./css/common.min.css">
-    <link rel="stylesheet" href="./css/jjh.css">
-    <link rel="stylesheet" href="./css/gms.min.css">
+    <!-- <link rel="stylesheet" href="./css/jjh.css"> -->
+    <!-- <link rel="stylesheet" href="./css/gms.min.css"> -->
     <link rel="stylesheet" href="./css/pyj.min.css">
     <!-- <link rel="stylesheet" href="./css/yjy.min.css"> -->
     <!-- <link rel="stylesheet" href="./css/yys.min.css"> -->
@@ -191,7 +191,7 @@
     
 
     
-    <aside id="quik" class="d-flex">
+    <aside id="quik" class="d-flex d-none">
         <i class="quikBtn">
             <img src="./img/img_yys/svg/plus.svg" alt="퀵버튼">
             <span class="visually-hidden">퀵버튼</span>
@@ -481,7 +481,7 @@
         </div>
     </section>
  
-    <footer id="ft_yys" class="d-block">
+    <footer id="ft_yys" class="d-block d-none">
         <section class="d-flex justify-content-between">
             <div class="d-flex flex-column footer_yys">
                 <div class="d-flex align-items-center">
@@ -518,11 +518,36 @@
     </footer>
 
     <aside id="quick_pyj">
-        <div class="plus_button_pyj">
-            <svg class="quick_svg" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="22" width="4" height="47" rx="2" fill="#983015"/>
-                <rect x="47" y="22" width="4" height="47" rx="2" transform="rotate(90 47 22)" fill="#983015"/>
-            </svg>
+        <div class="plus_before_pyj d-flex flex-column">
+            <div>
+                <img class="carrot_svg mb-2" src="./img/img_yys/svg/carrot_top.svg" alt="#">
+            </div>
+            <div class="before_button">
+                <div class="justify-content-center align-items-center">
+                    <img class="quick_button" src="./img/img_yys/svg/+_btn.svg" alt="#">
+                    <span class="plustext_pyj">추가</span>
+                </div>
+            </div>
+            <div class="before_button">
+                <img class="quick_button" src="./img/img_yys/svg/my.svg" alt="#">
+                <a class="font_button d-block" href="#">마이<span class="d-block">페이지</span></a>
+            </div>
+            <div class="before_button">
+                <img class="quick_button" src="./img/img_yys/svg/shop.svg" alt="#">
+                <a class="font_button d-block" href="#">마켓</a>
+            </div>
+            <div class="before_button">
+                <img class="quick_button" src="./img/img_yys/svg/event.svg" alt="#">
+                <a class="font_button d-block" href="#">이벤트</a>
+            </div>
+            <div class="before_button">
+                <img class="quick_button" src="./img/img_yys/svg/help.svg" alt="#">
+                <a class="font_button d-block" href="#">고객센터</a>
+            </div> 
+        </div>
+
+        <div class="plus_after_pyj d-none">
+            <img class="quick_button" src="./img/img_yys/svg/+_btn.svg" alt="#">
             <span class="plustext_pyj">추가</span>
         </div>
         
