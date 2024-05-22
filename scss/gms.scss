@@ -17,7 +17,7 @@
 .section_blank_gms{
   margin-top: 220px;
 }
-  
+
 .move90_right_gms{
   transform: translate(40px, 20px);
   z-index: 10;
@@ -108,7 +108,80 @@ margin: 0;
 
 @media (max-width: 991px) {
   html, body {
-    overflow-x: hidden; /* 수평 스크롤 방지 */
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+.center_image_gms{
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+  outline: 1px solid #BEBEBE;
+  outline-offset: -1px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  min-width: 300px;
+  max-width: 100%;
+}
+
+.review_img_gms{
+
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+  outline: 1px solid #BEBEBE;
+  outline-offset: -1px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  min-width: 250px;
+  max-width: 100%;
+}
+.m_review_margin_gms{
+  margin-bottom: 10px;
+}
+.m_review_padding_gms{
+  padding-bottom: 0px;
+}
+.m_review_showing_gms {
+  display: none;
+}
+.move30_right_gms{
+  transform: none;
+}
+.move30_left_gms{
+  transform: none;
+}
+
+.center_image_gms:hover {
+  outline: none;
+  transform: none;
+  outline: 1px solid #BEBEBE;
+  outline-offset: -1px;
+ 
+}
+.more_button-wrapper_gms {
+  position: relative;
+  padding-bottom: 220px;
+  padding-top: 20px;
+}
+
+.more_button_gms {
+  background-color: #FE663F; 
+  color: white;
+  border: none;
+  border-radius: 20px;
+  width: 110px;
+  height: 37px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  html, body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
   }
@@ -179,3 +252,4 @@ margin: 0;
   margin: 0;
   }
 }
+
