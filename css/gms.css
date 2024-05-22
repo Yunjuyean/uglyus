@@ -1,3 +1,13 @@
+.main_image_center_gms {
+  max-width: 1400px;
+  border-radius: 20px;
+}
+
+.main_image_side_gms {
+  max-width: 1000px;
+  border-radius: 20px;
+}
+
 .dja_gms {
   display: flex;
   align-items: center;
