@@ -270,28 +270,32 @@ $uglygray : #414B5A;
 #quick_pyj{
   // display: none;
   position: fixed;
-  bottom: calc(50vh - 200px); 
+  top: calc(50vh - 60px); 
   right: 20px;
+  width: 80px;
 
   .carrot_svg{
     width: 50px;
     height: auto;
-    transform: translateX(-2px);
+    transform: translateX(-5px);
   }
-
-  .plus_menu_pyj{
-    background-color: $uglyorange;
-    padding-bottom: 10px;
+  .plus_before_pyj{
     border: 5px solid $uglyorange;
     border-color: transparent $uglyorange;
     border-radius: 0 0 100px 100px;
+    padding-bottom: 10px;
+  }
 
-    .before_button{
+  .plus_after_pyj,
+  .plus_before_pyj{
+    background-color: $uglyorange;
+
+    .menu_button{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 75px;
+      width: 100%;
       height: 80px;
       border: 1px solid #983015;
       border-color: #983015 transparent transparent transparent;
@@ -306,8 +310,8 @@ $uglygray : #414B5A;
       }
 
       .quick_button{
-        padding: 4px 0;
-        width: 35px;
+        padding: 4px;
+        width: 40px;
         height: auto;
         cursor: pointer;
       }
@@ -336,7 +340,7 @@ $uglygray : #414B5A;
   color: #fff;
   letter-spacing: -0.5px;
   line-height: 1.5rem;
-      @media (max-width : 990px){
-          font-size: 13px;
-      }
+    @media (max-width : 990px){
+      font-size: 13px;
+    }
 }
