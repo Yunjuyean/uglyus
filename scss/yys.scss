@@ -359,6 +359,24 @@ a {
     justify-content: center;
   }
 
+  #event_banner_yys{
+    .banner_img{
+        background-image: url(../img/img_yys/img/sale_banner.jpg)no-repeat center;
+        background-size: cover;
+        height: 61px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            display: block;
+        }
+
+
+
+    }
+
+  }
+  
     
 
 
