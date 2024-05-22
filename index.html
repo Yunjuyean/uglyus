@@ -46,138 +46,90 @@
     <link rel="stylesheet" href="./css/gms.min.css">
     <link rel="stylesheet" href="./css/pyj.min.css">
     <link rel="stylesheet" href="./css/yjy.min.css">
-    <!-- <link rel="stylesheet" href="./css/yys.min.css"> -->
+    <link rel="stylesheet" href="./css/yys.min.css">
 
     
 </head>
 <body>
 
-    <!-- <header id="hd_yys" class="fixed-top  bg-white d-flex jcb aic d-none">
+    <header id="hd_yys" class="fixed-top  flexbetween_yys ">
 
             
            
-                    <h1 ><a class=" me-3 " href="https://uglyus.co.kr/main"><img  src="./img/img_yys/svg/ugly_us_logo.svg"  alt="어글리어스 로고"></a></h1>
-                    
-                    
-                        
-                        <ul class=" font_navi  flexcenter gnb mb-0 ps-0">
-
-                            <li class="nav-mission me-5 gnb_li  rel">
-                                <a class="d-block gnb_a" href="#about"><span>우리의미션</span></a>
-                                <ul class="gnb_ul abs">
-                                    <li class="gnb_ul_li"><a href=""><span>미션</span></a></li>
-                                    <li class="gnb_ul_li"><a href=""><span>소싱철학</span></a></li>
-                                </ul>
-                            </li>
-
-                            <li class="nav-mission me-5 gnb_li rel ">
-                                <a class="d-block gnb_a" href="#about"><span>정기배송</span></a>
-                                <ul class="gnb_ul abs">
-                                    <li class="gnb_ul_li"><a href=""><span>후기</span></a></li>
-                                    <li class="gnb_ul_li"><a href=""><span>혜택</span> </a></li>
-                                    <li class="gnb_ul_li"><a href=""><span>이용안내</span> </a></li>
-                                </ul>
-                            </li>
-
-                            <li class="nav-mission me-5 gnb_li rel">
-                                <a class="d-block gnb_a" href="#about"><span>싱싱마켓</span></a>
-                                <ul class="gnb_ul abs">
-                                    <li class="gnb_ul_li"><a href=""><span>인기상품</span></a></li>
-                                    <li class="gnb_ul_li"><a href=""><span>대기중인상품</span></a></li>
-                                </ul>
-                            </li>
-                            
-                            <li class="nav-mission me-5 gnb_li  rel">
-                                <a class="d-block gnb_a" href="#about"><span>커뮤니티</span></a>
-                                <ul class="gnb_ul abs">
-                                    <li class="gnb_ul_li"><a href=""><span>오늘의 레시피</span></a></li>
-                                    <li class="gnb_ul_li"><a href=""><span>채소이야기</span></a></li>
-                                    <li class="gnb_ul_li"><a href=""><span>어글리어스 밥풀루언서</span></a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    
-                        <div class=" login" >
-                            <ul class="d-flex px-0 my-0  ">
-                                <li class=" me-3 font_login ">
-                                    <a class="nav-link font_login" href="#about">로그인</a>
-                                </li>   
-                                <li class="  font_login ">
-                                    <a class="nav-link me-0 font_login" href="#portfolio">회원가입</a>
-                                </li>
-                            </ul>
-                            
-                        </div>
-               
-
-        </header> -->
-
-        <section id="mainbanner_yys" class="d-none">
-                <div class="swiper ms-0 me-0" >
-                    <!-- 슬라이드들 -->
-                    <div class="swiper-wrapper    ">
-                        <div class="swiper-slide">
-                            <li><a href="#"><img src="./img/img_yys/img/main_gms.jpg" class="img-fluid" alt="어글리어스 구스토스 콜라보"></a></li>
-                        </div>
-                        <div class="swiper-slide">
-                            <li><a href=""><img src="./img/img_yys/img/main_jjh.jpg" class="img-fluid" alt="어글리어스 음료수" class="img-fluid"></a></li>
-                        </div>
-                        <div class="swiper-slide">
-                            <li><a href=""><img src="./img/img_yys/img/main_pyj.jpg" class="img-fluid" alt="당신이구해준 채소한알" class="img-fluid"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <li><a href=""><img src="./img/img_yys/img/main_yjy.jpg" class="img-fluid" alt="못난이 토마토" class="img-fluid"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <li><a href=""><img src="./img/img_yys/img/main_yys.jpg" class="img-fluid" alt="유기농채소로 시작하는하루" class="img-fluid"></a>
-                        </div>
-                        <!-- 추가적인 슬라이드들을 여기에 추가 -->
-                    </div>
-
-                    <!-- 페이지네이션 -->
-                    <div class="swiper-pagination"></div>
-        </section>  
-
-                <!-- Swiper JS -->
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-                
-                <!-- 스와이퍼 초기화 스크립트 -->
-            <script>
-                    var swipermainBanner = new Swiper("#mainbanner_yys .swiper", {
-                    loop: true,
-                    spaceBetween: 800,
-                    centeredSlides: true,
-                    slidesPerView: 1.1,
-                    autoplay: {
-                        delay: 5000,
-                        disableOnInteraction: false,
-                    },
-                    pagination: {
-                        el: "#mainbanner_yys .swiper-pagination",
-                        clickable: true,
-                    },
-                   
-                    
-                    breakpoints: {
-                        // 768px 미만에서는 한 번에 하나의 슬라이드만 보여지도록 설정
-                         768: {
-                             slidesPerView: 1,
-                             spaceBetween: 60,
-                         },
-                        // // // 992px 미만에서는 슬라이드가 가운데로 오도록 설정
-                         992: {
-                             slidesPerView: 1,
-                             spaceBetween: 60,
-                         },
-                        1400: {
-                            slidesPerView: 1.6,
-                            spaceBetween: 90,
-                        },
-                    },
-                });
-            </script>
+        <h1 ><a class=" me-3 " href="https://uglyus.co.kr/main"><img  src="./img/img_yys/svg/ugly_us_logo.svg"  alt="어글리어스 로고"></a></h1>
         
-    <section id="event_banner_yys" class="d-none">
+        
+            
+            <ul class=" font_navi  flexcenter gnb mb-0 ps-0">
+
+                <li class="nav-mission me-5 gnb_li  rel">
+                    <a class="d-block gnb_a" href="#about"><span>우리의미션</span></a>
+                    <ul class="gnb_ul abs">
+                        <li class="gnb_ul_li"><a href=""><span>미션</span></a></li>
+                        <li class="gnb_ul_li"><a href=""><span>소싱철학</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-mission me-5 gnb_li rel ">
+                    <a class="d-block gnb_a" href="#about"><span>정기배송</span></a>
+                    <ul class="gnb_ul abs">
+                        <li class="gnb_ul_li"><a href=""><span>후기</span></a></li>
+                        <li class="gnb_ul_li"><a href=""><span>혜택</span> </a></li>
+                        <li class="gnb_ul_li"><a href=""><span>이용안내</span> </a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-mission me-5 gnb_li rel">
+                    <a class="d-block gnb_a" href="#about"><span>싱싱마켓</span></a>
+                    <ul class="gnb_ul abs">
+                        <li class="gnb_ul_li"><a href=""><span>인기상품</span></a></li>
+                        <li class="gnb_ul_li"><a href=""><span>대기중인상품</span></a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-mission me-5 gnb_li  rel">
+                    <a class="d-block gnb_a" href="#about"><span>커뮤니티</span></a>
+                    <ul class="gnb_ul abs">
+                        <li class="gnb_ul_li"><a href=""><span>오늘의 레시피</span></a></li>
+                        <li class="gnb_ul_li"><a href=""><span>채소이야기</span></a></li>
+                        <li class="gnb_ul_li"><a href=""><span>어글리어스 밥풀루언서</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        
+            <div class=" login" >
+                <ul class="d-flex px-0 my-0  ">
+                    <li class=" me-3 font_login ">
+                        <a class="nav-link font_login" href="#about">로그인</a>
+                    </li>   
+                    <li class="  font_login ">
+                        <a class="nav-link me-0 font_login" href="#portfolio">회원가입</a>
+                    </li>
+                </ul>
+                
+            </div>
+   
+
+</header>
+
+        <section id="mainbanner_yys">
+            <div>
+                <div class="dja_yys">
+                    <div>
+                        <img src="./img/img_yys/img/main_gms.jpg" alt="" class="main_image_side_yys">
+                    </div>
+                    <div class="px-5">
+                        <img src="./img/img_yys/img/main_img_yys.jpg" alt=""class="main_image_center_yys">
+                    </div>
+                    <div>
+                        <img src="./img/img_yys/img/main_jjh.jpg" alt=""class="main_image_side_yys">
+                    </div>
+                </div>
+        </section>
+
+         
+        
+    <section id="event_banner_yys" class=" d-none">
         <div class="event_banner ">
             <h2><a href="https://uglyus.co.kr/main"><img src="./img/img_yys/img/collab_banner.jpg" alt="콜라보배너" class="img-fluid"></a></h2>
 
@@ -252,34 +204,42 @@
             
     </script>     
 
-    <section id="review_gms"> 
-        <div class="text-center section_blank_gms">
-            <h2 class = "font_con_title_e title_blank">Review</h2>
-            <p class = "font_leadcopy title_blank">구매자 분들의 진심을 담은 실제  후기 입니다.</p>
+<section id="review_gms section_blank"> 
+    <!-- </section> 없어용 추가함 -->
+    <container>
+        <div class="text-center py-5">
+            <h2 class = "font_con_title_e mb-4 title_blank">Review</h2>
+            <p class = "font_leadcopy mb-5 title_blank">구매자 분들의 진심을 담은 실제  후기 입니다.</p>
         </div>
-        <div>  
-            <div class="dja_gms">
-                <div class="col-lg-2 box move90_right_gms justify-content-around "><span class="visually-hidden">리뷰 1</span>
-                    <img src="./img/img_gms/naver.review.svg" alt="네이버실시간리뷰" class="review_img_gms m_review_showing_gms">
-                </div>
-                <div class="col-lg-2 box move30_right_gms m_review_image_size_gms justify-content-around"><span class="visually-hidden">리뷰 2</span>
-                    <img src="./img/img_gms/x.reivew.svg" alt="트위터리뷰" class="review_img_gms">
-                </div>
-                <div class="col-lg-2 box m_review_image_size_gms justify-content-around mx-3"><span class="visually-hidden">리뷰 3</span>
-                    <img src="./img/img_gms/instagram.review.svg" alt="인스타리뷰" class="center_image_gms">
-                </div>
-                <div class="col-lg-2 box move30_left_gms m_review_image_size_gms justify-content-around"><span class="visually-hidden">리뷰 4</span>
-                    <img src="./img/img_gms/youtube.review.svg" alt="유튜브리뷰" class="review_img_gms">
-                </div>
-                <div class="col-lg-2 box move100_left_gms justify-content-around"><span class="visually-hidden">리뷰 5</span>
-                        <img src="./img/img_gms/naver.bolg.review.svg" alt="네이버블로그리뷰" class="review_img_gms m_review_showing_gms">
-                </div> 
+            <div>
+                <div class="row justify-content-center align-items-center">
+                    
+                        <div class="container d-flex justify-content-center align-items-center">
+                            
+
+                                <div class="col-2 px-3 box d-flex align-items-center justify-content-center move90_right_gms m_review_showing_gms "><span class="visually-hidden">리뷰 1</span>
+                                      <img src="./img/img_gms/naver.review.svg" alt="네이버실시간리뷰" class="review_img_gms m_review_showing_gms">
+                                 </div>
+                                <div class="col-2 px-3 box d-flex align-items-center justify-content-center move30_right_gms"><span class="visually-hidden">리뷰 2</span>
+                                  <img src="./img/img_gms/x.reivew.svg" alt="트위터리뷰" class="review_img_gms">
+                                </div>
+                                <div class="col-2 px-3 box d-flex align-items-center justify-content-center move_center_gms"><span class="visually-hidden">리뷰 3</span>
+                                  <img src="./img/img_gms/instagram.review.svg" alt="인스타리뷰" class="center_image_gms">
+                                </div>
+                                <div class="col-2 px-3 box d-flex align-items-center justify-content-center move30_left_gms"><span class="visually-hidden">리뷰 4</span>
+                                  <img src="./img/img_gms/youtube.review.svg" alt="유튜브리뷰" class="review_img_gms">
+                                </div>
+                                <div class="col-2 px-3 box d-flex align-items-center justify-content-center move100_left_gms m_review_showing_gms"><span class="visually-hidden">리뷰 5</span>
+                                  <img src="./img/img_gms/naver.bolg.review.svg" alt="네이버블로그리뷰" class="review_img_gms m_review_showing_gms">
+                                </div>
+                    </div>
+                        <div class="more_button-wrapper_gms d-flex justify-content-center align-items-center">
+                            <button class="more_button_gms font_button">더보기</button>
+                        </div>
+                    </div>
             </div>
-            <div class="more_button-wrapper_gms dja_gms">
-                <button class="more_button_gms font_button">더보기</button>
-            </div>
-        </div>    
-    </section>
+                </container>
+</section>
 
     <section id="store_jjh" class="d-none">
 
