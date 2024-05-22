@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .after:after {
   content: "";
 }
@@ -16,32 +17,50 @@
   color: #1F2937;
 }
 
-.font_f18bold {
-  font-family: "Pretendard";
-  font-size: 18px;
-  font-weight: 700;
-  color: #1F2937;
-}
-
-.font_subtitle_k {
+.font_subtitle_k_yjy {
   font-family: "Pretendard";
   font-size: 22px;
   font-weight: 800;
-  color: #414B5A;
+  color: #1F2937;
 }
 
-.font_text {
+.font_text_yjy {
   font-family: "Pretendard";
   font-size: 16px;
   font-weight: 500;
   color: #414B5A;
 }
 
-.font_f18bold {
+.font_yjy18_ft {
   font-family: "Pretendard";
   font-size: 18px;
   font-weight: 700;
+  color: #1F2937;
+}
+
+.font_f14semibold_yjy {
+  font-family: "Pretendard";
+  font-size: 14px;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.font_f14semibold_yjy_2 {
+  font-family: "Pretendard";
+  font-size: 14px;
+  font-weight: 400;
   color: #414B5A;
+}
+
+.font_f13bold_yjy {
+  font-family: "Pretendard";
+  font-size: 13px;
+  font-weight: 300;
+  color: #414B5A;
+}
+
+.letter_spacing_yjy {
+  letter-spacing: -0.3px;
 }
 
 .adbanner {
@@ -157,4 +176,66 @@
 #recipe_yjy .m-text {
   position: relative;
   top: 20px;
+}
+
+#ft_yys {
+  padding-left: 260px;
+  padding-right: 260px;
+  background-color: white; /* Footer 배경색 설정 */
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
+#ft_yys .ft_sns li {
+  width: 42px;
+  height: 42px;
+  background-color: #FE663F;
+  border-radius: 14px;
+  line-height: 42px;
+  text-align: center;
+}
+#ft_yys .btn-custom {
+  background-color: #FE663F;
+  border-color: #FE663F;
+  color: white;
+  border-radius: 20px;
+  width: 135px;
+  height: 40px;
+}
+#ft_yys .btn-custom:hover {
+  background-color: #e55b37;
+  border-color: #e55b37;
+}
+#ft_yys .ft_last {
+  white-space: nowrap;
+  text-align: right;
+  line-height: 1.3rem;
+}
+#ft_yys .ft_last a {
+  text-decoration: none;
+  color: #414B5A;
+}
+#ft_yys .sns_fb {
+  transform: translate(1px, -2px);
+}
+#ft_yys .sns_insta {
+  transform: translate(0px, -2px);
+  height: 32px;
+}
+#ft_yys .sns_kakao {
+  transform: translate(0px, 0px);
+}
+#ft_yys .sns_x {
+  transform: translate(1px, -1px);
+}
+#ft_yys .fixed-width {
+  width: 80px; /* 고정된 너비를 지정하여 정렬 */
+}
+#ft_yys .f_mg {
+  margin-top: 23px;
+}
+#ft_yys .s_mg {
+  margin-top: 29px;
+}
+#ft_yys .t_mg {
+  margin-top: 40px;
 }

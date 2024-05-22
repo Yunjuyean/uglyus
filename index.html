@@ -41,18 +41,18 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- 커스터 마이징 -->
-    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common.min.css">
     <link rel="stylesheet" href="./css/jjh.css">
     <link rel="stylesheet" href="./css/gms.min.css">
     <link rel="stylesheet" href="./css/pyj.min.css">
-    <!-- <link rel="stylesheet" href="./css/yjy.min.css"> -->
-    <link rel="stylesheet" href="./css/yys.min.css">
+    <link rel="stylesheet" href="./css/yjy.min.css">
+    <!-- <link rel="stylesheet" href="./css/yys.min.css"> -->
 
     
 </head>
 <body>
 
-    <header id="hd_yys" class="fixed-top  flexbetween_yys ">
+    <!-- <header id="hd_yys" class="fixed-top  bg-white d-flex jcb aic d-none">
 
             
            
@@ -110,9 +110,9 @@
                         </div>
                
 
-        </header>
+        </header> -->
 
-        <section id="mainbanner_yys" class="">
+        <section id="mainbanner_yys" class="d-none">
                 <div class="swiper ms-0 me-0" >
                     <!-- 슬라이드들 -->
                     <div class="swiper-wrapper    ">
@@ -177,7 +177,7 @@
                 });
             </script>
         
-    <section id="event_banner_yys" class=" d-none">
+    <section id="event_banner_yys" class="d-none">
         <div class="event_banner ">
             <h2><a href="https://uglyus.co.kr/main"><img src="./img/img_yys/img/collab_banner.jpg" alt="콜라보배너" class="img-fluid"></a></h2>
 
@@ -191,7 +191,7 @@
 
     
     <aside id="quik" class="d-flex">
-        <i class="quikBtn"">
+        <i class="quikBtn">
             <img src="./img/img_yys/svg/plus.svg" alt="퀵버튼">
             <span class="visually-hidden">퀵버튼</span>
         </i>
@@ -235,6 +235,7 @@
         </ul>
         
     </aside>
+    
     <script>
             const quikBtn = document.getElementById("quikBtn");
             const quikMenu = document.getElementById("quikMenu");      
@@ -251,49 +252,40 @@
             
     </script>     
 
-    <section id="review_gms section_blank"> 
-        <!-- </section> 없어용 추가함 -->
-        <container>
-            <div class="text-center py-5">
-                <h2 class = "font_con_title_e mb-4 title_blank">Review</h2>
-                <p class = "font_leadcopy mb-5 title_blank">구매자 분들의 진심을 담은 실제  후기 입니다.</p>
-            </div>
-                <div>
-                    <div class="row justify-content-center align-items-center">
-                        
-                            <div class="container d-flex justify-content-center align-items-center">
-                                
-    
-                                    <div class="col-2 px-3 box d-flex align-items-center justify-content-center move90_right_gms m_review_showing_gms "><span class="visually-hidden">리뷰 1</span>
-                                          <img src="./img/img_gms/naver.review.svg" alt="네이버실시간리뷰" class="review_img_gms m_review_showing_gms">
-                                     </div>
-                                    <div class="col-2 px-3 box d-flex align-items-center justify-content-center move30_right_gms"><span class="visually-hidden">리뷰 2</span>
-                                      <img src="./img/img_gms/x.reivew.svg" alt="트위터리뷰" class="review_img_gms">
-                                    </div>
-                                    <div class="col-2 px-3 box d-flex align-items-center justify-content-center move_center_gms"><span class="visually-hidden">리뷰 3</span>
-                                      <img src="./img/img_gms/instagram.review.svg" alt="인스타리뷰" class="center_image_gms">
-                                    </div>
-                                    <div class="col-2 px-3 box d-flex align-items-center justify-content-center move30_left_gms"><span class="visually-hidden">리뷰 4</span>
-                                      <img src="./img/img_gms/youtube.review.svg" alt="유튜브리뷰" class="review_img_gms">
-                                    </div>
-                                    <div class="col-2 px-3 box d-flex align-items-center justify-content-center move100_left_gms m_review_showing_gms"><span class="visually-hidden">리뷰 5</span>
-                                      <img src="./img/img_gms/naver.bolg.review.svg" alt="네이버블로그리뷰" class="review_img_gms m_review_showing_gms">
-                                    </div>
-                        </div>
-                            <div class="more_button-wrapper_gms d-flex justify-content-center align-items-center">
-                                <button class="more_button_gms font_button">더보기</button>
-                            </div>
-                        </div>
+    <section id="review_gms"> 
+        <div class="text-center section_blank_gms">
+            <h2 class = "font_con_title_e title_blank">Review</h2>
+            <p class = "font_leadcopy title_blank">구매자 분들의 진심을 담은 실제  후기 입니다.</p>
+        </div>
+        <div>  
+            <div class="dja_gms">
+                <div class="col-lg-2 box move90_right_gms justify-content-around "><span class="visually-hidden">리뷰 1</span>
+                    <img src="./img/img_gms/naver.review.svg" alt="네이버실시간리뷰" class="review_img_gms m_review_showing_gms">
                 </div>
-                    </container>
+                <div class="col-lg-2 box move30_right_gms m_review_image_size_gms justify-content-around"><span class="visually-hidden">리뷰 2</span>
+                    <img src="./img/img_gms/x.reivew.svg" alt="트위터리뷰" class="review_img_gms">
+                </div>
+                <div class="col-lg-2 box m_review_image_size_gms justify-content-around mx-3"><span class="visually-hidden">리뷰 3</span>
+                    <img src="./img/img_gms/instagram.review.svg" alt="인스타리뷰" class="center_image_gms">
+                </div>
+                <div class="col-lg-2 box move30_left_gms m_review_image_size_gms justify-content-around"><span class="visually-hidden">리뷰 4</span>
+                    <img src="./img/img_gms/youtube.review.svg" alt="유튜브리뷰" class="review_img_gms">
+                </div>
+                <div class="col-lg-2 box move100_left_gms justify-content-around"><span class="visually-hidden">리뷰 5</span>
+                        <img src="./img/img_gms/naver.bolg.review.svg" alt="네이버블로그리뷰" class="review_img_gms m_review_showing_gms">
+                </div> 
+            </div>
+            <div class="more_button-wrapper_gms dja_gms">
+                <button class="more_button_gms font_button">더보기</button>
+            </div>
+        </div>    
     </section>
 
-    <section id="store_jjh" class="">
+    <section id="store_jjh" class="d-none">
 
     </section>
 
-    <!--section#foodrecipe.section-->
-    <!-- <section id="recipe_yjy" class="section d-none> 
+    <section id="recipe_yjy" class="section"> 
         <div class="container text-center">
             <h2 class="font_title_k letter_spacing mb-0">출구 없는 레시피</h2>
             <p class="font_f18bold letter_spacing mb-0 mt-4">나만의 레시피를 알려주세요</p>
@@ -310,33 +302,39 @@
                                     <p class="font_yjy18 text-right px-4 mb-0">윤주연님</p>
                                 </div>
                             </div>
+                            
                         </div>                      
-                    </li>
+                                            
 
+                    </li>
                     <li class="col-6 overflow-hidden">
                         <div>
                             <a href="" class="d-block overflow-hidden targetThumb_a"><img src="./img/img_yjy/recipe/Vietnamese spring _roll.jpg" alt="월남쌈" class=""></a>
                         </div>
                         <div class="v-text">
-                            <a href=""><p class="font_subtitle_k letter_spacing my-0 text-start">한 입 가득 월남쌈</p></a>
+                            <a href=""><p class="font_subtitle_k_yjy letter_spacing my-0 text-start">한 입 가득 월남쌈</p></a>
                             <div class="d-flex justify-content-between">
-                                <p class="font_text">#볼 빵빵 #새싹채소 #파프리카</p>
-                                <p class="font_text text-right">정장훈 님</p>
+                                <p class="font_text_yjy">#볼 빵빵 #새싹채소 #파프리카</p>
+                                <p class="font_text_yjy text-right">정장훈 님</p>
                             </div>
-                        </div>                        
+                        </div>
+                            
+                                               
                     </li>
-
                     <li class="col-6 overflow-hidden">
                         <div>
                             <a href="" class="d-block overflow-hidden targetThumb_b"><img src="./img/img_yjy/recipe/cucumber.jpg" alt="오이소박이" class=""></a>
                         </div>
                         <div class="c-text">
-                            <a href=""><p class="font_subtitle_k letter_spacing my-0 text-start">아삭아삭 오이소박이</p></a>
+                            <a href=""><p class="font_subtitle_k_yjy letter_spacing my-0 text-start">아삭아삭 오이소박이</p></a>
                             <div class="d-flex justify-content-between">
-                                <p class="font_text">#새콤달콤 #오이 #부추</p>
-                                <p class="font_text text-right">박연주 님</p>
+                                <p class="font_text_yjy">#새콤달콤 #오이 #부추</p>
+                                <p class="font_text_yjy text-right">박연주 님</p>
                             </div>
                         </div>
+                            
+                        
+                        
                     </li>
                 </ul>
 
@@ -345,46 +343,45 @@
                         <div class="orange overflow-hidden d-flex flex-column after justify-content-between">
                             <a href="" class="d-block overflow-hidden targetThumb "><img src="./img/img_yjy/recipe/Jjambbong.jpg" alt="짬뽕" class="other"></a>
                             <div class="jjam-text">
-                                <a href=""><p class="font_yjy letter_spacing my-0 text-start px-4">해장엔? 짬뽕</p></a>
-                             <div class="d-flex justify-content-between">
-                                <p class="font_yjy18 px-4 mb-0">#칼칼한 #청경채 #콩나물</p>
-                                <p class="font_yjy18 text-right px-4 mb-0">윤여선 님</p>
+                                <p class="font_yjy letter_spacing my-0 text-start px-4"><a href="">해장엔? 짬뽕</a></p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="font_yjy18 px-4 mb-0">#칼칼한 #청경채 #콩나물</p>
+                                    <p class="font_yjy18 text-right px-4 mb-0">윤여선 님</p>
+                                </div>
                             </div>
-                            </div>
-                        </div>
+                            
+                        </div>                       
                     </li>
-
                     <li class="col-6 order-lg-1">
                         <div class="overflow-hidden">
                             <a href="" class="d-block overflow-hidden targetThumb_c"><img src="./img/img_yjy/recipe/pumpkin_porridge.jpg" alt="호박죽" class=""></a>
                             <div class="p-text">
-                                <a href=""><p class="font_subtitle_k letter_spacing my-0 text-start">달콤한 호박죽</p></a>
+                                <a href=""><p class="font_subtitle_k_yjy letter_spacing my-0 text-start">달콤한 호박죽</p></a>
                             <div class="d-flex justify-content-between">
-                                <p class="font_text">#든든한 #단호박 #잣</p>
-                                <p class="font_text text-right">방보영 님</p>
+                                <p class="font_text_yjy">#든든한 #단호박 #잣</p>
+                                <p class="font_text_yjy text-right">방보영 님</p>
                             </div>
                             </div>
+                            
                         </div>
+                       
                     </li>
-
                     <li class="col-6 order-lg-1">
                         <div class="overflow-hidden">
                             <a href="" class="d-block overflow-hidden targetThumb_d"><img src="./img/img_yjy/recipe/Mille_Feuille Nabe.jpg" alt="밀푀유나베" class=""></a>
                             <div class="m-text">
-                                <a href=""><p class="font_subtitle_k letter_spacing my-0 text-start">한 솥 가득 밀푀유나베</p></a>
-                            <div class="d-flex justify-content-between">
-                                <p class="font_text">#집들이 #배추 #버섯</p>
-                                <p class="font_text text-right">고민서 님</p>
-                            </div>
-                            </div>
-                        </div>
+                                <p class="font_subtitle_k_yjy letter_spacing my-0 text-start"><a href="">한 솥 가득 밀푀유나베</a></p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="font_text_yjy">#집들이 #배추 #버섯</p>
+                                    <p class="font_text_yjy text-right">고민서 님</p>
+                                </div>
+                            </div>                            
+                        </div>                        
                     </li>
                 </ul>
             </div>
-            
-        </div>
-    </section> -->
-
+        </div>      
+    </section>
     <section id="map_pyj" class="section_blank">
         <div class="text-center">
             <h2 class="font_con_title_k title_blank">Ugly Us Map</h2>
@@ -400,19 +397,21 @@
                 <div class="col-lg-3 col-12 d-flex flex-column justify-content-between align-items-start ps-lg-3 mt-3 mt-lg-0">
                     <div class="d-flex flex-lg-column flex-wrap">
                         <div class="col-lg-12 col-6">
-                            <img class="mapimg border-radius text_blank img-fluid" src="./img/img_pyj/map/strawberryjam.png" alt="권두보 생산자님">
+                            <img class="mapimg border-radius text_blank_pyj img-fluid" src="./img/img_pyj/map/strawberryjam_pyj.png" alt="권두보 생산자님">
                         </div>
-                        <div class="col-lg-12 col-6 ps-3 ps-lg-0">
-                            <p class="font_subtitle_pyj text_blank">
+                        <div class="col-lg-12 col-6 ps-3 ps-lg-0 d-flex flex-column justify-content-between">
+                            <p class="font_subtitle_pyj text_blank_pyj">
                                 <span class="map_title_pyj">자연 그대로</span>
                                 <span class="d-block d-xxl-inline">건강하고 정직한</span>
-                                <span class="d-block d-xxl-inline">딸기로 만들었습니다.</span>
+                                <span class="d-block d-xxl-inline marker_pyj">
+                                    <span class="marker_text"><span class="text-white">딸기</span></span>로 만들었습니다.
+                                </span>
                             </p>
-                            <p class="font_leadcopy_pyj text_blank">권두보님의 이야기</p>
-                            <p class="font_text text_blank">
-                                <span class="plus_text_pyj">딸기 농사를 지은지 벌써 20년이 넘었네요.<span class="map_text_pyj">저는 제가 살려고 유기농을 시작했다보니 어떻게 하면 더 건강한 농산물을 만들까가 농사의 제 1 기준이에요. 어글리어스 홈페이지를 봤는데 친환경 가치에 공감하고, 지지하는 고객분들이 많이 보였어요.</span> 여러분에게 정말 건강하게 자란 딸기를 꼭 맛보여드리고 싶습니다.</span>
+                            <p class="font_leadcopy_pyj text_blank_pyj">권두보님의 이야기</p>
+                            <p class="font_text text_blank_pyj">
+                                <span class="d-none d-lg-inline">딸기 농사를 지은지 벌써 20년이 넘었네요. 저는 제가 살려고 유기농을 시작했다보니 어떻게 하면 더 건강한 농산물을 만들까가 농사의 제 1 기준이에요. 어글리어스 홈페이지를 봤는데 친환경 가치에 공감하고, 지지하는 고객분들이 많이 보였어요. 여러분에게 정말 건강하게 자란 딸기를 꼭 맛보여드리고 싶습니다.</span>
                             </p>
-                            <span class="font_text Plus_button_pyj Plus_flex_pyj">+ 더보기</span>
+                            <span class="font_text_pyj mt-auto d-flex d-lg-none justify-content-end"><span class="">+ 더보기</span></span>
                             <div class="d-none d-lg-flex justify-content-start align-items-center">
                                 <button type="button" class="font_button mapbuttonstyle_pyj"><a href="#">구매하러가기</a></button>
                             </div>
@@ -432,7 +431,7 @@
                 <div class="col-lg-5 me-lg-auto">
                     <div class="mb-lg-0 mb-4 text-center">
                         <h2 class="font_title_k_pyj title_blank">생산자님! <span class="form_title_pyj">구출이 필요한 농산물이 있나요?</span></h2>
-                        <p class="font_text mb-0">구출이 필요한 농산물이 있다면 정보 확인 후 연락 드리겠습니다.</p>
+                        <p class="font_text mb-0">구출이 필요한 농산물이 있다면 정보 확인 후 <span class="form_text_pyj">연락 드리겠습니다.</span></p>
                         <p class="font_text mb-0 d-none d-lg-block">회신까지 2~3일 정도 소요될 수 있으며, 최대한 빠르게 연락 드릴 수 있도록 하겠습니다.</p>
                     </div>
                 </div>
@@ -480,97 +479,57 @@
         </div>
     </section>
  
-    <footer id="ft_yys" class="bg-white d-none">
-        <div>
-            <div class="footer1">
-                <div class="help_numder">
-                    <ul>
-                        <li class="font_numder">
-                            어글리어스 고객센터 070.4769.0271
-                        </li>
-                    </ul>
-                </div>
-                <ul id="snsIcon">
-                    <i class="iconColor">
-                        <img src="./img/img_yys/svg/face_book.svg" class="iconColor" alt="페이스북">
-                        <span class="visually-hidden">페이스북</span>
-                    </i>
-                    <i class="iconColor">
-                        <img src="./img/img_yys/svg/insta.svg" class="iconColor" alt="인스타그램">
-                        <span class="visually-hidden">인스타그램</span>
-                    </i>
-                    <i class="iconColor">
-                        <img src="./img/img_yys/svg/kakao_stroy.svg " class="iconColor" alt="카카오스토리">
-                        <span class="visually-hidden">카카오스토리</span>
-                    </i>
-                    <i class="iconColor">
-                        <img src="./img/img_yys/svg/x.svg" class="iconColor" alt="엑스">
-                        <span class="visually-hidden ">엑스</span>
-                    </i>
-                </ul>
-            </div>
-
-            <div>
-                <div class="day">
-                    <ul>
-                        <li>화-목요일</li>
-                        <li>월·금요일</li>
-                        <li>토·일·공휴일</li>
-                    </ul>
-                </div>
-                <div class="time">
-                    <ul>
-                        <li>11:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</li>
-                        <li>09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</li>
-                        <li>휴무</li>
-                    </ul>
-                    <div class="help_button">
-
-                        <div class="">
-                            <button>
-                               
-                            </button>
-
-                        </div>
-
-                        <div class="">
-                            <button>
-                                
-                            </button>
-
-                        </div>
-                        
+    <footer id="ft_yys" class="d-block">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-4">
+                    <h3 class="mb-0 font_yjy18_ft letter_spacing">어글리어스 고객센터 070.4769.0271</h3>
+                    <div class="d-flex align-items-center f_mg">
+                        <strong class="me-3 font_f14semibold_yjy fixed-width">화-목요일</strong>
+                        <span class="font_f14semibold_yjy_2">11:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                        <strong class="me-3 font_f14semibold_yjy letter_spacing fixed-width">월·금요일</strong>
+                        <span class="font_f14semibold_yjy_2 letter_spacing">09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                        <strong class="me-3 font_f14semibold_yjy letter_spacing fixed-width">토·일·공휴일</strong>
+                        <span class="font_f14semibold_yjy_2 letter_spacing">휴무</span>
+                    </div>
+                    <div class="d-flex align-items-center s_mg">
+                        <button type="button" class="btn btn-primary me-2 btn-custom font_f14semibold_yjy letter_spacing">문의하기</button>
+                        <button type="button" class="btn btn-secondary btn-custom font_f14semibold_yjy letter_spacing">자주하는 질문</button>
+                    </div>
+                    <div class="t_mg">
+                        <a href="/"><img src="./img/img_yys/svg/ugly_us_logo.svg" alt="어글리어스 로고"></a>
                     </div>
                 </div>
-
-
-
+                <div class="ft_sns col d-flex flex-column justify-content-between">
+                    <ul class="list-inline mb-4 text-end">
+                        <li class="list-inline-item mx-2"><a href="#"><img src="./img/img_yys/svg/face_book.svg" alt="페이스북" class="img-fluid sns_fb"></a></li>
+                        <li class="list-inline-item mx-2"><a href="#"><img src="./img/img_yys/svg/insta.svg" alt="인스타그램" class="img-fluid sns_insta"></a></li>
+                        <li class="list-inline-item mx-2"><a href="#"><img src="./img/img_yys/svg/kakao_stroy.svg" alt="카카오스토리" class="img-fluid sns_kakao"></a></li>
+                        <li class="list-inline-item mx-2"><a href="#"><img src="./img/img_yys/svg/x.svg" alt="트위터" class="img-fluid sns_x"></a></li>
+                    </ul>
+                    <div class="ft_last">
+                    <p class="font_f13bold_yjy letter_spacing_yjy my-0">상호명 : 주식회사 캐비지 &nbsp;|&nbsp; 대표 : 최현주 &nbsp;|&nbsp; 사업자등록번호 : 572-81-02287 &nbsp;|&nbsp; 소재지 : 서울특별시 영등포구 양평로 144, 8층(양평동5가)</p>
+                    <p class="font_f13bold_yjy letter_spacing_yjy my-0">통신판매업 신고번호 : 2021-화성동부-0302 &nbsp;|&nbsp; <a href="#">제휴 및 납품 문의 : biz@uglyus.co.kr</a> &nbsp;|&nbsp; <a href="#">농산물 납품 및 긴급구출 제보 : farm@uglyus.co.kr</a></p>
+                    <p class="font_f13bold_yjy letter_spacing_yjy m-0">서비스 이용약관 &nbsp;|&nbsp; 개인정보 처리방침 &nbsp;|&nbsp; Copyright ⓒ 2024 주식회사 캐비지 All rights reserved.</p>
+                    </div>
+                </div>
             </div>
-        
-            <div class="">
-                <h2 class="logo_footer"><a href=""><img src="./img/img_yys/svg/ugly_us_logo.svg" alt="어글리어스 로고"></a></h2>
-                <ul class="" >
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            
-
         </div>
     </footer>
+
+    <aside id="quick_pyj">
+        <div class="plus_button_pyj">
+            <svg class="quick_svg" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="22" width="4" height="47" rx="2" fill="#983015"/>
+                <rect x="47" y="22" width="4" height="47" rx="2" transform="rotate(90 47 22)" fill="#983015"/>
+            </svg>
+            <span class="plustext_pyj">추가</span>
+        </div>
+        
+    </aside>
 </body>
 </html>
