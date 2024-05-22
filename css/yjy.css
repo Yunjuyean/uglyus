@@ -185,8 +185,7 @@
   padding-top: 41px;
   padding-bottom: 41px;
 }
-
-.ft_sns li {
+#ft_yys .ft_sns li {
   width: 42px;
   height: 42px;
   background-color: #FE663F;
@@ -194,8 +193,7 @@
   line-height: 42px;
   text-align: center;
 }
-
-.btn-custom {
+#ft_yys .btn-custom {
   background-color: #FE663F;
   border-color: #FE663F;
   color: white;
@@ -203,51 +201,41 @@
   width: 135px;
   height: 40px;
 }
-
-.btn-custom:hover {
+#ft_yys .btn-custom:hover {
   background-color: #e55b37;
   border-color: #e55b37;
 }
-
-.ft_last {
+#ft_yys .ft_last {
   white-space: nowrap;
   text-align: right;
   line-height: 1.3rem;
 }
-.ft_last a {
+#ft_yys .ft_last a {
   text-decoration: none;
   color: #414B5A;
 }
-
-.sns_fb {
+#ft_yys .sns_fb {
   transform: translate(1px, -2px);
 }
-
-.sns_insta {
+#ft_yys .sns_insta {
   transform: translate(0px, -2px);
   height: 32px;
 }
-
-.sns_kakao {
+#ft_yys .sns_kakao {
   transform: translate(0px, 0px);
 }
-
-.sns_x {
+#ft_yys .sns_x {
   transform: translate(1px, -1px);
 }
-
-.fixed-width {
+#ft_yys .fixed-width {
   width: 80px; /* 고정된 너비를 지정하여 정렬 */
 }
-
-.f_mg {
+#ft_yys .f_mg {
   margin-top: 23px;
 }
-
-.s_mg {
+#ft_yys .s_mg {
   margin-top: 29px;
 }
-
-.t_mg {
+#ft_yys .t_mg {
   margin-top: 40px;
 }
