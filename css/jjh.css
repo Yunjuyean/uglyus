@@ -20,6 +20,17 @@
   color: #414B5A; /* $uglygray 대신 직접 색상 값 사용 */
 }
 
+.adbanner_jjh {
+  height: 15vw;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.trans_jjh {
+  transform: translate(-15%, -28%);
+  border-radius: 20px;
+}
+
 #store_jjh .swiper-container {
   width: 100%;
   height: 500px;
@@ -51,9 +62,13 @@
   background-color: #FE663F;
   color: white;
   border-radius: 20%;
+  font-family: "Pretendard";
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
 }
 #store_jjh .scaled-image {
-  transform: scale(0.65);
+  transform: scale(0.5);
 }
 #store_jjh ul {
   padding-left: 0;
@@ -71,8 +86,28 @@
   transform: rotate(3deg);
 }
 #store_jjh .margin_v {
-  margin-bottom: -180px;
+  margin-bottom: -250px;
 }
 #store_jjh .margin_t {
   margin-top: 80px;
+}
+#store_jjh .image-wrapper {
+  background-image: url("./img/img_jjh/SVG/carrot.svg");
+}
+#store_jjh .bg_svg {
+  background-image: url("./img/img_jjh/SVG/carrot.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#store_jjh .img_position_jjh {
+  left: -60px;
+  top: -7px;
+}
+#store_jjh .text_position_jjh {
+  width: 90%;
+  left: 80%;
+}
+#store_jjh .carrot_z {
+  z-index: 1000;
 }

@@ -17,7 +17,15 @@
   font-weight: 300;
   color: #414B5A; /* $uglygray 대신 직접 색상 값 사용 */
 }
-
+.adbanner_jjh{
+  height: 15vw;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.trans_jjh{
+  transform: translate(-15%, -28%);
+  border-radius: 20px;
+}
 #store_jjh{
 .swiper-container {
   width: 100%;
@@ -56,10 +64,14 @@
   background-color: #FE663F;
   color: white;
   border-radius: 20%;
+  font-family: 'Pretendard';
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
   
 }
 .scaled-image{
-  transform: scale(0.65);
+  transform: scale(0.5);
 }
 
 ul{
@@ -87,9 +99,31 @@ ul{
   transform: rotate(3deg);
 }
 .margin_v{
-  margin-bottom: -180px;
+  margin-bottom: -250px;
 }
 .margin_t{
   margin-top: 80px;
+}
+.image-wrapper{
+  background-image: url('./img/img_jjh/SVG/carrot.svg'){
+  
+  }
+}
+.bg_svg {
+  background-image: url('./img/img_jjh/SVG/carrot.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.img_position_jjh{
+  left:-60px; 
+  top: -7px;
+}
+.text_position_jjh{
+  width: 90%; 
+  left: 80%;
+}
+.carrot_z{
+  z-index: 1000;
 }
 }
