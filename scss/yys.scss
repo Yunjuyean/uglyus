@@ -133,153 +133,355 @@ a {
     
         
     
-#hd_yys {
+// #hd_yys {
+//     background-color: #ffffff !important;
+//     position: fixed;
+//     padding: 0 48px;
+//     z-index: 1000;
+//     display: flex;
+  
+//     .gnb {
+//       &:before {
+//         content: "";
+//         position: absolute;
+//         left: 0;
+//         right: 0;
+//         top: 100%;
+//         height: 0;
+//         transition: 0.5s;
+//         background-color: #ff6943 !important;
+//         border-bottom: none !important;
+//         margin-bottom: 0 !important;
+//       }
+  
+//       &:hover {
+//         &:before {
+//           height: 190px;
+//           border-bottom: 1px solid #cc5638 !important;
+//           transition: height 0.5s;
+//         }
+  
+//         .gnb_li {
+//           transition: 0.5s;
+//           padding: 0 50px;
+  
+//           .gnb_ul {
+//             height: 184px;
+//           }
+//           .gnb_a {
+//             &:hover{
+//                 span {
+//               &:before {
+//                 content: "";
+//                 left: 0;
+//                 right: 0;
+//                 height: 4px;
+//                 top: 81px;
+//                 min-width: 70px;
+//                 opacity: 1;
+//                 position: absolute;
+//                 z-index: 1000000;
+//                 background: #ff6943;
+//                 transition: 0.85s !important;
+//                  }
+//              }
+                
+//             }
+            
+//           }
+//         }
+  
+        
+//       }
+  
+//       .gnb_li {
+//         .gnb_ul_li {
+//           min-width: 300px;
+//           padding-bottom: 30px;
+//           text-align: center;
+//           font-family: "Pretendard";
+//           font-size: 18px;
+//           font-weight: 400;
+//           color: #ffffff;
+//         }
+//       }
+//       .gnb_ul {
+//         overflow: hidden;
+//         height: 0;
+//         top: 100%;
+//         margin-top: 30px !important;
+//         transition: height 0.2s;
+//         left: -93px;
+//         text-align: center;
+//         white-space: nowrap !important;
+//         position: absolute;
+  
+//         &:after,
+//         &:before {
+//           content: "";
+//           display: block;
+//         }
+  
+//         a {
+//           color: #414b5a;
+  
+//           &:hover {
+//             font-family: "Pretendard";
+//             font-size: 18px;
+//             font-weight: 400;
+//             color: #ffffff !important;
+//           }
+//         }
+//       }
+  
+//       .gnb_a {
+//         line-height: 100px;
+//         font-family: "Pretendard";
+//         font-size: 22px;
+//         font-weight: 400;
+//         color: #414b5a;
+  
+//         &:hover {
+//           transition: all 0.2s !important;
+//           color: #ff6943 !important;
+  
+//           span {
+//             &:before {
+//               content: "";
+//               left: 0;
+//               right: 0;
+//               height: 4px;
+//               top: 81px;
+//               min-width: 70px;
+//               opacity: 1;
+//               position: absolute;
+//               z-index: 1000000;
+//               background: #ff6943;
+//               transition: 0.85s !important;
+//             }
+//           }
+//         }
+//       }
+  
+      
+      
+//     }
+#hd_yys{
     background-color: #ffffff !important;
     position: fixed;
     padding: 0 48px;
     z-index: 1000;
-    display: flex;
-  
-    .gnb {
-      &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 100%;
-        height: 0;
-        transition: 0.5s;
-        background-color: #ff6943 !important;
-        border-bottom: none !important;
-        margin-bottom: 0 !important;
-      }
-  
-      &:hover {
-        &:before {
-          height: 190px;
-          border-bottom: 1px solid #cc5638 !important;
-          transition: height 0.5s;
-        }
-  
-        .gnb_li {
-          transition: 0.5s;
-          padding: 0 50px;
-  
-          .gnb_ul {
-            height: 184px;
-          }
-          .gnb_a {
-            &:hover{
-                span {
-              &:before {
-                content: "";
-                left: 0;
-                right: 0;
-                height: 4px;
-                top: 81px;
-                min-width: 70px;
-                opacity: 1;
-                position: absolute;
-                z-index: 1000000;
-                background: #ff6943;
-                transition: 0.85s !important;
-                 }
-             }
-                
-            }
+    .gnb
+    {
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 100%;
+                    height: 0;
+                    transition: 0.5s;
+                    background-color: #ff6943 !important;
+                    border-bottom: none !important;
+                    margin-bottom: 0 !important;
+                }
             
-          }
-        }
-  
+                &:hover {
+                    &:before {
+                        content: "";
+                    height: 190px;
+                    border-bottom: 1px solid #cc5638 !important;
+                    transition: height 0.5s;
+                    }
+                    
+                    .gnb_li{
+                        padding:0 80px;
+                        .gnb_ul{
+                            height: 180px;
+                            
+                        }
+                    }
+                    
+                    
+                }
+                
+                .gnb_li{
+                    position: relative;
+                    transition: 0.5s;
+                    &:hover{
+                       
+                        .gnb_a{
+                            span{
+                                    
+                                    line-height: 100px;
+                                    font-family: "Pretendard";
+                                    font-size: 22px;
+                                    font-weight: 400;
+                                    color: #ff6943; 
+                                    
+                                    &:before {
+                                       
+                                         
+                                                    width: 40%;
+                                               
+                                  
+                                        
+                                    }
+                            }
+                           
+                            
+                            
+                        }
+                       
+                        
+                        
+                    }
+                    
+                    .gnb_a{
+                                    line-height: 100px;
+                                    font-family: "Pretendard";
+                                    font-size: 22px;
+                                    font-weight: 400;
+                                    color: #414b5a;
+                                    span{
+                                       &:before {
+                                       
+                                        content: "";
+                                        // left: 35px;
+                                                // right: 35px;
+                                                transform: translateX(-50%);
+                                                left: 50%;
+                                                height: 4px;
+                                                top: 81px;
+                                                width: 0;
+                                             
+                                                position: absolute;
+                                                z-index: 1000000;
+                                                background: #ff6943;
+                                                border-radius: 3px;
+                                                transition: all 0.4s;
         
-      }
-  
-      .gnb_li {
-        .gnb_ul_li {
-          min-width: 300px;
-          padding-bottom: 30px;
-          text-align: center;
-          font-family: "Pretendard";
-          font-size: 18px;
-          font-weight: 400;
-          color: #ffffff;
-        }
-      }
-  
-      .gnb_a {
-        line-height: 100px;
-        font-family: "Pretendard";
-        font-size: 22px;
-        font-weight: 400;
-        color: #414b5a;
-  
-        &:hover {
-          transition: all 0.2s !important;
-          color: #ff6943 !important;
-  
-          span {
-            &:before {
-              content: "";
-              left: 0;
-              right: 0;
-              height: 4px;
-              top: 81px;
-              min-width: 70px;
-              opacity: 1;
-              position: absolute;
-              z-index: 1000000;
-              background: #ff6943;
-              transition: 0.85s !important;
-            }
-          }
-        }
-      }
-  
-      .gnb_ul {
-        overflow: hidden;
-        height: 0;
-        top: 100%;
-        margin-top: 30px !important;
-        transition: height 0.2s;
-        left: -93px;
-        text-align: center;
-        white-space: nowrap !important;
-        position: absolute;
-  
-        &:after,
-        &:before {
-          content: "";
-          display: block;
-        }
-  
-        a {
-          color: #414b5a;
-  
-          &:hover {
-            font-family: "Pretendard";
-            font-size: 18px;
-            font-weight: 400;
-            color: #ffffff !important;
-          }
-        }
-      }
-      
-    }
+                                    }
+                                    
+                                }
 
+                       
+                       
+                    }
+                    
+                    
+                }
+                .gnb_ul {
+                            overflow: hidden;
+                            height: 0;
+                            top: 100%;
+                            // margin-top: 30px !important;
+                            transition: height 0.2s;
+                            // left: -93px;
+                            transform: translateX(-50%);
+                            left: 50%;
+                            padding: 0;
+                            text-align: center;
+                            white-space: nowrap !important;
+                            position: absolute;
+                            
+                            min-width: 150px;
+                      
+                            &:after,
+                            &:before {
+                              content: "";
+                              display: block;
+                              height: 40px;
+                            }
+                      
+                            a {position: relative;
+                                font-family: "Pretendard";
+                                font-size: 18px;
+                                font-weight: 400;
+                                color: #414b5a;
+                                display: block;
+                                height: 50px;
+
+                      
+                              &:hover {
+                                font-family: "Pretendard";
+                                font-size: 18px;
+                                font-weight: 400;
+                                color: #ffffff;
+                                display: block;
+                                height:50px;
+                                
+                                    span{
+                                        
+                                        &:before{
+                                            content: "";
+                                            transform: translateX(-50%);
+                                            left: 50%;
+                                            position: absolute;
+                                            z-index: 1000000;
+                                            top: -14%;
+                                            width: 30%;
+                                            border-top:1.5px solid #ffffff;
+                                            padding: 5px 0;
+                                            transition: 0.2s;
+
+                                        }
+                                        
+                                        
+                                    } 
+                                }
+                                span{
+                                    &::before{
+                                        content: "";
+                                        transform: translateX(-50%);
+                                                left: 50%;
+                                        width: 0%;
+                                    }
+                                }
+
+                               
+                            }
+
+                            span{
+                                &::before{
+                                    content: "";
+                                    
+                                    width: 0;
+                                    
+                                }
+                            } 
+                    
+                         }
+
+
+                        
+                
+                
+                   
+    }        
+        
+        
+        
+
+    
     .font_login {
         font-family: "Pretendard";
         font-size: 14px;
         font-weight: 400;
         color: #414B5A;
         list-style: none;
+        &:hover {
+            color: #FF6943 !important;
+        }
     }
+   
+}
+
+
     
-    .login a:hover {
-        color: #FF6943 !important;
-    }
 
 
-  }
+  
 
     
 

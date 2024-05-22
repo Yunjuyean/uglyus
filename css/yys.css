@@ -113,7 +113,6 @@ a {
   position: fixed;
   padding: 0 48px;
   z-index: 1000;
-  display: flex;
 }
 #hd_yys .gnb:before {
   content: "";
@@ -128,86 +127,107 @@ a {
   margin-bottom: 0 !important;
 }
 #hd_yys .gnb:hover:before {
+  content: "";
   height: 190px;
   border-bottom: 1px solid #cc5638 !important;
   transition: height 0.5s;
 }
 #hd_yys .gnb:hover .gnb_li {
-  transition: 0.5s;
-  padding: 0 50px;
+  padding: 0 80px;
 }
 #hd_yys .gnb:hover .gnb_li .gnb_ul {
-  height: 184px;
+  height: 180px;
 }
-#hd_yys .gnb:hover .gnb_li .gnb_a:hover span:before {
-  content: "";
-  left: 0;
-  right: 0;
-  height: 4px;
-  top: 81px;
-  min-width: 70px;
-  opacity: 1;
-  position: absolute;
-  z-index: 1000000;
-  background: #ff6943;
-  transition: 0.85s !important;
+#hd_yys .gnb .gnb_li {
+  position: relative;
+  transition: 0.5s;
 }
-#hd_yys .gnb .gnb_li .gnb_ul_li {
-  min-width: 300px;
-  padding-bottom: 30px;
-  text-align: center;
+#hd_yys .gnb .gnb_li:hover .gnb_a span {
+  line-height: 100px;
   font-family: "Pretendard";
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
-  color: #ffffff;
+  color: #ff6943;
 }
-#hd_yys .gnb .gnb_a {
+#hd_yys .gnb .gnb_li:hover .gnb_a span:before {
+  width: 40%;
+}
+#hd_yys .gnb .gnb_li .gnb_a {
   line-height: 100px;
   font-family: "Pretendard";
   font-size: 22px;
   font-weight: 400;
   color: #414b5a;
 }
-#hd_yys .gnb .gnb_a:hover {
-  transition: all 0.2s !important;
-  color: #ff6943 !important;
-}
-#hd_yys .gnb .gnb_a:hover span:before {
+#hd_yys .gnb .gnb_li .gnb_a span:before {
   content: "";
-  left: 0;
-  right: 0;
+  transform: translateX(-50%);
+  left: 50%;
   height: 4px;
   top: 81px;
-  min-width: 70px;
-  opacity: 1;
+  width: 0;
   position: absolute;
   z-index: 1000000;
   background: #ff6943;
-  transition: 0.85s !important;
+  border-radius: 3px;
+  transition: all 0.4s;
 }
 #hd_yys .gnb .gnb_ul {
   overflow: hidden;
   height: 0;
   top: 100%;
-  margin-top: 30px !important;
   transition: height 0.2s;
-  left: -93px;
+  transform: translateX(-50%);
+  left: 50%;
+  padding: 0;
   text-align: center;
   white-space: nowrap !important;
   position: absolute;
+  min-width: 150px;
 }
 #hd_yys .gnb .gnb_ul:after, #hd_yys .gnb .gnb_ul:before {
   content: "";
   display: block;
+  height: 40px;
 }
 #hd_yys .gnb .gnb_ul a {
+  position: relative;
+  font-family: "Pretendard";
+  font-size: 18px;
+  font-weight: 400;
   color: #414b5a;
+  display: block;
+  height: 50px;
 }
 #hd_yys .gnb .gnb_ul a:hover {
   font-family: "Pretendard";
   font-size: 18px;
   font-weight: 400;
-  color: #ffffff !important;
+  color: #ffffff;
+  display: block;
+  height: 50px;
+}
+#hd_yys .gnb .gnb_ul a:hover span:before {
+  content: "";
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  z-index: 1000000;
+  top: -14%;
+  width: 30%;
+  border-top: 1.5px solid #ffffff;
+  padding: 5px 0;
+  transition: 0.2s;
+}
+#hd_yys .gnb .gnb_ul a span::before {
+  content: "";
+  transform: translateX(-50%);
+  left: 50%;
+  width: 0%;
+}
+#hd_yys .gnb .gnb_ul span::before {
+  content: "";
+  width: 0;
 }
 #hd_yys .font_login {
   font-family: "Pretendard";
@@ -216,7 +236,7 @@ a {
   color: #414B5A;
   list-style: none;
 }
-#hd_yys .login a:hover {
+#hd_yys .font_login:hover {
   color: #FF6943 !important;
 }
 
