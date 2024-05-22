@@ -36,7 +36,7 @@ $uglygray : #414B5A;
 // 공백
 .text_blank_pyj{
   margin-bottom: 23px;
-    @media (max-width : 991px){
+    @media (max-width : 990px){
       margin-bottom: 0;
     }
 }
@@ -62,7 +62,7 @@ $uglygray : #414B5A;
   color:$uglyblack;
   letter-spacing: -0.5px;
   line-height: 1.8rem;
-    @media (max-width : 991px){
+    @media (max-width : 990px){
       font-size: 30px;
       line-height: 2.5rem;
     }
@@ -86,7 +86,7 @@ $uglygray : #414B5A;
   color:$uglygray;
   letter-spacing: -0.5px;
   line-height: 1.8rem;
-    @media (max-width : 991px){
+    @media (max-width : 990px){
       font-size: 22px;
       line-height: 5rem;
     }
@@ -110,7 +110,7 @@ $uglygray : #414B5A;
   color:$uglygray;
   letter-spacing: -0.5px;
   line-height: 1.5rem;
-    @media (max-width : 991px){
+    @media (max-width : 990px){
       font-size: 14px;
     }
     @media (max-width : 450px){
@@ -174,7 +174,7 @@ $uglygray : #414B5A;
   color: $uglyblack;
   letter-spacing: -0.5px;
   line-height: 2.5rem;
-    @media (max-width : 991px){
+    @media (max-width : 990px){
       font-size: 22px;
       line-height: 1.8rem;
     }
@@ -186,7 +186,7 @@ $uglygray : #414B5A;
     color:$uglyblack;
     letter-spacing: -0.5px;
     line-height: 1.8rem;
-      @media (max-width : 991px){
+      @media (max-width : 990px){
         font-size: 17px;
         line-height: 1.4rem;
       }
@@ -196,8 +196,8 @@ $uglygray : #414B5A;
     font-size: 16px;
     font-weight: 600;
     color: $uglyblack;
-      @media (max-width : 991px){
-        font-size: 14px;
+      @media (max-width : 990px){
+        font-size: 13px;
     }
   }
   .formfont_placehold_pyj{
@@ -205,7 +205,7 @@ $uglygray : #414B5A;
     font-size: 14px;
     font-weight: 500;
     color: $uglygray;
-      @media (max-width : 991px){
+      @media (max-width : 990px){
         font-size: 12px;
     }
   }
@@ -228,7 +228,7 @@ $uglygray : #414B5A;
     border-radius: 5px;
     max-width: 400px;
     height: 33px;
-      @media (max-width : 991px){
+      @media (max-width : 990px){
         max-width: 300px;
       }
   }
@@ -238,7 +238,7 @@ $uglygray : #414B5A;
     border-radius: 5px;
     max-width: 130px;
     height: 33px;
-      @media (max-width : 991px){
+      @media (max-width : 990px){
         max-width: 97px;
       }
   }
@@ -257,7 +257,7 @@ $uglygray : #414B5A;
     font-family: 'Pretendard';
     font-size: 22px;
     font-weight: 600;
-      @media (max-width : 991px){
+      @media (max-width : 990px){
         max-width: 300px;
         height: 50px;
         font-size: 18px;
@@ -276,45 +276,67 @@ $uglygray : #414B5A;
   .carrot_svg{
     width: 50px;
     height: auto;
-    transform: translateX(-35%);
+    transform: translateX(-2px);
   }
 
-  .before_button{
+  .plus_menu_pyj{
     background-color: $uglyorange;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
+    padding-bottom: 10px;
+    border: 5px solid $uglyorange;
+    border-color: transparent $uglyorange;
+    border-radius: 0 0 100px 100px;
 
-    &:hover{
-      img{
-        filter: brightness(0) invert(1);
+    .before_button{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 75px;
+      height: 80px;
+      border: 1px solid #983015;
+      border-color: #983015 transparent transparent transparent;
+
+      &:hover{
+        img{
+          filter: brightness(0) invert(1);
+        }
+        a{
+          color: #fff;
+        }
+      }
+
+      .quick_button{
+        padding: 4px 0;
+        width: 35px;
+        height: auto;
+        cursor: pointer;
       }
       a{
-        color: #fff;
+        text-decoration: none;
+        color: #983015;
+        line-height: 1rem;
+      }
+      .plustext_pyj{
+        position : absolute;
+        width : 0;
+        height : 0;
+        display : block;
+        overflow : hidden;
+        opacity : 0;
       }
     }
-
-    .quick_button{
-      padding: 10px;
-      width: 50px;
-      height: auto;
-      cursor: pointer;
-    }
-    a{
-      text-decoration: none;
-      color: #983015;
-      line-height: 1rem;
-    }
-    .plustext_pyj{
-      position : absolute;
-      width : 0;
-      height : 0;
-      display : block;
-      overflow : hidden;
-      opacity : 0;
-    }
   }
+}
+
+// 퀵 폰트
+.font_button_pyj{
+  font-family: 'Pretendard';
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: -0.5px;
+  line-height: 1.5rem;
+      @media (max-width : 990px){
+          font-size: 13px;
+      }
 }
