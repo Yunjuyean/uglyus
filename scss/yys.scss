@@ -361,9 +361,10 @@ a {
 
   #event_banner_yys{
     .banner_img{
-        background-image: url(../img/img_yys/img/sale_banner.jpg)no-repeat center;
+        background: url(../img/img_yys/svg/eventBanner_yys.svg) no-repeat center;
         background-size: cover;
         height: 61px;
+        width: 1920px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -372,6 +373,31 @@ a {
         }
 
 
+
+    }
+    .event_font_yysH2{
+        display: flex;
+        position: absolute;
+        line-height: 1.5rem;
+        letter-spacing: -0.5px;
+        font-family: 'Pretendard';
+        font-size: 31px;
+        font-weight: 700;
+        padding:0 30px;
+        left: 598px;
+        margin-bottom: 0;
+
+    }
+    .event_font_yysP{
+        display: flex;
+        position: absolute;
+        right: 536px;
+        line-height: 1.5rem;
+        letter-spacing: -0.5px;
+        font-family: 'Pretendard';
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 0;
 
     }
 
