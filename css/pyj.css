@@ -362,8 +362,8 @@
 }
 #quick_pyj.showmenu .plus_button {
   position: relative;
-  transition: transform 0.5s ease border-radius 0.6s ease 0.1s;
-  border-radius: 0 0 100px 100px;
+  transition: max-height 0.5s ease;
+  border-radius: 0;
 }
 #quick_pyj.showmenu .plus_after_pyj {
   border-radius: 0;
@@ -372,7 +372,7 @@
   filter: brightness(0) invert(1);
 }
 #quick_pyj.showmenu #quickMenu {
-  max-height: 600px;
+  max-height: 500px;
 }
 #quick_pyj .carrot_svg {
   width: 30px;
