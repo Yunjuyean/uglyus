@@ -221,7 +221,7 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 990px) {
   .section_blank {
     margin-bottom: 80px;
   }
