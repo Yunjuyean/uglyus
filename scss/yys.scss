@@ -95,15 +95,18 @@ $or-color: #983016;
     align-items: $align-center;
   }
 
-.flexcenter {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.flexbetween_yys{
+   display: flex !important;
+   justify-content:space-between !important;
+   align-items: center !important;
   }
-
-.d-flex{
-    display: flex !important;
+.flexcenter{
+   display: flex !important;
+   justify-content:center !important;
+   align-items: center !important;
 }
+
+
 .jcc{
     justify-content: center !important;
 }
@@ -130,356 +133,388 @@ a {
     
         
     
- #hd_yys{
+
+#hd_yys{
+    
+    background-color: #ffffff !important;
     position: fixed;
     padding: 0 48px;
-    z-index: 1000px;
-    .gnb {
-        
-        &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 100%;
-            height: 0;
-            transition: 0.5s;
-            background-color: #FF6943 !important;
-            border-bottom: none !important;
-            margin-bottom:0 !important;
-        }
-
-        &:hover {
-            &:before {
-                height: 190px;
-                border-bottom: 1px solid #cc5638 !important;
-                transition: height 0.5s;
-            }
-
-            .gnb_li {
-                transition: 0.5s;
-                padding: 0 50px;
-                .gnb_ul {
-                    height: 184px;
+    z-index: 1000000;
+    .gnb
+    {
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 100%;
+                    height: 0;
+                    transition: 0.5s;
+                    background-color: #ff6943 !important;
+                    border-bottom: none !important;
+                    margin-bottom: 0 !important;
+                }
+            
+                &:hover {
+                    &:before {
+                        content: "";
+                    height: 190px;
+                    border-bottom: 1px solid #cc5638 !important;
+                    transition: height 0.5s;
+                    }
+                    
+                    .gnb_li{
+                        padding:0 80px;
+                        .gnb_ul{
+                            height: 180px;
+                            
+                        }
+                    }
+                    
                     
                 }
-            }
-        }
-
-        .gnb_li {
-            .gnb_ul_li {
-                min-width: 300px;
-                padding-bottom: 30px;
-                text-align: center;
-                font-family: "Pretendard";
-                font-size: 18px;
-                font-weight: 400;
-                color: #ffffff;
-            }
-        }
-
-        .gnb_a {
-            line-height: 100px;
-            font-family: "Pretendard";
-            font-size: 22px;
-            font-weight: 400;
-            color: #414B5A;
-
-            &:hover {
-                transition: 0.2s;
-                color: #FF6943 !important;
-            }
-        }
-
-        .gnb_ul {
-            
-            overflow: hidden;
-            height: 0;
-            top: 100%;
-            margin-top: 30px !important;
-            transition: height 0.2s;
-            left: -93px;
-            text-align: center;
-            white-space: nowrap !important;
-
-            &:after,
-            &:before {
-                content: "";
-                display: block;
                 
-            }
-
-            a {
-                color: #414B5A;
-                &:hover {
-                    font-family: "Pretendard";
-                    font-size: 18px;
-                    font-weight: 400;
-                    color: #414B5A;
-
-                    color: white !important;
-                }
-            }
-
-        }
-      
+                .gnb_li{
+                    position: relative;
+                    transition: 0.5s;
+                    &:hover{
+                       
+                        .gnb_a{
+                            span{
+                                    
+                                    line-height: 100px;
+                                    font-family: "Pretendard";
+                                    font-size: 22px;
+                                    font-weight: 400;
+                                    color: #ff6943; 
+                                    
+                                    &:before {
+                                       
+                                         
+                                                    width: 40%;
+                                               
+                                  
+                                        
+                                    }
+                            }
+                           
+                            
+                            
+                        }
+                       
+                        
+                        
+                    }
+                    
+                    .gnb_a{
+                                    line-height: 100px;
+                                    font-family: "Pretendard";
+                                    font-size: 22px;
+                                    font-weight: 400;
+                                    color: #414b5a;
+                                    span{
+                                       &:before {
+                                       
+                                        content: "";
+                                        // left: 35px;
+                                                // right: 35px;
+                                                transform: translateX(-50%);
+                                                left: 50%;
+                                                height: 4px;
+                                                top: 81px;
+                                                width: 0;
+                                             
+                                                position: absolute;
+                                                z-index: 1000000;
+                                                background: #ff6943;
+                                                border-radius: 3px;
+                                                transition: all 0.4s;
         
-    }
+                                    }
+                                    
+                                }
+                       
+                       
+                    }
+                    
+                    
+                }
+                .gnb_ul {
+                            overflow: hidden;
+                            height: 0;
+                            top: 100%;
+                            // margin-top: 30px !important;
+                            transition: height 0.2s;
+                            // left: -93px;
+                            transform: translateX(-50%);
+                            left: 50%;
+                            padding: 0;
+                            text-align: center;
+                            white-space: nowrap !important;
+                            position: absolute;
+                            
+                            min-width: 150px;
+                      
+                            &:after,
+                            &:before {
+                              content: "";
+                              display: block;
+                              height: 40px;
+                            }
+                      
+                            a {position: relative;
+                                font-family: "Pretendard";
+                                font-size: 18px;
+                                font-weight: 400;
+                                color: #414b5a;
+                                display: block;
+                                height: 50px;
+                      
+                              &:hover {
+                                font-family: "Pretendard";
+                                font-size: 18px;
+                                font-weight: 400;
+                                color: #ffffff;
+                                display: block;
+                                height:50px;
+                                
+                                    span{
+                                        
+                                        &:before{
+                                            content: "";
+                                            transform: translateX(-50%);
+                                            left: 50%;
+                                            position: absolute;
+                                            z-index: 1000000;
+                                            top: -14%;
+                                            width: 30%;
+                                            border-top:1.5px solid #ffffff;
+                                            padding: 5px 0;
+                                            transition: 0.2s;
+                                        }
+                                        
+                                        
+                                    } 
+                                }
+                                span{
+                                    &::before{
+                                        content: "";
+                                        transform: translateX(-50%);
+                                                left: 50%;
+                                        width: 0%;
+                                    }
+                                }
+                               
+                            }
+                            span{
+                                &::before{
+                                    content: "";
+                                    
+                                    width: 0;
+                                    
+                                }
+                            } 
+                    
+                         }
+                        
+                
+                
+                   
+    }        
+        
+        
+        
+    
     .font_login {
         font-family: "Pretendard";
         font-size: 14px;
         font-weight: 400;
         color: #414B5A;
         list-style: none;
+
     }
 
-    .login a:hover {
-        color: #FF6943 !important;
-    }
+}
+#mainbanner_yys{
+    overflow: hidden;
+    padding: 100px 0 200px 0;
     
- }
+}
+.main_image_center_yys{
+    max-width: 1400px;
+    border-radius: 20px;
+  }
+  .main_image_side_yys{
+    max-width: 1000px;
+    border-radius: 20px;
+  }
+  .dja_yys{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #pagination{
+    top:740px;
+    position: relative;
+    width: 137px;
+    height: 16px;
+    display: flex !important;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
     
 
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            width: 137px;
+            height: 16px;
+            
+            li{
+                
+                width: 17px;
+                height: 16px;
+                background-color: #D9D9D9;
+                border-radius: 30px;
+                padding: 0;
+                margin: 5px;
+                &:hover{
+                    background-color: #797979;
+                }
 
-#mainbanner_yys {
-    max-width: 1920px;
-
-    .swiper {
-        padding:186px 0 146px 0;
-        overflow: hidden;
-
-        .swiper-pagination {
-            padding: 90px 0 0 0;
-            bottom: unset !important;
-
-            span {
-                width: 15px !important;
-                height: 14px !important;
-                border-radius: 100% !important;
+                a{
+                    width: 17px;
+                    height: 16px;
+                    display: block;
+                }
             }
         }
+  }
 
-        .swiper-slide.swiper-slide-active {
-            transform: scale(2.3) !important;
-            position: relative !important;
-            z-index: 10000 !important;
-            padding: 100px 250px !important;
-            transition: 1.2s;
-        }
-    }
-
-    link {
-        list-style: none;
-    }
-}
-#quik{
-    
-    
-
-   
-
-
-    .quikBtn{
-        &::before{
+  #collab_banner_yys{
+    width: 1920px;
+    height: 60px;
+    justify-content: center;
+    .collab_img{
+        background: url(../img/img_yys/svg/collab_banner_yys.svg);
+        border-radius: 20px;
+        background-size: cover ;
+        height: 100px;
+        width: 1400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(18%);
+        
+        .collab_font_yysH2{
+            margin-left: -420px;
+            top: 23px;
+            display: flex;
+            position: absolute;
+            line-height: 1.5rem;
+            letter-spacing: -0.5px;
+            font-family: "Pretendard";
+            font-size: 30px;
+            font-weight: 700;
+            /* padding: 0 30px; */
+            left: 598px;
+            margin-bottom: 0;
             
+    
         }
+        .collab_font_yysP{
+            bottom: 17px;
+            margin-right: 407px;
+            display: flex;
+            position: absolute;
+            right: 536px;
+            line-height: 1.5rem;
+            letter-spacing: -0.7px;
+            font-family: 'Pretendard';
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 0;
+    
+        }
+        .collab_font_yysPt{
+            display: flex;
+            position: absolute;
+            right: 580px;
+            line-height: 17px;
+            letter-spacing: -0.6px;
+            font-family: "Pretendard";
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 0;
 
-        display: inline-block;
-        top: 50vh;
-        position: fixed !important;
-        z-index: 100000;
-        display: block;
-        flex-wrap: nowrap;
-        width: 80px;
-        height: 80px;
-        overflow: visible;
-        background-color: #FF6943 !important;
-        bottom:24px;
-        right:25px;
-         img{
-            margin: 17px;
+        }
+        a{
+            color: #3B3B3B !important;
+        }
+    
+    }
+
+  }
+
+  #event_banner_yys{
+    .banner_img{
+        background: url(../img/img_yys/svg/eventBanner_yys.svg) no-repeat center;
+        background-size: cover;
+        height: 61px;
+        width: 1920px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
             display: block;
-            overflow: visible;
-            
-
         }
-    
-        .quikMenu{position: absolute;
-            background-color: #FF6943;
-
-            max-height: 494px;
-            transition: max-height 0.5s;
-            bottom: 100%;
-
-            
-            &::before{
-                position: absolute;
-                background-color: #FF6943;
-
-                max-height: 494px;
-                transition: max-height 0.5s;
-                bottom: 100%;
-
-            }
-            &::after{
-                display: block;
-            }
-            
-            left: 0;
-            height: 0;
-            top: 0;
-            bottom: 0;
-        }
-        
-       .or{
-        background-color: #cc5638;
-        border: unset !important;
-       }
-    
-}
 
 
-    
 
-    // position: fixed;
-    // z-index: 10;
-    // display: block;
-    // flex-wrap: nowrap;s
-    // width:auto;
-    // overflow: visible;
-    // background: transparent;
-    // bottom: 24px;
-    // right: 25px;
+    }
+    .event_font_yysH2{
+        display: flex;
+        position: absolute;
+        line-height: 1.5rem;
+        letter-spacing: -0.5px;
+        font-family: 'Pretendard';
+        font-size: 31px;
+        font-weight: 600;
+        padding:0 30px;
+        left: 598px;
+        margin-bottom: 0;
 
-}
-#ft_yys{
-    #snsIcon{
-        .iconColor{
-            
-            background-color: #983016 !important;
-        }
+    }
+    .event_font_yysP{
+        display: flex;
+        position: absolute;
+        right: 536px;
+        line-height: 1.5rem;
+        letter-spacing: -0.5px;
+        font-family: 'Pretendard';
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 0;
 
     }
 
-}
+  }
 
 
-// #quick-menu_yys {
-//     position: relative;
-//     #quikBtn {
-//         &::before{background-color: #FF6943 !important;
-//             position: fixed;
-//             top: 0;
-//             right: 0 !important;
-//              /* 뷰포트 높이의 50% */
-            
-//             padding: 30px;
-//             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
-//             z-index: 99999999; /* 다른 요소 위에 표시되도록 설정 */
-
-//         }
-//         &:hover{
-//             display: block !important;
-//             max-width: 100px;
-//             height: 200px;
-//             .qIcon_span{
-//                 display: block !important;
-
-
-//             }
-//         }
-//     }
-    
-
-//     .quick-menu.aside {
-//         display: none; /* 초기에는 보이지 않도록 설정 */
-//     }
-// }
-// #quick-menu_yys{
-//     flex-direction: row-reverse !important;
-//     position: relative;
-//     padding-right: auto !important;
-//     // max-width: 1920px;
-    
-    
-    
-//     #quikBtn{
-        
-//         background-color: #FF6943 !important;
-//         position: fixed;
-//         height: 0 !important;
-//         top: 50vh;
-//         overflow: hidden !important;
-//     }
-//     &:hover{
-//         max-height: 50px;
-//         border-bottom: 0 0 30px 30px;
-
-//         #quikMenu_in{
-//             display: block !important;
-        
-            
-//         }
-
-
-//     }
-//     #quikMenu_in{
-//         display: none !important;
-//     }
+  
     
 
 
-      
+  
 
-
-// }
-
-
-// 22
-// #quik {
-//     position: relative;
-//     bottom: 2rem;
-//     right: 1rem;
-
-//     /* 새로운 내용: 부모 요소에 z-index 추가 */
-//     z-index: 10000;
-
-//     #quikBtn {
-//         position: fixed ;
-//         transform: translateY(.9rem);
-//         z-index: 100000 !important;
-//         img {
-//             height: 5rem;
-//         }
-//     }
-//     #quikMenu {
-//         position: fixed;
-//         top: 50%; transform: translateY(-50%);
-        
-//         &::before {
-//             content: "";
-//             display: block;
-//             background: #3D71FF;
-//             height: .5rem;
-            
-//             z-index: 100000 !important;
-//         }
-//         background: #3D71FF;
-//         border-radius: 0 0 3rem 3rem;
-//         .qIcon {
-//             position: absolute;
-//             background: #6A92FE;
-//             border-radius: 50%;
-//             box-shadow: 3px 3px 3px #00000030;
-//             line-height: 1;
-//             a {
-//                 font-size: 1.7rem;
-//                 color: #fff;
-//             }
-//         }
-//     }
     
-// }
+
+ 
+    
 
 
 
