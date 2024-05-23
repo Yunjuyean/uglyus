@@ -358,7 +358,6 @@
 #quick_pyj #quickMenu {
   max-height: 0;
   overflow: hidden;
-  transition: 0.5s;
 }
 #quick_pyj.showmenu .plus_button {
   position: relative;
