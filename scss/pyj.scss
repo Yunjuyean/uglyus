@@ -318,26 +318,43 @@ $uglygray : #414B5A;
 
 // 퀵 버튼 컨텐츠
 #quick_pyj{
-  // display: none;
   position: fixed;
-  top: calc(50vh - 60px); 
+  bottom: calc(10vh - 40px);
   right: 20px;
   width: 70px;
 
+  .quick-none{
+    display: block !important;
+  }
+  
+  #quickMenu{
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
 
   &.showmenu{
-     .d-none{
-      display: block !important;
-     }
-     .plus_after_pyj{
+    .plus_button{
+      position: relative;
+      transition: transform 0.5s ease border-radius 0.6s ease 0.1s;;
+      border-radius: 0 0 100px 100px;
+
+    }
+    .plus_after_pyj{
       border-radius: 0;
-     }
+      img{
+        filter: brightness(0) invert(1);
+      }
+    }
+    #quickMenu{
+      max-height: 600px;
+    }
   }
 
   .carrot_svg{
-    width: 40px;
+    width: 30px;
     height: auto;
-    transform: translateX(-2px);
+    transform: translateX(7px);
   }
   .plus_before_pyj{
     border: 5px solid $uglyorange;
@@ -351,6 +368,7 @@ $uglygray : #414B5A;
   .plus_before_pyj{
     background-color: $uglyorange;
     border-radius: 0 0 100px 100px;
+
     .menu_button{
       display: flex;
       flex-direction: column;

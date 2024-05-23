@@ -348,20 +348,36 @@
 
 #quick_pyj {
   position: fixed;
-  top: calc(50vh - 60px);
+  bottom: calc(10vh - 40px);
   right: 20px;
   width: 70px;
 }
-#quick_pyj.showmenu .d-none {
+#quick_pyj .quick-none {
   display: block !important;
+}
+#quick_pyj #quickMenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+#quick_pyj.showmenu .plus_button {
+  position: relative;
+  transition: transform 0.5s ease border-radius 0.6s ease 0.1s;
+  border-radius: 0 0 100px 100px;
 }
 #quick_pyj.showmenu .plus_after_pyj {
   border-radius: 0;
 }
+#quick_pyj.showmenu .plus_after_pyj img {
+  filter: brightness(0) invert(1);
+}
+#quick_pyj.showmenu #quickMenu {
+  max-height: 600px;
+}
 #quick_pyj .carrot_svg {
-  width: 40px;
+  width: 30px;
   height: auto;
-  transform: translateX(-2px);
+  transform: translateX(7px);
 }
 #quick_pyj .plus_before_pyj {
   border: 5px solid #FE663F;
