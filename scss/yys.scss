@@ -337,8 +337,12 @@ a {
 }
 #mainbanner_yys{
     overflow: hidden;
-    padding: 100px 0 200px 0;
-    
+    // padding: 100px 0 200px 0;
+    // #mainbanner_yys 에서 .mainbanner_pyj로 새로 class 만듬
+    // padding: 100px 0 200px 0; 에서 padding: 100px 0 40px 0;으로 수정함 - pyj(5/23)
+}
+.mainbanner_pyj{
+    padding: 100px 0 40px 0;
 }
 .main_image_center_yys{
     max-width: 1400px;

@@ -13,6 +13,62 @@ $uglygray : #414B5A;
 }
 
 // 배경
+#review_gms{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 220px;
+  .review_background{
+    background-image: url(../img/img_pyj/webbackground/background_parts_3.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1; 
+    transform: scaleX(-1);
+  }
+}
+#store_jjh{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 220px;
+  .store_background{
+    background-image: url(../img/img_pyj/webbackground/background_parts_1.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 100%;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1; 
+    transform: scaleX(-1);
+  }
+}
+#recipe_yjy{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  .recipe_background{
+    background-image: url(../img/img_pyj/webbackground/background_parts_1.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 100%;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1; 
+    transform: scaleY(-1);
+  }
+}
 #map_pyj{
   position: relative;
   width: 100%;
@@ -35,6 +91,14 @@ $uglygray : #414B5A;
   }
 }
 
+#event_banner_yys{
+  .event_banner_pyj{
+    background-color: #FFF4DF;
+    width: 100%;
+    height: auto;
+    padding-top: 6rem;
+  }
+}
 
 // 반응형
 .map_title_pyj{
@@ -70,12 +134,17 @@ $uglygray : #414B5A;
       margin-bottom: 0;
     }
 }
-.section_top_blank_pyj{
-  padding-top: 220px;
-  @media (max-width : 990px){
-    margin-top: 80px;
-  }
+.content_blank_pyj{
+  padding: 50px 0 100px 0;
+  margin-bottom: 150px;
 }
+
+// .section_top_blank_pyj{
+//   padding-top: 220px;
+//   @media (max-width : 990px){
+//     margin-top: 80px;
+//   }
+// }
 
 
 // 맵 컨텐츠 
@@ -261,6 +330,10 @@ $uglygray : #414B5A;
   // 배경
   .contents_background_pyj{
     background-color: #FFF4DF;
+    padding: 9rem 0;
+    @media (max-width : 990px) {
+      padding: 3rem
+    }
   }
   .form_background_pyj{
     max-width: 500px;

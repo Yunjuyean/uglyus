@@ -239,7 +239,10 @@ a {
 
 #mainbanner_yys {
   overflow: hidden;
-  padding: 100px 0 200px 0;
+}
+
+.mainbanner_pyj {
+  padding: 100px 0 40px 0;
 }
 
 .main_image_center_yys {

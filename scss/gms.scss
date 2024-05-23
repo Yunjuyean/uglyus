@@ -92,7 +92,8 @@ transform: scale(1.1);
 .more_button-wrapper_gms {
 position: relative;
 padding-bottom: 220px;
-padding-top: 220px;
+padding-top: 150px;
+// padding-top : 220px 에서 150px로 교체 - pyj(5/23)
 }
 
 .more_button_gms {

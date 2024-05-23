@@ -63,11 +63,14 @@
 .btn-orange{
   background-color: #FE663F;
   color: white;
-  border-radius: 20%;
+  border-radius: 20px;
+  // border-radius: 20%;을 border-radius: 20px;로 수정
   font-family: 'Pretendard';
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: -0.2px;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  // common.scss에 있는 font_button 스타일로 수정
+  // font-size / font-weight / letter-spacing 3개
   
 }
 .scaled-image{

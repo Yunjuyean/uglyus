@@ -60,11 +60,11 @@
 #store_jjh .btn-orange {
   background-color: #FE663F;
   color: white;
-  border-radius: 20%;
+  border-radius: 20px;
   font-family: "Pretendard";
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: -0.2px;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
 }
 #store_jjh .scaled-image {
   transform: scale(0.5);
