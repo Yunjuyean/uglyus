@@ -236,9 +236,6 @@ a {
   color: #414B5A;
   list-style: none;
 }
-#hd_yys .font_login:hover {
-  color: #FF6943 !important;
-}
 
 #mainbanner_yys {
   overflow: hidden;
@@ -262,7 +259,7 @@ a {
 }
 
 #pagination {
-  bottom: 186px;
+  top: 740px;
   position: relative;
   width: 137px;
   height: 16px;
