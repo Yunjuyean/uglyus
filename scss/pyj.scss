@@ -314,6 +314,8 @@ $uglygray : #414B5A;
   }
 
 
+
+
 // 퀵 버튼 컨텐츠
 #quick_pyj{
   // display: none;
@@ -321,6 +323,16 @@ $uglygray : #414B5A;
   top: calc(50vh - 60px); 
   right: 20px;
   width: 70px;
+
+
+  &.showmenu{
+     .d-none{
+      display: block !important;
+     }
+     .plus_after_pyj{
+      border-radius: 0;
+     }
+  }
 
   .carrot_svg{
     width: 40px;
@@ -332,14 +344,13 @@ $uglygray : #414B5A;
     border-top: 0;
     border-bottom: 0;
     border-color: transparent $uglyorange;
-    border-radius: 0 0 100px 100px;
     padding-bottom: 10px;
   }
 
   .plus_after_pyj,
   .plus_before_pyj{
     background-color: $uglyorange;
-
+    border-radius: 0 0 100px 100px;
     .menu_button{
       display: flex;
       flex-direction: column;

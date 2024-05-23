@@ -352,6 +352,12 @@
   right: 20px;
   width: 70px;
 }
+#quick_pyj.showmenu .d-none {
+  display: block !important;
+}
+#quick_pyj.showmenu .plus_after_pyj {
+  border-radius: 0;
+}
 #quick_pyj .carrot_svg {
   width: 40px;
   height: auto;
@@ -362,12 +368,12 @@
   border-top: 0;
   border-bottom: 0;
   border-color: transparent #FE663F;
-  border-radius: 0 0 100px 100px;
   padding-bottom: 10px;
 }
 #quick_pyj .plus_after_pyj,
 #quick_pyj .plus_before_pyj {
   background-color: #FE663F;
+  border-radius: 0 0 100px 100px;
 }
 #quick_pyj .plus_after_pyj .menu_button,
 #quick_pyj .plus_before_pyj .menu_button {

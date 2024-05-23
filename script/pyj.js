@@ -1,18 +1,22 @@
-document.getElementById('quickMenu').addEventListener('click', toggleQuickMenu);
+// document.getElementById('quickMenu').addEventListener('click', toggleQuickMenu);
 
-function toggleQuickMenu() {
-  const beforeButtons = document.querySelectorAll('.before_button');
+// function toggleQuickMenu() {
+//   const beforeButtons = document.querySelectorAll('.before_button');
 
-  beforeButtons.forEach(button => {
-    button.classList.toggle('d-none');
-    button.classList.toggle('d-flex');
-  });
+//   beforeButtons.forEach(button => {
+//     button.classList.toggle('d-none');
+//     button.classList.toggle('d-flex');
+//   });
 
-  const quickMenu = document.getElementById('quickMenu');
-  const quickplus = document.getElementById('quickplus');
+//   const quickMenu = document.getElementById('quickMenu');
+//   const quickplus = document.getElementById('quickplus');
 
-  quickMenu.classList.toggle('show');
-  quickplus.classList.toggle('close');
-  quickplus.classList.toggle('d-none');
-  quickplus.classList.toggle('d-flex');
-}
+//   quickMenu.classList.toggle('show');
+//   quickplus.classList.toggle('close');
+//   quickplus.classList.toggle('d-none');
+//   quickplus.classList.toggle('d-flex');
+// }
+
+document.querySelector("#quick_pyj .plus_after_pyj").addEventListener('click', function(){
+  document.querySelector("#quick_pyj").classList.toggle('showmenu')
+})
