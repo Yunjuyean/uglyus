@@ -56,7 +56,146 @@
 
             
            
+<<<<<<< HEAD
         <h1 ><a class=" me-3 " href="https://uglyus.co.kr/main"><img  src="./img/img_yys/svg/ugly_us_logo.svg"  alt="어글리어스 로고"></a></h1>
+=======
+                    <h1 ><a class=" me-3 " href="https://uglyus.co.kr/main"><img  src="./img/img_yys/svg/ugly_us_logo.svg"  alt="어글리어스 로고"></a></h1>
+                    
+                    
+                        
+                        <ul class=" font_navi  flexcenter gnb mb-0 ps-0">
+
+                            <li class="nav-mission me-5 gnb_li  rel">
+                                <a class="d-block gnb_a" href="#about"><span>우리의미션</span></a>
+                                <ul class="gnb_ul abs">
+                                    <li class="gnb_ul_li"><a href="">미션</a></li>
+                                    <li class="gnb_ul_li"><a href="">소싱철학</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-mission me-5 gnb_li rel ">
+                                <a class="d-block gnb_a" href="#about"><span>정기배송</span></a>
+                                <ul class="gnb_ul abs">
+                                    <li class="gnb_ul_li"><a href="">후기</a></li>
+                                    <li class="gnb_ul_li"><a href="">혜택</a></li>
+                                    <li class="gnb_ul_li"><a href="">이용안내</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-mission me-5 gnb_li rel">
+                                <a class="d-block gnb_a" href="#about"><span>싱싱마켓</span></a>
+                                <ul class="gnb_ul abs">
+                                    <li class="gnb_ul_li"><a href="">추천상품</a></li>
+                                    <li class="gnb_ul_li"><a href="">인기상품</a></li>
+                                    <li class="gnb_ul_li"><a href="">대기중인상품</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="nav-mission me-5 gnb_li  rel">
+                                <a class="d-block gnb_a" href="#about"><span>커뮤니티</span></a>
+                                <ul class="gnb_ul abs">
+                                    <li class="gnb_ul_li"><a href="">오늘의 레시피</a></li>
+                                    <li class="gnb_ul_li"><a href="">채소이야기</a></li>
+                                    <li class="gnb_ul_li"><a href="">어글리어스 밥풀루언서</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    
+                        <div class=" login" >
+                            <ul class="d-flex px-0 my-0  ">
+                                <li class=" me-3 font_login ">
+                                    <a class="nav-link font_login" href="#about">로그인</a>
+                                </li>   
+                                <li class="  font_login ">
+                                    <a class="nav-link me-0 font_login" href="#portfolio">회원가입</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+               
+
+        </header> -->
+        
+        <section id="mainbanner_yys">
+            <div>  
+                <div class="dja_gms">
+                    <div>
+                        <img src="./img/img_yys/img/main_gms.jpg" alt="" class="main_image_side_gms">
+                    </div>
+                    <div class="px-5">
+                        <img src="./img/img_yys/img/main_img_yys.jpg" alt=""class="main_image_center_gms">
+                    </div>
+                    <div>
+                        <img src="./img/img_yys/img/main_jjh.jpg" alt=""class="main_image_side_gms">
+                    </div>
+                </div>
+        </section>  
+
+        <section id="mainbanner_yys" class="d-none">
+                <div class="swiper ms-0 me-0" >
+                    <!-- 슬라이드들 -->
+                    <div class="swiper-wrapper    ">
+                        <div class="swiper-slide">
+                            <li><a href="#"><img src="./img/img_yys/img/main_gms.jpg" class="img-fluid" alt="어글리어스 구스토스 콜라보"></a></li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li><a href=""><img src="./img/img_yys/img/main_jjh.jpg" class="img-fluid" alt="어글리어스 음료수" class="img-fluid"></a></li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li><a href=""><img src="./img/img_yys/img/main_pyj.jpg" class="img-fluid" alt="당신이구해준 채소한알" class="img-fluid"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <li><a href=""><img src="./img/img_yys/img/main_yjy.jpg" class="img-fluid" alt="못난이 토마토" class="img-fluid"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <li><a href=""><img src="./img/img_yys/img/main_yys.jpg" class="img-fluid" alt="유기농채소로 시작하는하루" class="img-fluid"></a>
+                        </div>
+                        <!-- 추가적인 슬라이드들을 여기에 추가 -->
+                    </div>
+
+                    <!-- 페이지네이션 -->
+                    <div class="swiper-pagination"></div>
+        </section>  
+
+                <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                
+                <!-- 스와이퍼 초기화 스크립트 -->
+            <script>
+                    var swipermainBanner = new Swiper("#mainbanner_yys .swiper", {
+                    loop: true,
+                    spaceBetween: 800,
+                    centeredSlides: true,
+                    slidesPerView: 1.1,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: "#mainbanner_yys .swiper-pagination",
+                        clickable: true,
+                    },
+                   
+                    
+                    breakpoints: {
+                        // 768px 미만에서는 한 번에 하나의 슬라이드만 보여지도록 설정
+                         768: {
+                             slidesPerView: 1,
+                             spaceBetween: 60,
+                         },
+                        // // // 992px 미만에서는 슬라이드가 가운데로 오도록 설정
+                         992: {
+                             slidesPerView: 1,
+                             spaceBetween: 60,
+                         },
+                        1400: {
+                            slidesPerView: 1.6,
+                            spaceBetween: 90,
+                        },
+                    },
+                });
+            </script>
+>>>>>>> 6ae209f093212eb332114598f7af5005a3e1db1c
         
         
             
