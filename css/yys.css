@@ -294,6 +294,65 @@ a {
   display: block;
 }
 
+#collab_banner_yys {
+  width: 1920px;
+  height: 60px;
+  justify-content: center;
+}
+#collab_banner_yys .collab_img {
+  background: url(../img/img_yys/svg/collab_banner_yys.svg);
+  border-radius: 20px;
+  background-size: cover;
+  height: 100px;
+  width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(18%);
+}
+#collab_banner_yys .collab_img .collab_font_yysH2 {
+  margin-left: -420px;
+  top: 23px;
+  display: flex;
+  position: absolute;
+  line-height: 1.5rem;
+  letter-spacing: -0.5px;
+  font-family: "Pretendard";
+  font-size: 30px;
+  font-weight: 700;
+  /* padding: 0 30px; */
+  left: 598px;
+  margin-bottom: 0;
+}
+#collab_banner_yys .collab_img .collab_font_yysP {
+  bottom: 17px;
+  margin-right: 407px;
+  display: flex;
+  position: absolute;
+  right: 536px;
+  line-height: 1.5rem;
+  letter-spacing: -0.7px;
+  font-family: "Pretendard";
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+#collab_banner_yys .collab_img .collab_font_yysPt {
+  display: flex;
+  position: absolute;
+  right: 580px;
+  line-height: 17px;
+  letter-spacing: -0.6px;
+  font-family: "Pretendard";
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+#collab_banner_yys .collab_img a {
+  color: #3B3B3B !important;
+}
+
 #event_banner_yys .banner_img {
   background: url(../img/img_yys/svg/eventBanner_yys.svg) no-repeat center;
   background-size: cover;
@@ -313,7 +372,7 @@ a {
   letter-spacing: -0.5px;
   font-family: "Pretendard";
   font-size: 31px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0 30px;
   left: 598px;
   margin-bottom: 0;
