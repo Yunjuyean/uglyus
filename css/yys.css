@@ -229,12 +229,15 @@ a {
   content: "";
   width: 0;
 }
-#hd_yys .font_login {
+#hd_yys .font_login_pyj {
   font-family: "Pretendard";
   font-size: 14px;
   font-weight: 400;
   color: #414B5A;
   list-style: none;
+}
+#hd_yys .font_login_pyj:hover {
+  color: #FF6943;
 }
 
 #mainbanner_yys {
@@ -242,7 +245,7 @@ a {
 }
 
 .mainbanner_pyj {
-  padding: 100px 0 40px 0;
+  padding: 100px 0 80px 0;
 }
 
 .main_image_center_yys {
@@ -298,59 +301,40 @@ a {
 }
 
 #collab_banner_yys {
-  width: 1920px;
-  height: 60px;
-  justify-content: center;
+  background-image: url(../img/img_yys/collab_banner_yys_2.png);
+  max-width: 1400px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-position: right center;
+  background-size: auto 100%;
+  font-family: "Pretendard";
+  background-color: #BFEFFA !important;
+  margin-top: 20px;
+  margin-bottom: 150px;
 }
 #collab_banner_yys .collab_img {
-  background: url(../img/img_yys/svg/collab_banner_yys.svg);
-  border-radius: 20px;
-  background-size: cover;
-  height: 100px;
-  width: 1400px;
+  padding: 15px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 50%;
-  transform: translateX(18%);
 }
 #collab_banner_yys .collab_img .collab_font_yysH2 {
-  margin-left: -420px;
-  top: 23px;
-  display: flex;
-  position: absolute;
-  line-height: 1.5rem;
   letter-spacing: -0.5px;
-  font-family: "Pretendard";
   font-size: 30px;
-  font-weight: 700;
-  /* padding: 0 30px; */
-  left: 598px;
-  margin-bottom: 0;
 }
 #collab_banner_yys .collab_img .collab_font_yysP {
-  bottom: 17px;
-  margin-right: 407px;
-  display: flex;
-  position: absolute;
-  right: 536px;
-  line-height: 1.5rem;
   letter-spacing: -0.7px;
-  font-family: "Pretendard";
   font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 0;
 }
 #collab_banner_yys .collab_img .collab_font_yysPt {
-  display: flex;
-  position: absolute;
-  right: 580px;
   line-height: 17px;
   letter-spacing: -0.6px;
-  font-family: "Pretendard";
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 0;
 }
 #collab_banner_yys .collab_img a {
   color: #3B3B3B !important;
@@ -359,8 +343,9 @@ a {
 #event_banner_yys .banner_img {
   background: url(../img/img_yys/svg/eventBanner_yys.svg) no-repeat center;
   background-size: cover;
-  height: 61px;
-  width: 1920px;
+  padding: 30px 0;
+  margin: 0 auto;
+  max-width: 1920px;
   display: flex;
   align-items: center;
   justify-content: center;

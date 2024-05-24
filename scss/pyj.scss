@@ -12,6 +12,10 @@ $uglygray : #414B5A;
   background-color: #FFF4DF;
 }
 
+.activeColor{
+  color: $uglyorange !important
+}
+
 // 배경
 #review_gms{
   position: relative;
@@ -136,7 +140,8 @@ $uglygray : #414B5A;
 }
 .content_blank_pyj{
   padding: 50px 0 100px 0;
-  margin-bottom: 150px;
+  margin-top: 18px;
+  margin-bottom: 100px;
 }
 
 // .section_top_blank_pyj{
@@ -495,4 +500,37 @@ $uglygray : #414B5A;
     @media (max-width : 990px){
       font-size: 12px;
     }
+}
+
+
+// 추가 수정
+.font_title_k_2pyj{
+  font-family: 'Pretendard';
+  font-size: 30px;
+  font-weight: 700;
+  color: $uglyorange;
+  letter-spacing: -0.5px;
+  line-height: 1.8rem;
+      @media (max-width : 990px){
+          font-size: 22px;
+      }
+}
+.font_f30bold_pyj {
+  font-family: 'Rubik';
+  font-size: 30px;
+  font-weight: 700;
+  color: #1F2937; /* $uglyblack 대신 직접 색상 값 사용 */
+}
+.we_blank_pyj{
+  padding-top: 74px;
+}
+.we_icon_pyj{
+  max-width: 145px !important;
+  height: auto;
+}
+.we_text_pyj{
+  padding-bottom: 12px;
+}
+.we_padding_pyj{
+  padding: 0 50px;
 }
