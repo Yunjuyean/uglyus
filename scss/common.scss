@@ -7,6 +7,13 @@ $uglyblack : #1F2937;
 $uglygray : #414B5A;
 
 
+ul, li, dl, dt, dd{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
 // border-radius 공통 스타일 (버튼,이미지)
 .border-radius{
     border-radius: 20px;
