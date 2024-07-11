@@ -98,29 +98,62 @@
             </div>
     </header>
 
-    <section id="mainbanner_yys" class="mainbanner_pyj">
-        <div>
-            <div class="dja_yys">
-                <div>
-                    <img src="https://yunjuyean.github.io/uglyus/img/img_yys/img/main_gms.jpg" alt="" class="main_image_side_yys">
-                </div>
-                <div class="px-5">
-                    <img src="https://yunjuyean.github.io/uglyus/img/img_yys/img/main_pyj.jpg" alt=""class="main_image_center_yys">
-                </div>
-                <div>
-                    <img src="https://yunjuyean.github.io/uglyus/img/img_yys/img/main_jjh.jpg" alt=""class="main_image_side_yys">
-                </div>
-                <div id="pagination" >
-                    <ul>
-                        <li><a href="#"><span></span></a></li>
-                        <li><a href="#"><span></span></a></li>
-                        <li><a href="#"><span></span></a></li>
-                        <li><a href="#"><span></span></a></li>
-                        <li><a href="#"><span></span></a></li>
-                    </ul>
-                </div>
+          
+    <section id="mainbanner_yys" class="mainbanner_pyj>
+        <div class="main_caver">
+          <div class="swiper ov mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bg0 bs">Slide 1</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg1 bs">Slide 1</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg2 bs">Slide 1</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg3 bs">Slide 1</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg4 bs">Slide 1</div>
+              </div>
+              
+              
             </div>
-    </section>        
+            <div class="swiper-pagination"></div>
+          </div>
+    
+        </div>
+        
+    
+      </section>
+      
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        
+        var swiper = new Swiper("#mainbanner_yys .mySwiper", {
+          spaceBetween:  73,
+          slidesPerView: 1.35,
+          
+          centeredSlides: true,
+          loop: true,
+          // loopAdditionalSlides :5,
+          autoplay: {
+            delay: 6500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: "#mainbanner_yys .swiper-pagination",
+            clickable: true,
+            
+          },
+        });
+      </script>
         
     <section id="collab_banner_yys" class="content_blank_pyj">
         <div class="collab_img col-10 d-flex justify-content-around">
