@@ -6,7 +6,9 @@ $uglygreen : #5EAB42;
 $uglyblack : #1F2937;
 $uglygray : #414B5A;
 
-
+*{
+    word-break: keep-all;
+  }
 ul, li, dl, dt, dd{
     margin: 0;
     padding: 0;
